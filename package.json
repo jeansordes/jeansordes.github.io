@@ -1,6 +1,6 @@
 {
 	"scripts": {
-		"build": "parcel src/index.html"
+		"build": "parcel src/index.html --dist-dir docs"
 	},
 	"dependencies": {
 		"postcss": "^8.4.18",
