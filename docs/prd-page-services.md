@@ -1,8 +1,10 @@
 # PRD de la page de services de Jean Sordes
 
-Date : 7 octobre 2026. Version : 1. Statut : proposition de première version, prête à servir de base à l'implémentation.
+Date initiale : 7 octobre 2026. Mise à jour : 11 octobre 2026. Version : 2. Statut : V1 implémentée localement ; nouveau lot de clarification des offres cadré en section 16, à implémenter.
 
-Ce PRD décrit la transformation de la page personnelle de Jean Sordes en une page de services permettant de comprendre son approche, de découvrir le diagnostic Vibe Doctor et de réserver un échange gratuit de 30 minutes. Il s'appuie sur le [brief de référence](brief-page-services.md), qui reste la source des décisions commerciales et des limites des expériences racontées.
+Ce PRD décrit la page de services de Jean Sordes et son évolution vers deux formats lisibles : « Intervention urgente » et « Accompagnement », avec un échange gratuit de 30 minutes pour commencer. Il s'appuie sur le [brief de référence](brief-page-services.md), complété par les décisions plus récentes consignées ici. Le brief conserve notamment les sources et les limites des expériences racontées.
+
+Les sections consacrées à Vibe Doctor conservent le cadrage historique de la V1. Pour la prochaine évolution, **le lot de la section 16 fait référence sur les sujets qu'il remplace** : nom de l'offre, intervention comprenant les corrections, argumentaire, organisation des deux offres et navigation. Il consigne les décisions plus récentes de Jean, qui complètent et remplacent sur ces points le brief initial. Les autres exigences et les modifications déjà demandées restent applicables.
 
 ## 1. Statut des exigences
 
@@ -285,3 +287,123 @@ Donner au visiteur des éléments concrets pour comprendre l'expérience de Jean
 **À travailler dans ce lot :** une sélection argumentée d'expériences et de projets, les textes correspondants, les captures et un relevé des preuves avec leurs sources. Explorer une synthèse du parcours dans « À propos » et des cartes de portfolio dans l'univers ludique existant ; le nombre de projets et leur placement restent à décider. Préserver la lisibilité des offres et le parcours de réservation.
 
 **Critères d'acceptation du lot :** les faits et indicateurs affichés sont sourcés et vérifiés, la contribution de Jean est explicite, les captures et liens correspondent aux projets présentés, et aucun témoignage ou résultat n'est inventé. Une mise à jour manuelle des indicateurs peut suffire ; aucune intégration automatique GitHub ou Obsidian n'est décidée à ce stade.
+
+## 16. Lot — Deux offres lisibles et intervention urgente
+
+**Cadrage demandé par Jean le 11 octobre 2026. Statut : à implémenter.** Ce lot transforme la présentation commerciale pour faire comprendre immédiatement les deux façons de travailler avec Jean : lui confier un blocage précis sur un projet existant, ou être accompagné dans les choix et la progression de son entreprise.
+
+### Décisions de Jean et portée du changement
+
+- **Retenu :** le titre public de l'offre ponctuelle est **« Intervention urgente »**. Jean privilégie les missions pour débloquer ou corriger un projet existant.
+- **Retenu :** abandonner Vibe Doctor, le doctor et l'univers médical dans la prochaine version publique. **Vibe Fixer** a été évoqué comme nom possible ; il reste facultatif et ne remplace pas le titre choisi ni l'identité de Jean.
+- **Retenu :** adopter l'image du pompier qui éteint le feu, avec des **emoji 🔥 en stickers** et l'univers ludique à bords arrondis existant.
+- **Retenu, précisé ensuite par Jean :** rassurer par une présence compétente et une intervention menée ensemble. Le visiteur explique sa situation et participe aux échanges ; Jean apporte son expertise, mène le travail technique et aide à débloquer le projet. La promesse émotionnelle est **« Vous n'êtes plus seul face au problème »**. La formulation « je prends tout en charge » est retirée : Jean souhaite une collaboration concrète dans l'urgence, et non un service de luxe ou une livraison clé en main sans participation du client.
+- **Retenu :** le CTA de cette offre est **« Préparons une intervention »**, à la place de « Parlons de votre blocage » ou d'un équivalent centré sur une simple discussion.
+- **Retenu :** la seconde offre est un accompagnement plus complet, avec conseil, coaching et suivi. Elle aide notamment les dirigeants à découvrir ce qui est possible avec l'IA et à choisir les évolutions utiles pour leur entreprise.
+- **Demande commerciale à concrétiser :** livraison ultra rapide, avec une cible de **7 jours maximum**. Le point de départ, le décompte des jours, les conditions de livraison et la capacité à tenir cet engagement restent à définir.
+- **Hypothèse évoquée par Jean :** une garantie si le problème n'est pas résolu. Le remboursement a été proposé dans la discussion ; sa forme, son montant et son déclenchement ne sont pas encore arrêtés.
+
+Le changement porte sur la prestation vendue, au-delà de son nom : **l'intervention urgente comprend les corrections du blocage confié**. La règle V1 « diagnostic avec corrections séparées » ne décrit donc plus cette offre. Une analyse préalable approfondie peut encore nécessiter une proposition distincte, mais un diagnostic autonome n'est pas ajouté comme troisième offre principale. Son éventuelle facturation reste à préciser.
+
+### Objectif et valeur pour le visiteur
+
+Le visiteur doit pouvoir choisir son entrée sans lire tous les détails techniques :
+
+| Entrée | Situation du visiteur | Valeur attendue |
+| --- | --- | --- |
+| Intervention urgente | « Mon projet existe, je sais ce qui doit fonctionner et quelque chose bloque. » | Être rejoint par un expert, faire le point ensemble et débloquer le projet avec une aide technique concrète. |
+| Accompagnement | « Je sais où je veux emmener mon entreprise, mais je ne connais pas toutes les possibilités ni les bonnes étapes. » | Identifier les opportunités, décider des priorités et progresser avec du conseil, du coaching et un suivi. |
+
+Le visiteur n'a pas besoin d'identifier la cause technique ni de prescrire une solution. Il explique le contexte, ce qu'il veut pouvoir faire, ce qui l'en empêche et les tentatives déjà réalisées. Jean guide l'exploration du problème et réalise les interventions techniques ; le client apporte les informations et retours nécessaires et participe à la validation du résultat. Cette collaboration n'exige pas que le client sache coder. Le prix se construit autour du blocage levé, du temps gagné et de la capacité retrouvée à avancer. Le temps de travail sert à vérifier la rentabilité en interne.
+
+### Argumentaire et textes de référence
+
+**Direction éditoriale retenue :** parler à la première personne, avec des verbes d'action, une présence rassurante et un « ensemble » concret. Le lecteur doit ressentir du soulagement : quelqu'un rejoint son projet, sait où regarder et l'aide à gérer l'urgence. Le registre est celui du pompier qui vient aider et se retrousse les manches avec lui. Exprimer le calme et la solidarité sans accentuer la panique. Les détails de qualification et de contrat sont traités dans le parcours de préparation, avec une FAQ concise pour les informations utiles à la décision.
+
+**Proposition de rédaction pour la section urgente :**
+
+> **Intervention urgente**
+>
+> **Votre projet prend feu ? Vous n'êtes plus seul.**
+>
+> Votre application bloque, une fonctionnalité ne répond plus ou les bugs s'accumulent ? Vous m'expliquez ce qui se passe, et on se retrousse les manches ensemble.
+>
+> Je vous aide à comprendre ce qui coince, j'interviens sur le projet et nous vérifions ensemble que le problème est résolu. On éteint le feu pour vous permettre d'avancer à nouveau.
+>
+> **Préparons une intervention**
+
+Les formulations exactes peuvent être affinées pendant l'implémentation. Conserver le titre et le CTA choisis par Jean. Éviter une succession de « je peux peut-être », « voir si je peux aider » ou une promesse limitée à fournir un plan d'action. Décrire l'aide concrète de Jean, la participation du client et le résultat attendu. Ne pas employer « je prends tout en charge », « vous n'avez rien à faire » ou un argumentaire de délégation totale. La collaboration doit rester accessible et soutenante, sans donner l'impression que le client devra assurer lui-même les corrections techniques.
+
+**Ligne commerciale à finaliser :** « Livraison sous 7 jours maximum. » La promesse chiffrée sera associée au démarrage et aux conditions définis pour l'offre. Une éventuelle formulation « Problème non résolu : intervention remboursée » reste une proposition jusqu'à définition de la garantie ; elle ne constitue pas une décision déjà validée.
+
+Jean mène le travail technique et le client contribue par son contexte, les accès nécessaires et ses retours. Le dirigeant conserve les décisions concernant son entreprise et son projet. Aucune disponibilité permanente, compatibilité universelle, absence totale de bugs ou sécurité absolue n'est convenue.
+
+### Parcours de l'intervention et engagements à préciser
+
+Le parcours public doit rester simple et actif :
+
+1. **Préparons l'intervention.** Le visiteur réserve l'échange gratuit de 30 minutes et décrit son projet, le blocage et le résultat souhaité. Le raccordement du calendrier avec description obligatoire reste à terminer conformément à la section 7.
+2. **On organise l'intervention.** Jean examine le projet et les accès nécessaires, puis convient avec le client du résultat à livrer, du prix et de la date de démarrage. L'échange gratuit prépare la mission ; cliquer sur le CTA ne réserve pas automatiquement une intervention payante.
+3. **On éteint le feu.** Jean guide la recherche des causes et réalise les corrections techniques. Le client explique le fonctionnement attendu, répond aux questions utiles et partage ses observations ; Jean l'aide à comprendre ce qui se passe et les prochaines actions.
+4. **On vérifie ensemble.** Jean et le client vérifient le parcours concerné et le résultat attendu. La livraison comprend la correction, une explication des changements et les informations nécessaires pour poursuivre. Préciser si la livraison comprend une mise en production ou une remise prête à déployer.
+
+**À formaliser avant publication des engagements correspondants :**
+
+- Définition du résultat et critères de validation observables ; par exemple, un utilisateur peut se connecter et accéder à son espace.
+- Types de projets pris en charge, accès nécessaires et traitement d'une demande qui exige une refonte plus large.
+- Décompte des sept jours, date de début et traitement des dépendances ou modifications de la demande. La date de livraison doit être compréhensible avant engagement.
+- Garantie : événement déclencheur, montant remboursé, traitement d'une analyse facturée séparément et procédure applicable.
+- Modalités du point d'avancement et durée d'un éventuel suivi après livraison.
+- Disponibilité et nombre de missions simultanées soutenables pour Jean ; aucun compteur de places ou délai de réponse n'est inventé sur la page.
+
+### Accompagnement et ambition de l'entreprise
+
+Présenter l'accompagnement comme la deuxième voie à part entière : le dirigeant a une ambition, Jean l'aide à explorer les possibilités, choisir les priorités et faire progresser son entreprise et son équipe.
+
+L'ambition « devenir une entreprise AI first » exprimée par Jean est traduite en bénéfices compréhensibles : alléger des tâches répétitives, améliorer le service rendu, mieux exploiter les informations et gagner en autonomie. Les objectifs précis se construisent avec le client. Le rôle de Jean reste celui d'un CTO à temps partagé dans une posture de conseil, avec le dirigeant qui décide.
+
+**Proposition de rédaction :** « Vous savez où vous voulez aller. Je vous aide à trouver le chemin. Ensemble, nous identifions les usages utiles de l'IA, choisissons les priorités et faisons progresser votre équipe avec du conseil, du coaching et un suivi. »
+
+Une cartographie des opportunités, une feuille de route et un premier usage à tester sont des pistes de livrables, à formaliser. La cadence, la disponibilité et les interventions opérationnelles éventuelles se définissent dans l'offre ; aucun abonnement illimité n'est ajouté par défaut.
+
+### Architecture et repères persistants
+
+**Exigence issue de la demande de Jean :** afficher les deux offres dès la présentation initiale, avant les symptômes détaillés. Garder au défilement des repères visibles en haut de page pour comprendre la partie consultée et rejoindre l'autre offre.
+
+**Proposition d'ordre :** présentation de Jean et des deux formats → intervention urgente → accompagnement → approche et preuves → FAQ → invitation à commencer. Les symptômes deviennent quelques exemples dans l'intervention urgente. Le parcours et le portfolio servent à étayer les offres ; leur présentation peut être condensée, avec accès aux détails, afin de préserver une lecture simple.
+
+Les libellés des offres sont **« Intervention urgente »** et **« Accompagnement »**. Le repère actif suit la section consultée et distingue les sections consacrées aux offres des sections de présentation, de preuves et de questions. Il ne doit pas désigner une offre comme active lorsque le visiteur lit une autre partie de la page. Les détails d'un bloc d'offre restent associés à ce même bloc.
+
+Prévoir sur mobile un accès visible aux deux offres. La navigation persistante doit conserver des cibles tactiles suffisantes, un focus visible et un décalage des ancres adapté à sa hauteur. Elle ne masque ni titres, ni contenu, ni CTA. Les liens fonctionnent sans JavaScript ; le suivi de la section active peut être une amélioration JavaScript. L'Easter egg local au portrait conserve le fonctionnement déjà demandé ; la navigation répond à un besoin de repérage des offres.
+
+### Direction visuelle et cohérence de publication
+
+- Ajouter des stickers **🔥** autour du bloc d'intervention et de ses illustrations, avec un traitement arrondi cohérent avec le site. L'emoji est décoratif et ignoré par les lecteurs d'écran ; le sens est porté par le texte.
+- Montrer le passage d'un projet qui bloque à un projet repris en main. L'expression de Jean et l'ensemble de la composition doivent rassurer ; éviter une surcharge de flammes ou un effet d'alarme.
+- Conserver l'identité « Jean Z. Sordes », son portrait et sa personnalité. L'univers pompier illustre l'intervention urgente ; l'accompagnement conserve sa propre lecture.
+- Remplacer les références médicales dans les titres, textes, navigation, FAQ, textes alternatifs et métadonnées. Adapter les visuels de partage s'ils comportent ces références. Les documents historiques conservent les anciens termes pour la traçabilité.
+- Mettre à jour la FAQ pour expliquer le rôle technique de Jean, la participation du client (contexte, accès, retours et validation), le démarrage, la livraison, les engagements définis et la différence avec l'accompagnement. Rassurer les visiteurs non techniques : participer n'exige pas de savoir coder. Les réponses V1 relatives aux corrections toujours séparées doivent être réécrites.
+- Le CTA « Préparons une intervention » utilise le parcours de réservation existant. Les CTA de l'accompagnement sont adaptés à cette intention et restent cohérents avec l'échange gratuit de 30 minutes. Chaque action indique clairement sa destination ; le formulaire de contexte n'est pas simulé localement.
+
+### Pistes ultérieures évoquées
+
+Les webinaires ou ateliers payants et un widget d'orientation restent des **pistes à explorer**, sans lancement inclus dans ce lot. La recommandation discutée est un outil aidant à choisir une première action utile, puis une orientation vers l'intervention ou l'accompagnement. Le contenu, le modèle commercial et la réalisation de ces pistes nécessitent un cadrage distinct ; ils ne deviennent pas des offres disponibles par leur mention dans le PRD.
+
+### Livrables et critères d'acceptation
+
+Le lot comprend les textes des deux offres, la nouvelle hiérarchie de la page, la navigation persistante avec repère actif, les stickers 🔥, la mise en cohérence de la FAQ et des métadonnées, puis la recette sur mobile et bureau. Cette mise à jour du PRD cadre le travail ; elle ne réalise pas ces changements sur le site et ne publie rien.
+
+| Référence | Critère vérifiable |
+| --- | --- |
+| L16-1 | La présentation initiale permet d'identifier Jean et les deux formats avant les détails ; le visiteur distingue un blocage à confier d'un besoin d'accompagnement. |
+| L16-2 | Le titre de l'offre ponctuelle est « Intervention urgente » et son CTA « Préparons une intervention ». |
+| L16-3 | L'offre exprime « vous n'êtes plus seul » et une intervention menée ensemble : Jean mène le travail technique ; le client apporte le contexte et participe aux échanges et à la validation. Aucun texte ne promet une délégation totale ou un client sans rien à faire. |
+| L16-4 | Les éléments publics de la page et de son partage ne présentent plus Vibe Doctor ni une identité médicale ; les stickers 🔥 illustrent l'intervention sans gêner la lecture. |
+| L16-5 | Les deux offres restent accessibles dans la navigation au défilement, sur mobile et bureau ; le repère actif correspond au contenu consulté, y compris hors des offres. |
+| L16-6 | Les ancres, le clavier, le zoom à 200 % et les formats à partir de 320 px restent utilisables ; aucune barre ne masque les titres ou actions et aucun débordement horizontal n'est introduit. |
+| L16-7 | Le parcours distingue la préparation gratuite et l'intervention payante ; les liens ouvrent le calendrier réel et le statut du champ de description est vérifié. |
+| L16-8 | Le délai de sept jours et une éventuelle garantie sont publiés avec des modalités définies ; aucun engagement supplémentaire n'est déduit du vocabulaire de prise en charge. |
+| L16-9 | L'accompagnement expose l'orientation, le conseil, le coaching et le suivi, avec des usages utiles de l'IA et la décision finale du dirigeant. |
+| L16-10 | Parcours, portfolio et FAQ renforcent les deux offres ; les webinaires et le widget ne sont pas annoncés comme déjà disponibles. |
+
+Pour ce lot, ces critères remplacent A2, A3 et les formulations V1 d'A6 sur le diagnostic et les corrections séparées. Les autres critères de la section 12 restent applicables, avec les noms, contenus et CTA actualisés.

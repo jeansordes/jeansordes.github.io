@@ -65,6 +65,29 @@ svg {
   /* Frame the supplied photo below its top letterbox, without retouching it. */
   object-position: center 75%;
 }
+.icon {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+.card-symbol .icon {
+  width: 26px;
+  height: 26px;
+}
+.principles-grid article > span .icon {
+  width: 36px;
+  height: 36px;
+}
+.faq-doodle .icon {
+  width: 64px;
+  height: 64px;
+}
+.booking-spark .icon {
+  width: 1em;
+  height: 1em;
+}
 h1,
 h2,
 h3,
@@ -1016,18 +1039,19 @@ summary {
 summary::-webkit-details-marker {
   display: none;
 }
-summary::after {
-  content: "+";
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 1;
-  width: 22px;
+.disclosure-icons {
+  display: inline-flex;
   flex-shrink: 0;
   color: var(--purple);
-  text-align: center;
 }
-details[open] summary::after {
-  content: "−";
+.disclosure-icons .icon-minus {
+  display: none;
+}
+details[open] > summary .icon-plus {
+  display: none;
+}
+details[open] > summary .icon-minus {
+  display: inline-block;
 }
 details p {
   font-size: 0.88rem;

@@ -37,15 +37,20 @@
       signature.style.width = `${initialWidth + widths.reduce((sum, width, i) => sum + width * full[i], 0) + 1}px`;
       measureNeeded = false;
     }
-    // Finish the whole loop while the portrait sticker crosses the viewport.
-    // Six short phases: a stable name for 65%, then an expansion for 35%.
-    const center =
-      signature.getBoundingClientRect().top +
-      signature.getBoundingClientRect().height / 2;
-    const start = window.innerHeight * 0.85;
-    const distance = Math.min(620, Math.max(240, start - 80));
+    // Use the sticker's fully visible journey, including mobile browser chrome.
+    // No fixed scroll distance: the entire loop fits the available screen.
+    const bounds = signature.closest(".about-sticker").getBoundingClientRect();
+    const viewport = window.visualViewport;
+    const viewportTop = viewport?.offsetTop ?? 0;
+    const viewportHeight = viewport?.height ?? window.innerHeight;
+    const margin = Math.min(24, viewportHeight * 0.04);
+    const center = bounds.top + bounds.height / 2;
+    const start = viewportTop + viewportHeight - margin - bounds.height / 2;
+    const end = viewportTop + margin + bounds.height / 2;
+    const distance = Math.max(1, start - end);
     const progress = Math.max(0, Math.min(1, (start - center) / distance));
-    const position = progress * (stages.length - 1);
+    // Add a final pause so JZS.fr is readable before the sticker leaves.
+    const position = progress * (stages.length - 1 + 0.65);
     const step = Math.min(Math.floor(position), stages.length - 2);
     const phase = Math.max(0, Math.min(1, (position - step - 0.65) / 0.35));
     const blend = phase * phase * (3 - 2 * phase);
@@ -71,6 +76,8 @@
   };
   window.addEventListener("scroll", scheduleUpdate, { passive: true });
   window.addEventListener("resize", remeasure);
+  window.visualViewport?.addEventListener("resize", scheduleUpdate);
+  window.visualViewport?.addEventListener("scroll", scheduleUpdate);
   window.addEventListener("pageshow", remeasure);
   reducedMotion.addEventListener("change", scheduleUpdate);
   document.fonts?.ready.then(remeasure);
