@@ -18,7 +18,7 @@ Ouvrir `http://127.0.0.1:4173`. La FAQ, la navigation et les liens fonctionnent 
 - `assets/styles.css` : styles, adaptations mobiles et préférence de réduction des mouvements.
 - `assets/jean-sordes-actuel.jpg` : photo récente fournie par Jean, encodée en JPEG sans retouche, utilisée dans la présentation, « À propos » et la signature au défilement. L’ancien portrait Gravatar est conservé mais n’est plus affiché.
 - `assets/jean-sordes-partage-v3.png` : visuel de partage avec la photo récente, utilisé par Open Graph et la carte de grande taille. Les versions précédentes sont conservées. [Prompt et provenance](docs/visuel-partage.md).
-- `assets/identity-scroll.js` : signature décorative liée au défilement, qui prend le relais de l’en-tête hors écran. Les lettres se déploient de Jean à Jean Z. Sordes puis Jean Zacharie Sordes, se replient en JZS et reviennent progressivement à Jean. Avec réduction des mouvements, son nom reste « Jean Z. Sordes ». Sans JavaScript, l’en-tête statique suffit.
+- `assets/identity-scroll.js` : Easter egg limité au sticker du portrait dans « À propos », sans barre fixe. Boucle JZS.fr → Jean Zacharie Sordes → Jean Z. Sordes → Jean, puis retour dans l’autre sens. Les formes lisibles restent fixes pendant 65 % de chaque phase ; les fragments partiellement déployés sont masqués. Avec réduction des mouvements ou sans JavaScript, le sticker reste sur JZS.fr.
 - `assets/favicon.svg` : icône du site.
 - `CNAME` : domaine GitHub Pages existant, à conserver.
 - [Brief](docs/brief-page-services.md) et [PRD](docs/prd-page-services.md) : direction commerciale et exigences de la page.

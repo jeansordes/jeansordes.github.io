@@ -90,8 +90,16 @@ Le formulaire externe a été revérifié après sélection d’un créneau, san
 
 ### Remplacement par la photo récente
 
-**Ajustement de la signature :** à la demande de Jean, le nom ne change plus par remplacement de texte. Ses fragments sont créés une seule fois, puis leur largeur varie continuellement avec le défilement : les lettres et les espaces se déploient ou se replient, notamment autour des initiales J, Z et S. La boucle initiale est conservée. Les étapes, les états intermédiaires, la conservation des éléments dans le DOM, les deux sens de défilement et l’absence de débordement sont vérifiés à 320, 390, 768 et 1 440 px. Les versions sans mouvement et sans JavaScript sont également vérifiées.
+**Ajustement initial de la signature :** à la demande de Jean, le nom ne change plus par remplacement de texte. Ses fragments sont créés une seule fois, puis leur largeur varie avec le défilement. Cette première version a ensuite été affinée comme décrit ci-dessous.
 
 À la demande de Jean, la photo fournie dans la conversation remplace le portrait Gravatar dans les trois images de la page. La photo est encodée en JPEG (environ 173 Ko) sans retouche du visage ; le cadrage est défini par CSS. Le visuel de partage est édité avec imagegen pour reprendre cette seule référence d’identité, et livré dans `assets/jean-sordes-partage-v3.png`. Les deux métadonnées d’image pointent vers cette version ; les anciens fichiers restent conservés.
 
 Vérifications à 320, 390 et 1 440 px : trois références au nouveau portrait, aucune à l’ancien portrait dans la page, chargement des images réussi, absence de débordement horizontal et métadonnées v3 correctes. Les cadrages de la section « À propos » sur mobile et ordinateur et le portrait du visuel de partage ont été inspectés. `git diff --check` ne signale aucune erreur. Aucune publication n’a été effectuée.
+
+### Easter egg discret avec pauses
+
+Le monogramme « js ✳ » est retiré de l’en-tête et du pied de page. La barre fixe est supprimée ; l’effet est limité au sticker du portrait, sans overlay ni déplacement du contenu. La boucle commence et finit par JZS.fr, passe par Jean Zacharie Sordes, Jean Z. Sordes et Jean, puis revient dans l’autre sens.
+
+La boucle complète utilise au maximum 620 px de défilement autour du portrait, avec une distance adaptée à la hauteur de l’écran. Chaque phase comporte 65 % de pause et 35 % de transition. Les fragments dont la largeur est partielle sont invisibles, évitant les lettres coupées ou superposées ; le sticker réserve la largeur du nom complet. Les largeurs sont mesurées avant transformation, pour ne pas être faussées par la rotation du sticker.
+
+Contrôles : sept formes lisibles et leurs pauses vérifiées dans les deux sens à 320, 390, 768 et 1 440 px ; fragments partiels masqués ; mêmes éléments DOM conservés ; largeur stable ; absence de barre fixe ou de monogramme. Réduction des mouvements et JavaScript désactivé : JZS.fr fixe. La recette générale à huit largeurs, le clavier, le zoom et les audits axe à trois largeurs passent sans anomalie détectée. Les cinq destinations de réservation restent identiques. Rendu du sticker sur mobile inspecté ; `git diff --check` sans erreur.

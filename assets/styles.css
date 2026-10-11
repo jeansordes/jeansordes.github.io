@@ -26,7 +26,7 @@
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 85px;
+  scroll-padding-top: 28px;
 }
 body {
   margin: 0;
@@ -154,47 +154,11 @@ p + p {
   font-weight: 500;
   color: var(--muted);
 }
-.identity-ribbon {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 5;
-  background: var(--paper);
-  border-bottom: 1px solid var(--border);
-  visibility: hidden;
-  transform: translateY(-100%);
-  transition: transform 180ms ease-out;
-}
-.identity-ribbon.is-visible {
-  visibility: visible;
-  transform: translateY(0);
-}
-.identity-ribbon-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  min-height: 60px;
-}
-.identity-signature {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  min-height: 44px;
-  color: var(--ink);
-  text-decoration: none;
-  font-weight: 750;
-}
-.identity-signature img {
-  border: 1px solid var(--ink);
-  border-radius: 50%;
-  object-fit: cover;
-  flex-shrink: 0;
-}
 .identity-name {
   display: inline-flex;
   white-space: nowrap;
+  vertical-align: top;
+  max-width: 100%;
 }
 .identity-name-part {
   display: inline-block;
@@ -204,38 +168,6 @@ p + p {
 .identity-name-part > span {
   display: inline-block;
   white-space: pre;
-}
-.identity-domain {
-  font-size: 0.8rem;
-  font-weight: 650;
-  white-space: nowrap;
-}
-.identity-domain span {
-  color: var(--purple);
-  margin-left: 8px;
-}
-@media (max-width: 420px) {
-  .identity-signature {
-    font-size: 0.9rem;
-    gap: 10px;
-  }
-  .identity-domain {
-    display: none;
-  }
-}
-.monogram {
-  display: flex;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 1;
-  font-weight: 850;
-  letter-spacing: -0.12em;
-}
-.monogram span {
-  font-size: 1.3rem;
-  letter-spacing: 0;
-  color: var(--purple);
-  margin-left: 3px;
 }
 .site-header nav {
   display: flex;
@@ -1466,9 +1398,6 @@ details p {
   }
   .wordmark-note {
     font-size: 0.6rem;
-  }
-  .monogram {
-    font-size: 1.8rem;
   }
   .button-small {
     font-size: 0.72rem;
