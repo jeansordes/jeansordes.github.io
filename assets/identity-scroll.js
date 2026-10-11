@@ -1,55 +1,65 @@
-// A decorative signature; the accessible name and page content stay stable.
+// Keep the letters in place and expand or fold the rest of the name on scroll.
 (() => {
   const signature = document.querySelector("[data-scroll-name]");
   if (!signature) return;
   const ribbon = signature.closest(".identity-ribbon");
   const header = document.querySelector(".site-header");
-
-  const names = [
-    "Jean",
-    "Jean Z. Sordes",
-    "Jean Zacharie Sordes",
-    "JZS",
-    "Jean Zacharie Sordes",
-    "Jean Z. Sordes",
-    "Jean",
-  ];
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  const fragments = ["ean", " ", "Z", ".", "acharie", " ", "S", "ordes"];
+  const jean = [1, 0, 0, 0, 0, 0, 0, 0];
+  const abbreviated = [1, 1, 1, 1, 0, 1, 1, 1];
+  const full = [1, 1, 1, 0, 1, 1, 1, 1];
+  const initials = [0, 0, 1, 0, 0, 0, 1, 0];
+  const stages = [jean, abbreviated, full, initials, full, abbreviated, jean];
+
+  const initial = document.createElement("span");
+  initial.textContent = "J";
+  const parts = fragments.map((text, index) => {
+    const part = document.createElement("span");
+    part.className = "identity-name-part";
+    part.dataset.namePart = String(index);
+    const letters = document.createElement("span");
+    letters.textContent = text;
+    part.append(letters);
+    return part;
+  });
+  // Build once: scrolling only changes widths, never replaces the letters.
+  signature.replaceChildren(initial, ...parts);
+  let widths = [];
+  let measureNeeded = true;
   let scheduled = false;
-  let animation;
 
   const update = () => {
     scheduled = false;
-    // Take over only after the regular header leaves the viewport.
-    // This keeps the first view compact and its booking button visible.
     ribbon?.classList.toggle(
       "is-visible",
       header ? header.getBoundingClientRect().bottom <= 0 : window.scrollY > 60,
     );
+
+    if (measureNeeded) {
+      widths = parts.map(
+        (part) => part.firstElementChild.getBoundingClientRect().width,
+      );
+      measureNeeded = false;
+    }
     const scrollable =
       document.documentElement.scrollHeight - window.innerHeight;
     const progress =
       scrollable > 0
         ? Math.max(0, Math.min(1, window.scrollY / scrollable))
         : 0;
-    const name = reducedMotion.matches
-      ? "Jean Z. Sordes"
-      : names[Math.round(progress * (names.length - 1))];
-
-    if (reducedMotion.matches) animation?.cancel();
-    if (signature.textContent === name) return;
-    animation?.cancel();
-    signature.textContent = name;
-    // No continuous animation: a brief entrance only when the name changes.
-    if (!reducedMotion.matches && signature.animate) {
-      animation = signature.animate(
-        [
-          { opacity: 0.35, transform: "translateY(5px)" },
-          { opacity: 1, transform: "translateY(0)" },
-        ],
-        { duration: 220, easing: "ease-out" },
-      );
-    }
+    const position = progress * (stages.length - 1);
+    const step = Math.min(Math.floor(position), stages.length - 2);
+    const fraction = position - step;
+    const blend = fraction * fraction * (3 - 2 * fraction);
+    parts.forEach((part, index) => {
+      const amount = reducedMotion.matches
+        ? abbreviated[index]
+        : stages[step][index] +
+          (stages[step + 1][index] - stages[step][index]) * blend;
+      part.style.width = `${widths[index] * amount}px`;
+    });
   };
 
   const scheduleUpdate = () => {
@@ -57,12 +67,15 @@
     scheduled = true;
     window.requestAnimationFrame(update);
   };
-
+  const remeasure = () => {
+    measureNeeded = true;
+    scheduleUpdate();
+  };
   window.addEventListener("scroll", scheduleUpdate, { passive: true });
-  window.addEventListener("resize", scheduleUpdate);
-  window.addEventListener("pageshow", scheduleUpdate);
+  window.addEventListener("resize", remeasure);
+  window.addEventListener("pageshow", remeasure);
   reducedMotion.addEventListener("change", scheduleUpdate);
-  // Opening the gallery or FAQ changes the document's scrollable distance.
+  document.fonts?.ready.then(remeasure);
   if (window.ResizeObserver) {
     new ResizeObserver(scheduleUpdate).observe(document.body);
   }

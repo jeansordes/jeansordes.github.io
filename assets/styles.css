@@ -193,7 +193,17 @@ p + p {
   flex-shrink: 0;
 }
 .identity-name {
+  display: inline-flex;
+  white-space: nowrap;
+}
+.identity-name-part {
   display: inline-block;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.identity-name-part > span {
+  display: inline-block;
+  white-space: pre;
 }
 .identity-domain {
   font-size: 0.8rem;

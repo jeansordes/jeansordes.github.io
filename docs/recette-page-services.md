@@ -90,6 +90,8 @@ Le formulaire externe a été revérifié après sélection d’un créneau, san
 
 ### Remplacement par la photo récente
 
+**Ajustement de la signature :** à la demande de Jean, le nom ne change plus par remplacement de texte. Ses fragments sont créés une seule fois, puis leur largeur varie continuellement avec le défilement : les lettres et les espaces se déploient ou se replient, notamment autour des initiales J, Z et S. La boucle initiale est conservée. Les étapes, les états intermédiaires, la conservation des éléments dans le DOM, les deux sens de défilement et l’absence de débordement sont vérifiés à 320, 390, 768 et 1 440 px. Les versions sans mouvement et sans JavaScript sont également vérifiées.
+
 À la demande de Jean, la photo fournie dans la conversation remplace le portrait Gravatar dans les trois images de la page. La photo est encodée en JPEG (environ 173 Ko) sans retouche du visage ; le cadrage est défini par CSS. Le visuel de partage est édité avec imagegen pour reprendre cette seule référence d’identité, et livré dans `assets/jean-sordes-partage-v3.png`. Les deux métadonnées d’image pointent vers cette version ; les anciens fichiers restent conservés.
 
 Vérifications à 320, 390 et 1 440 px : trois références au nouveau portrait, aucune à l’ancien portrait dans la page, chargement des images réussi, absence de débordement horizontal et métadonnées v3 correctes. Les cadrages de la section « À propos » sur mobile et ordinateur et le portrait du visuel de partage ont été inspectés. `git diff --check` ne signale aucune erreur. Aucune publication n’a été effectuée.
