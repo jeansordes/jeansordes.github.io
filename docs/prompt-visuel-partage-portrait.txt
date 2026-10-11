@@ -1,0 +1,11 @@
+Edit the supplied social sharing banner (image 1) using the real portrait (image 2).
+Use case: compositing / identity-preserve.
+Image 1 is the edit target; image 2 is Jean Sordes's real portrait, supporting identity reference.
+Keep the wide horizontal approximately 1.91:1 banner, warm ivory #faf7f0, dark plum #292332, purple #68409b, lavender, buttery yellow and sage stickers, elegant editorial hierarchy.
+Add Jean's actual photographic head and shoulders as a large friendly die-cut photo sticker in the right third. Preserve his exact recognizable identity from image 2: facial features, glasses, hair, beard, smile, dark T-shirt. Do not invent a new face, beautify, age or illustrate his face. Remove the original leafy background from this inserted portrait. Frame the photo with a rounded organic lavender backing, thin dark outline and subtle flat offset shadow. The portrait should be prominent and clearly visible even in a small social preview, replacing most of the existing planning illustration; retain a modest yellow star and a small curved purple arrow around the portrait, outside the face.
+Keep the text area unobstructed on the left. Change only the name line to "Jean Z. Sordes" to connect his identity with jzs.fr; retain the exact other text:
+"CTO à temps partagé"
+"Comprendre ce qui bloque."
+"Savoir comment avancer."
+"www.jzs.fr"
+Use crisp, highly legible typography with correct accents and at least 6% safe margins. No additional text, no testimonials, no prices, no medical imagery, no watermark. Keep all text and the full face within safe bounds. Final result must be a polished finished sharing banner, not a mockup.

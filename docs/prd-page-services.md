@@ -22,6 +22,10 @@ L’inspection du calendrier confirme la durée de 30 minutes. Son formulaire pr
 
 ## 2. Problème et objectifs
 
+**Ajustements demandés le 11 octobre 2026 :** la présentation fixe de Jean utilise « Jean Z. Sordes » pour expliquer le domaine jzs.fr. La référence « Jean dans la lune » est retirée. Une signature décorative prend le relais lorsque l’en-tête sort de l’écran et suit la séquence Jean → Jean Z. Sordes → Jean Zacharie Sordes → JZS → Jean Zacharie Sordes → Jean Z. Sordes → Jean. Le nom accessible reste stable ; avec réduction des mouvements, la signature affiche Jean Z. Sordes. Sans JavaScript, l’en-tête statique conserve cette identité. Le visuel de partage intègre son portrait réel.
+
+Jean a envisagé une réservation en iframe, puis choisi de conserver le bouton/lien après constat que Notion limite les domaines autorisés à intégrer son calendrier. Ce choix remplace la demande d’iframe. La description du blocage doit toujours être collectée dans l’interface de réservation ; sa présence reste à vérifier dans le formulaire effectivement proposé.
+
 La page actuelle présente Jean et ses liens sociaux, mais ne permet pas de comprendre ses prestations ni de commencer une relation commerciale.
 
 La nouvelle page doit permettre à un visiteur de :
@@ -252,3 +256,32 @@ Ces points permettent de préparer une page complète sans convertir les hypoth�
 5. Publier dans le cadre d'une demande de mise en ligne, puis affiner l'offre et la page à partir des premiers échanges.
 
 La rédaction de ce PRD ne modifie pas la page actuelle et ne déclenche aucune publication.
+
+## 15. Lot — Parcours et portfolio
+
+**État au 8 octobre 2026 : implémenté localement à la demande de Jean.** La page comprend une synthèse du parcours LinkedIn, quatre cartes d’expériences et trois projets Obsidian : Dot Navigator, Auto Expander et Workflow Boards. Deux captures réelles de Dot Navigator, des illustrations de principe pour les autres projets et des indicateurs datés complètent les cartes. Les [sources et règles de mise à jour](sources-parcours-portfolio.md) sont documentées. Les vérifications figurent dans la [recette](recette-page-services.md). Aucune publication n’a été effectuée.
+
+**Demandé par Jean le 7 octobre 2026 :** prévoir un lot ultérieur pour mettre en avant son expertise à partir de son parcours LinkedIn et de ses réalisations. Le cadrage initial de ce lot est conservé ci-dessous ; la sélection implémentée est décrite dans les sources liées ci-dessus.
+
+### Objectif
+
+Donner au visiteur des éléments concrets pour comprendre l'expérience de Jean et sa capacité à concevoir, développer et transmettre. Relier les expériences et réalisations aux besoins des clients : prendre des décisions techniques, faire avancer un produit et gagner en autonomie. Jean reste au premier plan, avec son positionnement souhaité de CTO à temps partagé et sa posture de conseil.
+
+### Parcours professionnel
+
+- Reprendre le [profil LinkedIn de Jean](https://www.linkedin.com/in/jean-sordes/) et les éléments déjà relevés dans la section 8 du brief ; vérifier les rôles, dates et informations avant publication.
+- Sélectionner les expériences qui éclairent son expertise en ingénierie logicielle, conseil, entrepreneuriat et pédagogie. Privilégier une synthèse compréhensible pour un dirigeant plutôt qu'une reproduction exhaustive du CV.
+- Pour chaque expérience retenue, préciser le contexte, le rôle de Jean et ce qu'elle illustre pour le client. Distinguer les responsabilités déclarées des résultats vérifiables ; confirmer les éléments publiables.
+
+### Portfolio de réalisations
+
+- Inventorier les projets GitHub de Jean et ses plugins Obsidian, puis sélectionner les réalisations les plus pertinentes pour illustrer son expertise. **Selon Jean**, plusieurs projets disposent de stars ou de téléchargements ; les projets et chiffres exacts restent à identifier et à vérifier.
+- Préparer pour chaque réalisation une fiche courte : besoin utilisateur, application ou plugin, contribution de Jean, choix ou difficultés significatifs, lien vers le dépôt et, lorsque disponible, vers une démonstration ou la fiche Obsidian.
+- Rassembler des captures de l'application pour montrer concrètement le résultat, avec une légende accessible à un public non technique. Vérifier leur caractère publiable et éviter les données confidentielles ; prévoir des images légères et des textes alternatifs utiles.
+- Relever les stars GitHub et téléchargements Obsidian pertinents avec leur source et leur date de consultation. Préciser ce que mesure chaque indicateur : les téléchargements ne sont pas un nombre d'utilisateurs actifs, et les stars ne prouvent pas un résultat commercial ni la qualité d'une mission de conseil.
+
+### Livrables et pistes de présentation
+
+**À travailler dans ce lot :** une sélection argumentée d'expériences et de projets, les textes correspondants, les captures et un relevé des preuves avec leurs sources. Explorer une synthèse du parcours dans « À propos » et des cartes de portfolio dans l'univers ludique existant ; le nombre de projets et leur placement restent à décider. Préserver la lisibilité des offres et le parcours de réservation.
+
+**Critères d'acceptation du lot :** les faits et indicateurs affichés sont sourcés et vérifiés, la contribution de Jean est explicite, les captures et liens correspondent aux projets présentés, et aucun témoignage ou résultat n'est inventé. Une mise à jour manuelle des indicateurs peut suffire ; aucune intégration automatique GitHub ou Obsidian n'est décidée à ce stade.

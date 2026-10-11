@@ -1,0 +1,13 @@
+Use case: identity-preserve compositing.
+Edit image 1, the existing Jean Z. Sordes social sharing banner, by replacing ONLY the portrait sticker with the person in image 2, the newer photo supplied by Jean.
+Image 1 is the layout edit target, NOT an identity reference. Image 2 is the sole authoritative reference for Jean's present appearance.
+Remove the old smiling portrait and dark T-shirt completely. Use the exact new photo's head and shoulders: current facial proportions, round black glasses, curly hair with visible grey strands, current beard and skin texture, calm closed-mouth expression, gaze slightly to the left, light blue open shirt over a white T-shirt. Preserve his present age and recognizable face. No rejuvenation, smoothing, beautifying, new smile, mixing faces or invented clothing. This should look like the new photograph cut out, not a redrawn face. Remove the newer photo's studio background and black letterboxing from the inserted sticker.
+Keep the existing lavender organic die-cut backing and dark outline on the right, yellow star and purple arrow. Keep the face fully within safe margins, and leave all text unobstructed.
+Preserve the wide horizontal approx 1.91:1 format, warm ivory background, layout, palette and existing typography.
+Text must remain exactly:
+"Jean Z. Sordes"
+"CTO à temps partagé"
+"Comprendre ce qui bloque."
+"Savoir comment avancer."
+"www.jzs.fr"
+No other changes, no additional text, no watermark.

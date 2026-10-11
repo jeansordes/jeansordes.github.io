@@ -26,7 +26,7 @@
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 28px;
+  scroll-padding-top: 85px;
 }
 body {
   margin: 0;
@@ -60,6 +60,10 @@ img,
 svg {
   display: block;
   max-width: 100%;
+}
+.jean-portrait {
+  /* Frame the supplied photo below its top letterbox, without retouching it. */
+  object-position: center 75%;
 }
 h1,
 h2,
@@ -149,6 +153,65 @@ p + p {
   font-size: 0.7rem;
   font-weight: 500;
   color: var(--muted);
+}
+.identity-ribbon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  background: var(--paper);
+  border-bottom: 1px solid var(--border);
+  visibility: hidden;
+  transform: translateY(-100%);
+  transition: transform 180ms ease-out;
+}
+.identity-ribbon.is-visible {
+  visibility: visible;
+  transform: translateY(0);
+}
+.identity-ribbon-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 60px;
+}
+.identity-signature {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 750;
+}
+.identity-signature img {
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.identity-name {
+  display: inline-block;
+}
+.identity-domain {
+  font-size: 0.8rem;
+  font-weight: 650;
+  white-space: nowrap;
+}
+.identity-domain span {
+  color: var(--purple);
+  margin-left: 8px;
+}
+@media (max-width: 420px) {
+  .identity-signature {
+    font-size: 0.9rem;
+    gap: 10px;
+  }
+  .identity-domain {
+    display: none;
+  }
 }
 .monogram {
   display: flex;
@@ -729,6 +792,231 @@ p + p {
 }
 .about .text-link {
   margin-top: 20px;
+}
+.about .about-degree {
+  border-left: 3px solid var(--purple);
+  padding-left: 16px;
+  font-size: 0.85rem !important;
+}
+.career-section {
+  padding-bottom: 52px;
+}
+.career-grid,
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.career-card {
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+.career-period {
+  font-size: 0.75rem;
+  color: var(--purple);
+  font-weight: 650;
+  margin-bottom: 14px;
+}
+.career-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+.career-card p:not(.career-period) {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.career-card .career-takeaway {
+  color: var(--ink) !important;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.source-note {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 24px;
+  max-width: 850px;
+}
+.project-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--white);
+  min-width: 0;
+}
+.project-featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: start;
+  border: 2px solid var(--ink);
+  box-shadow: 5px 5px 0 var(--lavender);
+}
+.project-preview,
+.project-gallery figure {
+  margin: 0;
+}
+.project-preview {
+  padding: 20px;
+}
+.project-preview img,
+.project-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.project-preview a,
+.project-gallery figure a {
+  display: block;
+}
+.project-preview figcaption,
+.project-gallery figcaption {
+  font-size: 0.73rem;
+  color: var(--muted);
+  margin-top: 12px;
+}
+.project-content {
+  padding: 30px;
+}
+.project-content .eyebrow {
+  color: var(--purple);
+  font-size: 0.68rem;
+  margin-bottom: 12px;
+}
+.project-content h3 {
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+}
+.project-content p:not(.eyebrow) {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.project-content strong {
+  color: var(--ink);
+}
+.project-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 12px;
+}
+.project-metrics a,
+.project-status {
+  display: inline-block;
+  font-size: 0.74rem !important;
+  font-weight: 650;
+  background: var(--lavender);
+  color: var(--ink) !important;
+  padding: 8px 12px;
+  border-radius: 12px;
+}
+.project-status {
+  margin-top: 24px;
+  background: var(--green);
+}
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-top: 18px;
+}
+.project-links .text-link {
+  font-size: 0.85rem;
+  min-height: 44px;
+}
+.project-gallery {
+  border-top: 1px solid var(--border);
+  border-bottom: 0;
+  margin-top: 20px;
+}
+.project-gallery summary {
+  font-size: 0.82rem;
+  padding-block: 16px;
+}
+.project-gallery figure {
+  padding-bottom: 8px;
+}
+.project-illustration {
+  border-radius: 23px 23px 0 0;
+  min-height: 215px;
+  padding: 25px 30px;
+  display: grid;
+  align-content: center;
+  gap: 18px;
+}
+.snippet-illustration {
+  background: var(--lavender);
+}
+.workflow-illustration {
+  background: var(--green);
+}
+.illustration-label {
+  font-size: 0.67rem;
+  text-transform: uppercase;
+  font-weight: 650;
+  letter-spacing: 0.07em;
+}
+.snippet-illustration > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+  font-size: 1.3rem;
+}
+.snippet-illustration kbd {
+  background: var(--white);
+  padding: 8px 16px;
+  border: 1px solid var(--ink);
+  border-radius: 10px;
+  box-shadow: 3px 3px 0 var(--ink);
+}
+.snippet-result {
+  font-weight: 650;
+}
+.project-illustration p {
+  font-size: 0.8rem;
+}
+.workflow-example {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+.workflow-example span {
+  padding: 16px 8px;
+  border: 1px solid var(--ink);
+  border-radius: 10px;
+  background: var(--white);
+  font-size: 0.78rem;
+  font-weight: 650;
+  text-align: center;
+}
+.portfolio > .text-link {
+  margin-top: 18px;
+}
+@media (max-width: 760px) {
+  .career-grid,
+  .portfolio-grid,
+  .project-featured {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .career-card,
+  .project-content {
+    padding: 24px;
+  }
+  .project-featured .project-content {
+    padding-top: 12px;
+  }
+  .project-preview {
+    padding: 16px;
+  }
+  .project-illustration {
+    padding: 24px;
+  }
+  .career-section {
+    padding-bottom: 36px;
+  }
 }
 .experience {
   display: grid;
