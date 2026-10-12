@@ -1,10 +1,14 @@
 # PRD de la page de services de Jean Sordes
 
-Date initiale : 7 octobre 2026. Mise à jour : 11 octobre 2026. Version : 2. Statut : V1 implémentée localement ; nouveau lot de clarification des offres cadré en section 16, à implémenter.
+Date initiale : 7 octobre 2026. Mise à jour : 12 octobre 2026. Version : 4. Statut : V1 et lots 16 à 18 implémentés localement ; raccordement du calendrier, modalités commerciales et lecture YouTube réelle à vérifier.
 
-Ce PRD décrit la page de services de Jean Sordes et son évolution vers deux formats lisibles : « Intervention urgente » et « Accompagnement », avec un échange gratuit de 30 minutes pour commencer. Il s'appuie sur le [brief de référence](brief-page-services.md), complété par les décisions plus récentes consignées ici. Le brief conserve notamment les sources et les limites des expériences racontées.
+Ce PRD décrit la page de services de Jean Sordes et son évolution vers deux formats lisibles : « Vibe Pompier — réparation urgente » et « Vibe Doctor — diagnostic et suivi », avec un échange gratuit de 30 minutes pour commencer. Il s'appuie sur le [brief de référence](brief-page-services.md), complété par les décisions plus récentes consignées ici. Le brief conserve notamment les sources et les limites des expériences racontées.
 
-Les sections consacrées à Vibe Doctor conservent le cadrage historique de la V1. Pour la prochaine évolution, **le lot de la section 16 fait référence sur les sujets qu'il remplace** : nom de l'offre, intervention comprenant les corrections, argumentaire, organisation des deux offres et navigation. Il consigne les décisions plus récentes de Jean, qui complètent et remplacent sur ces points le brief initial. Les autres exigences et les modifications déjà demandées restent applicables.
+Les sections de la V1 consacrées à Vibe Doctor conservent le cadrage historique. **Le lot de la section 16 fait référence sur les sujets qu'il remplace** : nom de l'offre, intervention comprenant les corrections, argumentaire, organisation des deux offres et navigation. Il consigne les décisions plus récentes de Jean, qui complètent et remplacent sur ces points le brief initial. Les autres exigences et les modifications déjà demandées restent applicables.
+
+**La section 17 décrit l'évolution des offres** : Vibe Doctor devient la seconde offre de diagnostic et de suivi dans la durée, à côté de l'intervention urgente. Elle remplace la suppression du docteur et la présentation commerciale « CTO à temps partagé » du lot 16, et transforme le portfolio en carrousel manuel. Les sections antérieures restent conservées comme historique ; l'intervention collaborative, l'identité de Jean, la réservation et les autres exigences demeurent applicables.
+
+**La section 18 actualise la présentation** : punchline « Face à l’IA, vous n’êtes plus seul », nom « Vibe Pompier », grandes entrées rouge/bleue avec emojis, passages TV et logos du parcours. Elle remplace les anciens libellés et traitements visuels sur ces points. Les modalités des deux offres restent celles des lots 16 et 17.
 
 ## 1. Statut des exigences
 
@@ -290,7 +294,11 @@ Donner au visiteur des éléments concrets pour comprendre l'expérience de Jean
 
 ## 16. Lot — Deux offres lisibles et intervention urgente
 
-**Cadrage demandé par Jean le 11 octobre 2026. Statut : à implémenter.** Ce lot transforme la présentation commerciale pour faire comprendre immédiatement les deux façons de travailler avec Jean : lui confier un blocage précis sur un projet existant, ou être accompagné dans les choix et la progression de son entreprise.
+**Cadrage et implémentation demandés par Jean le 11 octobre 2026. Statut : implémenté localement, sans publication.** Ce lot transforme la présentation commerciale pour faire comprendre immédiatement les deux façons de travailler avec Jean : lui confier un blocage précis sur un projet existant, ou être accompagné dans les choix et la progression de son entreprise.
+
+La page présente les deux offres dès l'introduction, avec leurs ancres dans une navigation persistante. Le repère actif suit aussi les sections hors offres. L'intervention comprend les corrections et s'appuie sur la collaboration avec le client ; les stickers 🔥 et la FAQ reprennent ce positionnement. Le parcours et les détails des projets sont dépliables, avec leurs sources conservées. L'Easter egg du portrait termine sa boucle dans l'espace visible sous la navigation. Le visuel de partage existant a été inspecté : il ne comporte aucune référence médicale et reste utilisable. Les contrôles sont consignés dans la [recette du lot 16](recette-page-services.md#lot-16--deux-offres-et-intervention-urgente--11-octobre-2026).
+
+Le calendrier existant reste raccordé ; son remplacement pour recueillir obligatoirement le contexte est toujours reporté à la demande de Jean. Le délai de sept jours et la garantie attendent les modalités décrites ci-dessous et ne sont pas affichés comme des engagements acquis.
 
 ### Décisions de Jean et portée du changement
 
@@ -391,7 +399,7 @@ Les webinaires ou ateliers payants et un widget d'orientation restent des **pist
 
 ### Livrables et critères d'acceptation
 
-Le lot comprend les textes des deux offres, la nouvelle hiérarchie de la page, la navigation persistante avec repère actif, les stickers 🔥, la mise en cohérence de la FAQ et des métadonnées, puis la recette sur mobile et bureau. Cette mise à jour du PRD cadre le travail ; elle ne réalise pas ces changements sur le site et ne publie rien.
+Le lot comprend les textes des deux offres, la nouvelle hiérarchie de la page, la navigation persistante avec repère actif, les stickers 🔥, la mise en cohérence de la FAQ et des métadonnées, puis la recette sur mobile et bureau. Ces changements sont réalisés localement ; aucune publication n'a été déclenchée.
 
 | Référence | Critère vérifiable |
 | --- | --- |
@@ -407,3 +415,111 @@ Le lot comprend les textes des deux offres, la nouvelle hiérarchie de la page, 
 | L16-10 | Parcours, portfolio et FAQ renforcent les deux offres ; les webinaires et le widget ne sont pas annoncés comme déjà disponibles. |
 
 Pour ce lot, ces critères remplacent A2, A3 et les formulations V1 d'A6 sur le diagnostic et les corrections séparées. Les autres critères de la section 12 restent applicables, avec les noms, contenus et CTA actualisés.
+
+## 17. Évolution — Pompier, Vibe Doctor et portfolio en carrousel
+
+**Orientation exprimée par Jean le 11 octobre 2026. Statut : implémenté localement, sans publication.** Jean souhaite explorer de nouveau le rôle du docteur, cette fois comme deuxième voie de diagnostic et de suivi dans la durée. Le portfolio occupe moins d'espace visuel avec une présentation en carrousel.
+
+La page présente désormais « Intervention urgente » et « Vibe Doctor », avec les textes, la navigation, la FAQ et les métadonnées correspondants. Le portfolio affiche un projet à la fois, avec sélection par nom, précédent/suivant, compteur et navigation au clavier. Les détails, sources et liens restent accessibles sans JavaScript. Les contrôles sont consignés dans la [recette du lot 17](recette-page-services.md#lot-17--pompier-vibe-doctor-et-carrousel--11-octobre-2026).
+
+### Deux situations, deux offres
+
+| Offre | Situation du visiteur | Contribution de Jean |
+| --- | --- | --- |
+| Intervention urgente — le pompier | Un blocage précis sur un projet existant empêche d'avancer et demande une réparation. | Jean intervient sur le problème, réalise les corrections et vérifie le résultat avec le client. |
+| Vibe Doctor — diagnostic et suivi | Le visiteur veut comprendre ce qu'il faut améliorer, découvrir les possibilités et choisir comment faire évoluer son projet ou son entreprise. | Jean examine la situation, explique les options, recommande les priorités et accompagne la progression dans la durée avec conseil, coaching et suivi. |
+
+La mise en avant commerciale utilise ces deux rôles. Jean Z. Sordes reste l'identité principale. « CTO à temps partagé » peut éclairer son expérience ou son rôle professionnel, mais n'est plus le titre de la deuxième offre ni l'accroche principale. La direction technique, les besoins de l'entreprise et la décision finale du dirigeant restent présents dans le contenu.
+
+L'expression « vous avez du temps » utilisée pour explorer cette distinction est traduite en un bénéfice actif : comprendre ce qu'il faut améliorer, choisir les bonnes priorités et préparer la suite. Le visiteur peut déjà utiliser l'IA ou souhaiter découvrir ses possibilités ; les recommandations restent liées à ses besoins, aux méthodes de l'équipe et à ses moyens.
+
+### Contenu et parcours de Vibe Doctor
+
+- Présenter explicitement **« Vibe Doctor »** et **« Diagnostic et suivi »** dans la carte de choix et dans la section de l'offre. Le lien de navigation utilise « Vibe Doctor » et le repère actif suit ce même libellé.
+- Expliquer la progression : faire le point sur la situation, restituer les constats et les options, prioriser les prochaines actions, puis suivre leur mise en œuvre et aider l'équipe à progresser.
+- Conserver la valeur d'un diagnostic compréhensible et d'un plan d'action exploitable. Le suivi régulier est présenté comme une suite à organiser avec le client ; sa cadence et ses modalités ne sont pas inventées.
+- Mentionner le conseil, le coaching, l'autonomie et les usages utiles de l'IA. L'offre ne se limite pas à analyser du code généré avec l'IA ni à multiplier les outils.
+- Les modifications opérationnelles éventuelles sont cadrées dans une proposition adaptée. L'offre n'annonce pas un abonnement incluant toutes les réparations ou tous les développements.
+- **CTA proposé pour cette version : « Préparons un diagnostic »**, vers le même échange gratuit de 30 minutes. L'échange prépare la prestation ; il ne constitue pas le diagnostic approfondi ou un abonnement déjà acheté.
+
+Le retour du docteur ne rétablit pas l'ancien diagnostic V1 comme troisième offre. Les corrections du blocage convenu restent incluses dans l'intervention urgente, avec « Préparons une intervention », les stickers 🔥 et la collaboration client/Jean. La FAQ distingue la réparation urgente de la compréhension, des priorités et du suivi.
+
+Actualiser les textes, cartes, navigation et métadonnées pour refléter les deux offres. Les éléments graphiques du docteur restent propres à cette prestation. Le visuel de partage existant mentionne le rôle professionnel de Jean sans nommer l'ancienne offre ; sa conservation ne constitue pas une troisième offre.
+
+### Portfolio : un projet à la fois
+
+La grille actuelle est remplacée par un **carrousel manuel**, sur mobile comme sur ordinateur. Un projet occupe la zone visible ; les trois réalisations restent disponibles, avec leurs captures ou illustrations, leurs contributions, leurs liens et les preuves datées.
+
+- Navigation précédente/suivante et indicateur explicite du projet consulté, par exemple « 1 / 3 ». Les limites de la collection sont compréhensibles.
+- Défilement tactile et horizontal natif, avec alignement du projet dans la zone visible. Le défilement reste contenu dans le portfolio et ne crée pas de débordement de toute la page.
+- Commandes utilisables au clavier, nommées pour les lecteurs d'écran ; annoncer le changement de projet de façon concise et conserver un focus compréhensible.
+- Aucun défilement automatique. Respecter la réduction des mouvements pour les déplacements manuels.
+- Conserver les détails natifs dépliables, notamment la galerie de Dot Navigator. Le projet reste entièrement lisible lorsque ses détails sont ouverts.
+- Sans JavaScript, tous les projets et liens restent consultables avec le défilement natif. Les commandes qui nécessitent JavaScript sont affichées seulement lorsqu'elles fonctionnent.
+- Utiliser HTML, CSS et un script local limité à l'interaction. Aucun framework, bibliothèque de carrousel ni collecte supplémentaire n'est ajouté.
+
+La conception suit les principes de contrôle utilisateur, de clavier et d'annonce des changements du [guide WAI sur les carrousels](https://www.w3.org/WAI/tutorials/carousels/).
+
+### Critères d'acceptation
+
+| Référence | Critère vérifiable |
+| --- | --- |
+| L17-1 | Les deux offres présentées dès l'introduction et dans la navigation sont « Intervention urgente » et « Vibe Doctor », avec réparation d'un côté, diagnostic et suivi de l'autre. |
+| L17-2 | Vibe Doctor décrit les constats, les options, les priorités et le suivi avec conseil/coaching ; la décision finale du dirigeant et les modalités à convenir sont conservées. |
+| L17-3 | Le CTA du docteur prépare un diagnostic via l'échange gratuit ; celui de l'intervention reste « Préparons une intervention ». Les destinations sont cohérentes et réelles. |
+| L17-4 | Titres, textes, FAQ, métadonnées et repères actifs reflètent cette évolution, sans troisième offre ni retour implicite aux corrections toujours séparées de la V1. |
+| L17-5 | Le portfolio montre un projet à la fois, avec navigation manuelle et indicateur de position ; les trois projets, preuves et liens sont conservés. |
+| L17-6 | Le carrousel fonctionne au clavier et par défilement tactile/natif ; le focus, les limites de collection et les annonces sont compréhensibles ; aucun défilement automatique n'est ajouté. |
+| L17-7 | Détails et galerie restent utilisables ; le carrousel demeure consultable sans JavaScript et respecte la réduction des mouvements. |
+| L17-8 | Aucun débordement horizontal de la page à partir de 320 px, y compris avec détails ouverts ; rendu mobile/bureau et texte agrandi vérifiés. |
+| L17-9 | La navigation persistante et la boucle d'identité sous cette navigation restent fonctionnelles après les changements de hauteur du portfolio. |
+
+Ce lot remplace L16-4 sur l'absence d'univers médical et L16-9 sur le nom et la présentation de l'accompagnement. Les autres critères du lot 16 continuent de s'appliquer, avec les nouveaux libellés. Les paramètres de prix, délai, garantie, disponibilité et réservation déjà ouverts restent à préciser.
+
+## 18. Évolution — Punchline, entrées visuelles et preuves du parcours
+
+**Demandes de Jean implémentées localement les 11–12 octobre 2026, sans publication.** Les deux offres conservent leur contenu et prennent une place plus visible dès le haut de page. Deux passages à la télévision et des logos rendent le parcours plus concret. Les [sources](sources-parcours-portfolio.md#logos-et-passages-tv--1112-octobre-2026) et la recette précisent les vérifications et leurs limites.
+
+### Message et choix des offres
+
+- **Retenu :** punchline principale **« Face à l’IA, vous n’êtes plus seul »**, avec l'orthographe corrigée depuis « fasse » dans la demande. La solidarité, le conseil et le travail mené ensemble restent le fil conducteur.
+- **Retenu :** nom public **« Vibe Pompier »**, avec le sous-titre « Réparation urgente ». Jean a choisi ce titre le 12 octobre 2026 pour remplacer « Vibe Urgence » et former un duo avec Vibe Doctor. Il remplace « Intervention urgente » comme titre, sans changer le fonctionnement de la prestation.
+- **Retenu :** grands titres gras et emojis **feu/pompier** pour Vibe Pompier, **médecin/stéthoscope** pour Vibe Doctor, avec **rouge** pour la première offre et **bleu** pour la seconde.
+- Appliquer ces repères aux deux liens de la navigation persistante et aux cartes de choix du hero. Les cartes sont placées immédiatement après la punchline, avant les détails de présentation ; les deux offres sont compréhensibles sans descendre jusqu'aux sections complètes.
+- Les noms et les explications portent le sens ; les emojis restent décoratifs. Couleurs, contrastes, focus et tailles tactiles doivent préserver l'accessibilité.
+- Conserver le CTA **« Préparons une intervention »** pour Vibe Pompier et **« Préparons un diagnostic »** pour Vibe Doctor, avec le calendrier réel de 30 minutes. La décision finale du client et les modalités commerciales déjà ouvertes restent explicites.
+
+### Deux passages à la télévision
+
+Jean a fourni deux vidéos et les points de départ de ses passages. L'API oEmbed de YouTube identifie l'émission comme **Bonsoir Bruxelles**, publiée par **BX1** :
+
+| Émission | Vidéo | Départ |
+| --- | --- | --- |
+| 5 juin 2026 | [JgMDYGr0zY4](https://www.youtube.com/live/JgMDYGr0zY4?t=2430) | 40:30, soit 2 430 secondes |
+| 17 avril 2026 | [nm2h6rb0BkY](https://www.youtube.com/live/nm2h6rb0BkY?t=2280) | 38:00, soit 2 280 secondes |
+
+Une section « À la télévision » présente les deux passages, avec date, vignette de l'émission et liens vers les vidéos originales. Un lien depuis l'introduction permet de la rejoindre. La navigation indique cette partie comme une section hors offres.
+
+Le lecteur intégré est chargé après activation du bouton de lecture, sur `youtube-nocookie.com`, avec le paramètre `start` correspondant. Aucun lecteur, script YouTube ou vignette distante n'est chargé à l'ouverture de la page. Les vignettes officielles sont conservées localement. La lecture automatique éventuelle fait suite au clic du visiteur. Le cadre reste dimensionné, nommé et accessible au clavier.
+
+Les liens YouTube avec timestamps restent utilisables avec ou sans JavaScript. Les vidéos sont les émissions complètes démarrant au passage, sans fin d'extrait définie ni copie locale de la vidéo. La présence comme invité IA et les timestamps sont déclarés par Jean ; les titres, dates et auteur sont vérifiés avec oEmbed. Le navigateur automatisé rencontre un contrôle anti-bot YouTube : la lecture réelle et le contenu des passages restent à vérifier dans un navigateur habituel. Ne pas inventer de sujets précis, de citations ou de certification à partir des seules vignettes.
+
+### Logos dans le parcours
+
+Présenter les logos réels de **MolenGeek**, **Holberton School** et **Capgemini** avec les rôles déjà documentés : formation et campus, formation technique, développement Java en mission SNCF Fret. Les logos conservent leurs proportions et leurs couleurs, dans des cartes adaptées au mobile. Ils illustrent le parcours de Jean, sans devenir une liste de clients ni un témoignage de ces organisations sur les nouvelles offres.
+
+Les fichiers sont copiés localement depuis des sources identifiées. Le logo MolenGeek publié par Molengeek sur Commons porte une licence CC BY-SA 4.0 ; son attribution et les liens vers la source et la licence figurent dans les détails du parcours. Holberton et Capgemini proviennent des fichiers référencés par leurs sites officiels. Aucun logo n'est inventé ou reconstruit. Associate Agency et Entrep Ensemble Lille restent présentés en texte, faute de source de logo fiable identifiée.
+
+### Critères d'acceptation
+
+| Référence | Critère vérifiable |
+| --- | --- |
+| L18-1 | La punchline « Face à l’IA, vous n’êtes plus seul » est le titre principal ; Jean reste identifié dans l'en-tête et l'introduction. |
+| L18-2 | Les choix Vibe Pompier et Vibe Doctor sont grands et gras, rouge/bleu, avec les emojis demandés, dans la navigation et le hero. Leur sens reste compréhensible sans couleur ni emoji. |
+| L18-3 | Les noms, sections, repères actifs, FAQ et métadonnées sont cohérents ; les modalités et CTA des offres sont conservés. |
+| L18-4 | Les deux vidéos portent les titres et dates vérifiés, et leurs lecteurs/liens utilisent les départs 2 430 et 2 280 secondes. Les liens externes restent disponibles sans JavaScript. |
+| L18-5 | Aucun appel vers YouTube avant une activation ; au clic, le cadre conserve sa taille, un titre explicite et un focus utilisable. La limite de vérification de lecture réelle est documentée. |
+| L18-6 | Les trois logos sont lisibles et chargés localement, avec rôles exacts et sources documentées ; l'attribution nécessaire est consultable. |
+| L18-7 | Rendu à partir de 320 px, clavier, texte agrandi, contrastes et navigation persistante contrôlés, y compris dans la nouvelle section TV ; carrousel et Easter egg préservés. |
+
+Ce lot remplace les anciens libellés de L16-2 et L17-1/L17-4 sur l'offre urgente et les propositions de punchline/couleurs. Les autres critères restent applicables. Le visuel de partage existant est conservé comme présentation du parcours professionnel ; son texte alternatif décrit toujours son contenu réel.

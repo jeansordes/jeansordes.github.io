@@ -2,6 +2,7 @@
 (() => {
   const signature = document.querySelector("[data-scroll-name]");
   if (!signature) return;
+  const header = document.querySelector("[data-section-header]");
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const fragments = ["ean", " ", "Z", ".", "acharie", " ", "S", "ordes", ".fr"];
   const domain = [0, 0, 1, 0, 0, 0, 1, 0, 1];
@@ -43,10 +44,15 @@
     const viewport = window.visualViewport;
     const viewportTop = viewport?.offsetTop ?? 0;
     const viewportHeight = viewport?.height ?? window.innerHeight;
+    const visibleTop = Math.max(
+      viewportTop,
+      header?.getBoundingClientRect().bottom ?? viewportTop,
+    );
     const margin = Math.min(24, viewportHeight * 0.04);
     const center = bounds.top + bounds.height / 2;
     const start = viewportTop + viewportHeight - margin - bounds.height / 2;
-    const end = viewportTop + margin + bounds.height / 2;
+    // Complete the loop before the sticker reaches the persistent navigation.
+    const end = visibleTop + margin + bounds.height / 2;
     const distance = Math.max(1, start - end);
     const progress = Math.max(0, Math.min(1, (start - center) / distance));
     // Add a final pause so JZS.fr is readable before the sticker leaves.

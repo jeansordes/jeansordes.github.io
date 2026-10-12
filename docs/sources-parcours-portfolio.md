@@ -15,7 +15,7 @@ Source : [profil LinkedIn de Jean Sordes](https://www.linkedin.com/in/jean-sorde
 | Entrep Ensemble Lille   | Fondateur à partir de juillet 2025 ; réseau business, cafés de réseautage, ateliers et identité visuelle                                                                                              | Illustration de l’entrepreneuriat                                                            |
 | Université Toulouse III | Master MIAGE, 2020–2022                                                                                                                                                                               | Repère de formation en informatique et gestion d’entreprise                                  |
 
-Les noms et rôles proviennent du profil public, dans le cadre de la demande de Jean d’exploiter son parcours. Aucun logo d’entreprise, témoignage ou résultat chiffré de mission n’a été ajouté. Les dates sans fin ne justifient pas une promesse de disponibilité.
+Les noms et rôles proviennent du profil public, dans le cadre de la demande de Jean d’exploiter son parcours. Lors du premier lot, aucun logo d’entreprise, témoignage ou résultat chiffré de mission n’avait été ajouté. Les logos ajoutés ensuite à sa demande sont documentés ci-dessous. Les dates sans fin ne justifient pas une promesse de disponibilité.
 
 ## Projets et indicateurs
 
@@ -47,3 +47,30 @@ Ces images montrent des notes d’exemple et ont été inspectées avant intégr
 ## Mise à jour
 
 Actualiser manuellement les indicateurs, leur date dans `index.html` et ce relevé lors d’une nouvelle vérification des sources. En cas d’indisponibilité d’une source, conserver la date du relevé existant ou retirer l’indicateur ; ne pas le remplacer par une estimation. La page ne contacte aucune API à son chargement.
+
+## Logos et passages TV — 11–12 octobre 2026
+
+Jean a demandé des logos pour illustrer les entreprises de son parcours et fourni deux liens YouTube vers ses passages à la télévision en tant qu'expert IA. Les logos sont présentés avec les rôles déjà documentés ; ils ne sont pas utilisés comme témoignages ou comme liste de clients de la nouvelle offre.
+
+### Logos conservés localement
+
+| Organisation | Asset et source | Traitement |
+| --- | --- | --- |
+| MolenGeek | `assets/logos/molengeek.jpg` ; [fichier Commons publié par Molengeek](https://commons.wikimedia.org/wiki/File:MolenGeek.jpg), [original](https://upload.wikimedia.org/wikipedia/commons/4/4f/MolenGeek.jpg) | Copie originale 460 × 230, environ 13,6 Ko, sans modification. Licence CC BY-SA 4.0 ; attribution et liens vers la source et la licence présents dans les détails du parcours. |
+| Holberton School | `assets/logos/holberton.svg` ; [site officiel](https://www.holbertonschool.fr/), [logo référencé par son en-tête](https://cdn.prod.website-files.com/64107f65f30b69371e3d6bfa/65c6179aa44b63fa4f31e7ad_Holberton-Logo-Cherry.svg) | SVG original, environ 10,9 Ko, avec « actual digital school ». Aucun logo d'un autre groupe trouvé sur la page n'est substitué. |
+| Capgemini | `assets/logos/capgemini.svg` ; [site officiel](https://www.capgemini.com/fr-fr/), [logo bleu référencé par son en-tête](https://www.capgemini.com/fr-fr/wp-content/themes/capgemini2025/assets/images/capgeminiBlue.svg) | SVG original, environ 6,6 Ko. La légende conserve « mission SNCF Fret » pour préciser le contexte sans présenter SNCF comme l'employeur direct. |
+
+Les logos ont été inspectés dans le rendu du parcours. Ils sont affichés avec leurs couleurs et proportions d'origine. Aucun logo n'a été créé ou reconstruit. Les noms Associate Agency et Entrep Ensemble Lille restent dans le texte : aucune source de logo fiable n'a été identifiée pendant cette recherche.
+
+### Deux vidéos BX1
+
+| Source fournie par Jean | Métadonnées vérifiées | Départ configuré |
+| --- | --- | --- |
+| [Premier passage](https://www.youtube.com/live/JgMDYGr0zY4?t=2430) | « Bonsoir Bruxelles du 5 juin 2026 » ; auteur BX1 ; [oEmbed YouTube](https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DJgMDYGr0zY4&format=json) | 2 430 secondes, soit 40:30 |
+| [Deuxième passage](https://www.youtube.com/live/nm2h6rb0BkY?t=2280) | « Bonsoir Bruxelles du 17 avril 2026 » ; auteur BX1 ; [oEmbed YouTube](https://www.youtube.com/oembed?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dnm2h6rb0BkY&format=json) | 2 280 secondes, soit 38:00 |
+
+Le nom de l'émission est **Bonsoir Bruxelles**, corrigé à partir des métadonnées, et non « Bonjour Bruxelles ». La présentation de l'intervention sur l'IA et les timestamps proviennent de Jean. Les titres, dates et auteur ont été vérifiés indépendamment avec l'API oEmbed ; le contenu des interventions n'a pas pu être visionné dans l'environnement automatisé, où YouTube demande une connexion pour son contrôle anti-bot. Aucun sujet de débat précis, citation ou titre d'expertise certifié n'est ajouté à partir des seules vignettes.
+
+Les images `assets/media/bx1-JgMDYGr0zY4.jpg` et `assets/media/bx1-nm2h6rb0BkY.jpg` sont des copies inchangées des vignettes YouTube officielles [du 5 juin](https://i.ytimg.com/vi/JgMDYGr0zY4/hqdefault.jpg) et [du 17 avril](https://i.ytimg.com/vi/nm2h6rb0BkY/hqdefault.jpg), 480 × 360, environ 21 et 13 Ko. Elles illustrent les émissions complètes et ne sont pas présentées comme des captures des passages de Jean.
+
+Les vidéos restent hébergées par YouTube ; aucun fichier vidéo n'est copié dans le dépôt. Les lecteurs utilisent le paramètre `start` décrit par la [documentation officielle YouTube](https://developers.google.com/youtube/player_parameters#start). Il définit un point de départ dans l'émission, sans constituer un découpage avec une fin d'extrait. Les liens originaux restent disponibles à côté de chaque lecteur.
