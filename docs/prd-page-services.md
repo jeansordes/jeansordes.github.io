@@ -1,6 +1,6 @@
 # PRD de la page de services de Jean Sordes
 
-Date initiale : 7 octobre 2026. Mise à jour : 12 octobre 2026. Version : 5. Statut : V1 et lots 16 à 19 implémentés localement ; raccordement du calendrier, modalités commerciales et lecture YouTube réelle à vérifier.
+Date initiale : 7 octobre 2026. Mise à jour : 12 octobre 2026. Version : 4. Statut : V1 et lots 16 à 18 implémentés localement ; raccordement du calendrier, modalités commerciales et lecture YouTube réelle à vérifier.
 
 Ce PRD décrit la page de services de Jean Sordes et son évolution vers deux formats lisibles : « Vibe Pompier — réparation urgente » et « Vibe Doctor — diagnostic et suivi », avec un échange gratuit de 30 minutes pour commencer. Il s'appuie sur le [brief de référence](brief-page-services.md), complété par les décisions plus récentes consignées ici. Le brief conserve notamment les sources et les limites des expériences racontées.
 
@@ -523,20 +523,3 @@ Les fichiers sont copiés localement depuis des sources identifiées. Le logo Mo
 | L18-7 | Rendu à partir de 320 px, clavier, texte agrandi, contrastes et navigation persistante contrôlés, y compris dans la nouvelle section TV ; carrousel et Easter egg préservés. |
 
 Ce lot remplace les anciens libellés de L16-2 et L17-1/L17-4 sur l'offre urgente et les propositions de punchline/couleurs. Les autres critères restent applicables. Le visuel de partage existant est conservé comme présentation du parcours professionnel ; son texte alternatif décrit toujours son contenu réel.
-
-
-## 19. Identité immédiate et conversion — 12 octobre 2026
-
-Jean a demandé l’implémentation de l’audit de conversion, puis le commit et le push. Ce lot remplace l’ordre du hero et la densité des cartes du lot 18 ; les deux offres, la punchline, la réservation de 30 minutes et les modalités commerciales restent applicables.
-
-- Portrait substantiel, nom et rôle visibles dès l’arrivée ; identité avant les offres dans l’ordre de lecture mobile et du document. Portrait décrit et accessible, en dehors des éléments décoratifs.
-- CTA « Réserver un échange », avec gratuité, durée et absence d’engagement à proximité. Les deux choix deviennent compacts et expliquent le résultat client.
-- Vibe Pompier : une introduction, exemples sélectionnables de chargement et connexion, puis cadrer/corriger/vérifier. Le récit Lovable est rapproché de l’offre et accessible à la demande, avec ses limites conservées.
-- Vibe Doctor : aperçu illustratif de plan d’action dépliable, usage du suivi expliqué. Aucune cadence ni format contractuel supplémentaire promis.
-- Repères de confiance compacts après le hero ; présentation personnelle et parcours avant les vidéos. Titres simplifiés, répétitions retirées et bloc de réservation final raccourci.
-- Démo locale d’Auto Expander : « btw » suivi d’un espace devient « By the way ». Les autres projets et détails du parcours sont conservés.
-- Les exemples ne sont pas des preuves de missions réelles. Les contrôles, boutons et champs sont accessibles au clavier ; sans JavaScript, les exemples et détails restent disponibles et la transformation est expliquée.
-
-Critères : portrait et CTA du hero entièrement visibles au premier écran à 320 × 844 et 390 × 844 ; absence de débordement de 320 à 1440 px ; CTA de réservation vers une destination commune ; sélection des exemples, détails natifs et démo de saisie fonctionnels ; carrousel, vidéos à la demande et Easter egg conservés.
-
-Le raccordement du calendrier avec description obligatoire reste reporté. L’effet de cette nouvelle version sur les réservations n’est pas mesuré et devra être testé.
