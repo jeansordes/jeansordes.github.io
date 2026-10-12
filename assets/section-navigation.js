@@ -7,12 +7,22 @@
   const label = document.querySelector("[data-section-label]");
   if (!header || !regions.length || !label) return;
 
+  const hero = document.querySelector('#accueil');
+  const offers = [...header.querySelectorAll('.nav-offer')];
+  let offersVisible = false;
   let scheduled = false;
   let current;
   position.hidden = false;
 
   const update = () => {
     scheduled = false;
+    // A stable threshold avoids flickering when the mobile header gains a row.
+    const shouldShowOffers = !!hero && hero.getBoundingClientRect().bottom <= header.getBoundingClientRect().bottom;
+    if (shouldShowOffers !== offersVisible) {
+      offersVisible = shouldShowOffers;
+      for (const offer of offers) offer.hidden = !offersVisible;
+      header.classList.toggle('has-offers', offersVisible);
+    }
     const headerHeight = header.getBoundingClientRect().height;
     document.documentElement.style.setProperty(
       "--header-offset",

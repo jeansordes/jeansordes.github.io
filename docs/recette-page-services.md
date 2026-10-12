@@ -202,3 +202,10 @@ Les outils T3 `preview_status` puis `preview_open` ont confirmé l'absence d'hô
 ### Nom final — 12 octobre 2026
 
 À la demande de Jean, le titre devient **Vibe Pompier**, avec le sous-titre **« Réparation urgente »**, pour former un duo avec Vibe Doctor. Navigation, repère actif, carte, titre de section, FAQ, métadonnées, README et PRD sont actualisés ; les anciennes mentions dans la recette restent historiques. Les contrôles de page à huit largeurs, les 36 vérifications de navigation et les audits axe à trois largeurs passent à nouveau. La revue de formatage et `git diff --check` ne signalent aucune erreur. Jean a explicitement demandé le commit et le push de l'ensemble des changements.
+
+
+## Ajustements hero, parcours et speaker — 12 octobre 2026
+
+Contrôles dans Chromium headless aux largeurs 1 440, 768, 390 et 320 px : aucun débordement horizontal, portrait visible dans la hero, raccourcis des offres masqués au début, visibles après la hero puis masqués au retour, absence de clignotement à la frontière, logos pointant vers LinkedIn. Les captures fournies sont intégrées en stickers dans un bloc compact.
+
+Les deux stickers ouvrent une boîte de dialogue avec l’identifiant YouTube et le timestamp attendus. Échap et le bouton de fermeture retirent l’iframe et rendent le focus au sticker. Aucun lecteur n’est présent au chargement. Sans JavaScript, les deux liens YouTube restent accessibles. Aucun message d’erreur JavaScript observé. La réponse du lecteur externe est simulée pour ces tests ; la lecture réelle distante reste à contrôler dans un navigateur habituel. L’aperçu collaboratif T3 est indisponible dans cet environnement, vérifications effectuées avec Playwright.

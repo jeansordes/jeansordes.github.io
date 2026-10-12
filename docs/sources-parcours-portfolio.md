@@ -56,7 +56,7 @@ Jean a demandé des logos pour illustrer les entreprises de son parcours et four
 
 | Organisation | Asset et source | Traitement |
 | --- | --- | --- |
-| MolenGeek | `assets/logos/molengeek.jpg` ; [fichier Commons publié par Molengeek](https://commons.wikimedia.org/wiki/File:MolenGeek.jpg), [original](https://upload.wikimedia.org/wikipedia/commons/4/4f/MolenGeek.jpg) | Copie originale 460 × 230, environ 13,6 Ko, sans modification. Licence CC BY-SA 4.0 ; attribution et liens vers la source et la licence présents dans les détails du parcours. |
+| MolenGeek | `assets/logos/molengeek.jpg` ; [fichier Commons publié par Molengeek](https://commons.wikimedia.org/wiki/File:MolenGeek.jpg), [original](https://upload.wikimedia.org/wikipedia/commons/4/4f/MolenGeek.jpg) | Copie originale 460 × 230, environ 13,6 Ko, sans modification. Licence CC BY-SA 4.0 ; attribution et liens vers la source et la licence présents sous les icônes dans « À propos ». |
 | Holberton School | `assets/logos/holberton.svg` ; [site officiel](https://www.holbertonschool.fr/), [logo référencé par son en-tête](https://cdn.prod.website-files.com/64107f65f30b69371e3d6bfa/65c6179aa44b63fa4f31e7ad_Holberton-Logo-Cherry.svg) | SVG original, environ 10,9 Ko, avec « actual digital school ». Aucun logo d'un autre groupe trouvé sur la page n'est substitué. |
 | Capgemini | `assets/logos/capgemini.svg` ; [site officiel](https://www.capgemini.com/fr-fr/), [logo bleu référencé par son en-tête](https://www.capgemini.com/fr-fr/wp-content/themes/capgemini2025/assets/images/capgeminiBlue.svg) | SVG original, environ 6,6 Ko. La légende conserve « mission SNCF Fret » pour préciser le contexte sans présenter SNCF comme l'employeur direct. |
 
@@ -74,3 +74,12 @@ Le nom de l'émission est **Bonsoir Bruxelles**, corrigé à partir des métadon
 Les images `assets/media/bx1-JgMDYGr0zY4.jpg` et `assets/media/bx1-nm2h6rb0BkY.jpg` sont des copies inchangées des vignettes YouTube officielles [du 5 juin](https://i.ytimg.com/vi/JgMDYGr0zY4/hqdefault.jpg) et [du 17 avril](https://i.ytimg.com/vi/nm2h6rb0BkY/hqdefault.jpg), 480 × 360, environ 21 et 13 Ko. Elles illustrent les émissions complètes et ne sont pas présentées comme des captures des passages de Jean.
 
 Les vidéos restent hébergées par YouTube ; aucun fichier vidéo n'est copié dans le dépôt. Les lecteurs utilisent le paramètre `start` décrit par la [documentation officielle YouTube](https://developers.google.com/youtube/player_parameters#start). Il définit un point de départ dans l'émission, sans constituer un découpage avec une fin d'extrait. Les liens originaux restent disponibles à côté de chaque lecteur.
+
+
+### Ajustements du 12 octobre 2026
+
+À la demande de Jean, le parcours détaillé et la section de logos séparée sont remplacés par trois petites icônes dans « À propos ». Chaque icône renvoie à son profil LinkedIn. L’attribution du logo MolenGeek est conservée dans un détail compact.
+
+Les deux pièces jointes de Jean remplacent les vignettes des émissions complètes : `IMG_1180.png` → `assets/media/bx1-prompt-contexte.webp` et `IMG_1181.png` → `assets/media/bx1-mots-clefs.webp`. Les titres courts reprennent les bandeaux visibles. Les captures originales de 2 048 × 945 px sont recadrées à 1 680 × 945 (retrait des bandes noires latérales), puis réduites à 960 × 540 en WebP. Aucun contenu de l’image n’est généré ou retouché. Leur association aux vidéos suit l’ordre fourni ; les liens et timestamps existants sont conservés.
+
+Le bloc présente désormais la disponibilité de Jean pour des interventions sur l’IA, avec deux stickers ouvrant un lecteur flottant. La photo récente déjà fournie prend une place centrale dans la hero sur ordinateur et un format compact immédiatement visible sur mobile.

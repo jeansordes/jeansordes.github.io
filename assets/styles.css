@@ -2112,3 +2112,232 @@ button:focus-visible,
     min-width: 0;
   }
 }
+
+/* Offer shortcuts become useful once the hero has been passed. */
+.site-header nav .nav-offer[hidden] {
+  display: none;
+}
+.hero-portrait {
+  width: min(360px, 82%);
+  height: 400px;
+  object-fit: cover;
+  border: 3px solid var(--ink);
+  border-radius: 36px;
+  box-shadow: 7px 8px 0 var(--ink);
+  transform: rotate(-4deg);
+}
+.hero-art .sticker-top {
+  z-index: 1;
+  right: 0;
+}
+.hero-art .sticker-left {
+  bottom: 84px;
+}
+.hero-signature {
+  margin-top: 38px;
+  text-align: center;
+  font-weight: 750;
+}
+.hero-signature small {
+  display: block;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+.hero-mobile-portrait {
+  display: none;
+}
+.career-intro {
+  margin-top: 24px;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+.career-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 12px 0 0;
+}
+.career-logos a {
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px 12px;
+  min-height: 58px;
+  border-radius: 12px;
+}
+.career-logos img {
+  width: 100px;
+  height: 36px;
+}
+.career-logos span {
+  display: none;
+}
+.career-logos a:hover {
+  border-color: var(--purple);
+}
+.logo-attribution {
+  margin-top: 8px;
+  border: 0;
+  color: var(--muted);
+}
+.logo-attribution > summary {
+  min-height: 32px;
+  padding: 4px 0;
+  font-size: 0.65rem;
+  font-weight: 400;
+}
+.logo-attribution p {
+  padding: 0;
+  font-size: 0.65rem;
+}
+.television {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 40px;
+  padding-block: 48px;
+}
+.speaker-copy h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+.speaker-copy > p:not(.eyebrow) {
+  margin-top: 16px;
+  font-size: 0.95rem;
+}
+.speaker-copy .text-link {
+  margin-top: 12px;
+  font-size: 0.82rem;
+}
+.television-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.video-sticker {
+  display: block;
+  min-width: 0;
+  padding: 7px;
+  border: 2px solid var(--ink);
+  border-radius: 16px;
+  background: var(--white);
+  box-shadow: 4px 5px 0 var(--ink);
+  text-decoration: none;
+  transform: rotate(-4deg);
+  transition: transform 0.15s;
+}
+.video-sticker:nth-child(2) {
+  transform: rotate(4deg);
+  margin-top: 28px;
+}
+.video-sticker:hover {
+  transform: rotate(0);
+}
+.video-sticker .video-stage {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.video-sticker .video-play {
+  display: grid;
+  place-items: center;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  min-height: 44px;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+.video-caption {
+  display: block;
+  padding: 10px 4px 4px;
+  font-size: 0.82rem;
+}
+.video-caption small {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.65rem;
+  color: var(--muted);
+}
+.video-dialog {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: min(900px, calc(100% - 32px));
+  max-height: calc(100dvh - 32px);
+  padding: 16px;
+  overflow-y: auto;
+  color: var(--ink);
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  border-radius: 20px;
+  box-shadow: 7px 8px 0 rgb(0 0 0 / 25%);
+}
+.video-dialog::backdrop {
+  background: rgb(25 20 35 / 75%);
+}
+.video-dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.video-dialog h2 {
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+.video-close {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  font: inherit;
+  background: var(--white);
+  cursor: pointer;
+}
+.video-dialog > .text-link {
+  margin-top: 8px;
+}
+@media (max-width: 1100px) {
+  .site-header:not(.has-offers) nav {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .hero-art {
+    display: none;
+  }
+  .hero-mobile-portrait {
+    display: block;
+    width: 104px;
+    height: 112px;
+    object-fit: cover;
+    border: 2px solid var(--ink);
+    border-radius: 22px;
+    box-shadow: 4px 4px 0 var(--ink);
+    transform: rotate(-4deg);
+    margin-bottom: 24px;
+  }
+  .television {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  .television-grid {
+    width: min(490px, 100%);
+    margin: 0 auto;
+  }
+}
+@media (max-width: 420px) {
+  .career-logos {
+    gap: 8px;
+  }
+  .career-logos a {
+    padding: 8px;
+  }
+  .career-logos img {
+    width: 76px;
+    height: 30px;
+  }
+  .video-caption {
+    font-size: 0.72rem;
+  }
+}
