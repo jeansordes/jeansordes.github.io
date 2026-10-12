@@ -202,3 +202,26 @@ Les outils T3 `preview_status` puis `preview_open` ont confirmé l'absence d'hô
 ### Nom final — 12 octobre 2026
 
 À la demande de Jean, le titre devient **Vibe Pompier**, avec le sous-titre **« Réparation urgente »**, pour former un duo avec Vibe Doctor. Navigation, repère actif, carte, titre de section, FAQ, métadonnées, README et PRD sont actualisés ; les anciennes mentions dans la recette restent historiques. Les contrôles de page à huit largeurs, les 36 vérifications de navigation et les audits axe à trois largeurs passent à nouveau. La revue de formatage et `git diff --check` ne signalent aucune erreur. Jean a explicitement demandé le commit et le push de l'ensemble des changements.
+
+
+## Lot 19 — Identité et conversion — 12 octobre 2026
+
+Implémentation de l’audit de conversion : portrait et nom au premier écran, CTA avant les offres, cartes compactes, exemples de correction, plan d’action dépliable et démonstration de saisie locale. Le parcours, les projets et leurs sources, les deux passages BX1 et le récit Lovable sont conservés. Le récit est désormais accessible dans Vibe Pompier.
+
+Contrôles locaux avec Chromium / Playwright et axe :
+
+| Contrôle | Résultat |
+| --- | --- |
+| Largeurs 320, 390, 768, 1024, 1440 px | Pas de débordement horizontal, d’ancre manquante, d’identifiant dupliqué ou d’erreur JavaScript ; portrait et CTA visibles au premier écran |
+| Mobile 390 × 844 | Portrait entièrement visible avant 259 px ; bouton du hero entièrement visible avant 495 px, contre un portrait à 1371 px et un bouton commençant à 835 px avant refonte |
+| Exemples Pompier | Changement d’exemple, état `aria-pressed`, panneau visible et activation au clavier vérifiés |
+| Plan Doctor | Ouverture native au clavier ; détails accessibles sans JavaScript |
+| Auto Expander | Transformation au clavier, conservation du préfixe et poursuite de la saisie au bon endroit ; absence de transformation d’un mot contenant le raccourci |
+| Portfolio | Sélection d’Auto Expander et passage au projet suivant vérifiés |
+| Sans JavaScript, 390 px | Deux exemples visibles, commandes de sélection masquées, détails et navigation vers le projet accessibles, explication de la démo présente |
+| Images, détails ouverts et ancres | Images locales décodées, absence de débordement avec plan / récit / parcours ouverts et titre de l’offre sous la navigation persistante |
+| Vidéo | Aucun iframe avant activation ; lecteur à la demande avec domaine et timestamp conservés, sans validation de lecture distante |
+| Texte agrandi à 200 %, 390 px | Menu adapté et sticker du portrait repositionné ; pas de débordement horizontal |
+| Audit axe aux cinq largeurs | Aucune violation détectée pour les règles WCAG A/AA contrôlées ; ne constitue pas une certification d’accessibilité |
+
+Aucun gain de conversion n’est affirmé sans mesure. Le formulaire externe et la réservation complète ne sont pas retestés ; le raccordement du calendrier avec collecte du blocage demeure reporté comme convenu.

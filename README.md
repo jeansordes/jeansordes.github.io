@@ -15,9 +15,11 @@ Ouvrir `http://127.0.0.1:4173`. La FAQ, la navigation et les liens fonctionnent 
 ## Fichiers
 
 - `index.html` : contenu, navigation, FAQ native, métadonnées et liens de réservation.
-- `assets/styles.css` : styles, adaptations mobiles et préférence de réduction des mouvements.
+- `assets/styles.css` : styles de base, adaptations mobiles et préférence de réduction des mouvements.
+- `assets/conversion.css` : présentation du portrait dès l’arrivée, hiérarchie compacte et styles des exemples de prestations.
+- `assets/service-demos.js` : choix des exemples illustratifs de correction et démonstration locale du raccourci Auto Expander ; aucune saisie transmise. Sans JavaScript, les deux exemples restent visibles et une explication remplace la transformation automatique.
 - `assets/lucide.svg` : icônes Lucide dans un sprite local, utilisable sans JavaScript ; licence dans `assets/LUCIDE-LICENSE`. [Provenance et usage](docs/icones-lucide.md).
-- `assets/jean-sordes-actuel.jpg` : photo récente fournie par Jean, encodée en JPEG sans retouche, utilisée dans la présentation, « À propos » et la signature au défilement. L’ancien portrait Gravatar est conservé mais n’est plus affiché.
+- `assets/jean-sordes-actuel.jpg` : photo récente fournie par Jean, encodée en JPEG sans retouche, utilisée en grand dès l’arrivée et dans « À propos ». L’ancien portrait Gravatar est conservé mais n’est plus affiché.
 - `assets/jean-sordes-partage-v3.png` : visuel de partage avec la photo récente, utilisé par Open Graph et la carte de grande taille. Les versions précédentes sont conservées. [Prompt et provenance](docs/visuel-partage.md).
 - `assets/portfolio-carousel.js` : carrousel manuel du portfolio, boutons précédent/suivant, sélection des projets, clavier, compteur annoncé et adaptation de la hauteur aux détails ouverts. Aucun défilement automatique.
 - `assets/television.js` : chargement des lecteurs YouTube après un clic, aux timestamps fournis par Jean. Les liens directs restent disponibles sans JavaScript. Aucun lecteur externe ne se charge à l'ouverture de la page.
@@ -28,6 +30,7 @@ Ouvrir `http://127.0.0.1:4173`. La FAQ, la navigation et les liens fonctionnent 
 - `assets/favicon.svg` : icône du site.
 - `CNAME` : domaine GitHub Pages existant, à conserver.
 - [Brief](docs/brief-page-services.md) et [PRD](docs/prd-page-services.md) : direction commerciale et exigences de la page.
+- [Audit de conversion](docs/audit-conversion-2026-10-12.md) : constats avant modification et recommandations implémentées dans le lot 19.
 - [Recette](docs/recette-page-services.md) : contrôles réalisés et raccordement reporté.
 - [Sources du parcours et du portfolio](docs/sources-parcours-portfolio.md) : expériences LinkedIn, projets sélectionnés, provenance des captures et indicateurs datés.
 
@@ -51,7 +54,7 @@ Pour connecter le nouveau calendrier : vérifier ses 30 minutes et son champ obl
 
 Le calendrier doit correspondre à la durée annoncée et au parcours de collecte du contexte convenu avec Jean. Le site ne conserve aucune donnée de formulaire, ne charge aucun calendrier intégré et n’ajoute aucun outil de mesure. La réservation est traitée par le prestataire externe.
 
-La dernière orientation de Jean conserve deux offres : **Vibe Pompier**, qui comprend les corrections du blocage convenu, et **Vibe Doctor — diagnostic et suivi**, pour comprendre les besoins et les opportunités, choisir les priorités, planifier et suivre leur mise en œuvre avec conseil et coaching, notamment les usages utiles de l’IA. Les choix sont grands, gras, illustrés par des emojis et différenciés en rouge et bleu. Vibe Doctor accompagne dans la durée ; cette offre ne se limite pas au diagnostic ponctuel de la V1. Le rôle de CTO peut éclairer le parcours professionnel, sans constituer une troisième offre ni l’intitulé commercial principal. Jean mène le travail technique ; le client apporte le contexte et participe aux échanges et à la validation. Le dirigeant conserve les décisions. Le prix, le résultat et le calendrier sont convenus avant engagement. Le délai de sept jours et une éventuelle garantie ne sont pas affichés : leurs modalités restent à définir. Aucun widget ni webinaire disponible n’est annoncé.
+La dernière orientation de Jean conserve deux offres : **Vibe Pompier**, qui comprend les corrections du blocage convenu, et **Vibe Doctor — diagnostic et suivi**, pour comprendre les besoins et les opportunités, choisir les priorités, planifier et suivre leur mise en œuvre avec conseil et coaching, notamment les usages utiles de l’IA. Les choix sont illustrés par des emojis et différenciés en rouge et bleu. Depuis l’audit de conversion du 12 octobre, le portrait et le nom précèdent les offres sur mobile ; les entrées compactes explicitent « corriger un blocage précis » et « définir les priorités et suivre la suite ». Les prestations sont illustrées par des exemples de correction sélectionnables et un plan d’action dépliable, clairement présentés comme illustratifs. Le récit Lovable est accessible dans l’offre Vibe Pompier. Vibe Doctor accompagne dans la durée ; cette offre ne se limite pas au diagnostic ponctuel de la V1. Le rôle de CTO peut éclairer le parcours professionnel, sans constituer une troisième offre ni l’intitulé commercial principal. Jean mène le travail technique ; le client apporte le contexte et participe aux échanges et à la validation. Le dirigeant conserve les décisions. Le prix, le résultat et le calendrier sont convenus avant engagement. Le délai de sept jours et une éventuelle garantie ne sont pas affichés : leurs modalités restent à définir. Aucun widget ni webinaire disponible n’est annoncé.
 
 ## Passages à la télévision
 

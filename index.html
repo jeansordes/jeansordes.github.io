@@ -43,10 +43,12 @@
     />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/conversion.css" />
     <script src="assets/identity-scroll.js" defer></script>
     <script src="assets/section-navigation.js" defer></script>
     <script src="assets/portfolio-carousel.js" defer></script>
     <script src="assets/television.js" defer></script>
+    <script src="assets/service-demos.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -119,341 +121,74 @@
         class="hero wrap"
         aria-labelledby="hero-title"
       >
+        <div class="hero-identity">
+          <img
+            class="jean-portrait"
+            src="assets/jean-sordes-actuel.jpg"
+            width="512"
+            height="512"
+            alt="Jean Z. Sordes"
+            fetchpriority="high"
+          />
+          <div>
+            <p class="identity-title">Jean Z. Sordes</p>
+            <p>Ingénieur logiciel &amp; pédagogue</p>
+          </div>
+          <span class="sticker identity-sticker" aria-hidden="true"
+            >Jean, enchanté ! ✌</span
+          >
+        </div>
         <div class="hero-copy">
-          <p class="eyebrow">
-            <span class="small-star" aria-hidden="true"
-              ><svg
-                class="icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <use href="assets/lucide.svg#sparkles"></use></svg
-            ></span>
-            Intervention technique · diagnostic & suivi
-          </p>
           <h1 id="hero-title">
             Face à l’IA,<br /><span class="marker"
               >vous n’êtes <span class="punchline-end">plus seul.</span></span
             >
           </h1>
-          <div
-            class="offer-choices"
-            aria-label="Deux façons de travailler ensemble"
-          >
-            <a class="offer-choice offer-choice-urgent" href="#intervention">
-              <span class="offer-choice-title"
-                ><span
-                  ><span class="offer-choice-emoji" aria-hidden="true"
-                    >🔥 👨‍🚒</span
-                  >Vibe Pompier</span
-                >
-                <svg
-                  class="icon"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <use href="assets/lucide.svg#arrow-down"></use></svg
-              ></span>
-              <span class="offer-choice-subtitle">Réparation urgente</span>
-              <span
-                >Votre projet bloque ? J’interviens et on vérifie
-                ensemble.</span
-              >
-            </a>
-            <a class="offer-choice offer-choice-doctor" href="#accompagnement">
-              <span class="offer-choice-title"
-                ><span
-                  ><span class="offer-choice-emoji" aria-hidden="true"
-                    >🧑‍⚕️ 🩺</span
-                  >Vibe Doctor</span
-                >
-                <svg
-                  class="icon"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <use href="assets/lucide.svg#arrow-down"></use></svg
-              ></span>
-              <span class="offer-choice-subtitle">Diagnostic et suivi</span>
-              <span
-                >Un cap clair pour progresser, avec conseil et coaching.</span
-              >
-            </a>
-          </div>
           <p class="hero-intro">
-            Je suis <strong>Jean Z. Sordes.</strong> Je vous aide à débloquer
-            votre projet et à faire avancer votre entreprise.
-          </p>
-          <p class="hero-role">
-            Je mène le travail technique et vous accompagne dans vos choix. Vous
-            gardez la main sur les décisions.
+            Je répare les blocages de votre application et vous aide à choisir
+            la suite.
           </p>
           <a
             class="button"
             data-booking-link
             href="https://calendar.notion.so/meet/johnsordes/30min"
-            >Réserver un échange gratuit de 30 min
-            <span aria-hidden="true"
-              ><svg
-                class="icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <use href="assets/lucide.svg#arrow-up-right"></use></svg></span
-          ></a>
-          <p class="action-note">
-            Votre projet, votre blocage, vos mots. On commence simplement.
-          </p>
-          <a class="text-link" href="#television"
-            >Mes interventions sur l’IA à la télévision
-            <span aria-hidden="true">↘</span></a
+            >Réserver un échange <span aria-hidden="true">↗</span></a
           >
-        </div>
-        <div class="hero-art" aria-hidden="true">
-          <span class="sticker sticker-top"
-            >Vous n’êtes plus seul.<br />On avance ensemble.</span
+          <p class="action-note">Gratuit · 30 min · Sans engagement</p>
+          <div
+            class="offer-choices"
+            aria-label="Deux façons de travailler ensemble"
           >
-          <svg
-            class="project-art"
-            viewBox="0 0 500 430"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M402 82c25 2 40 16 38 35M413 61l8-15M450 82l17-5"
-              stroke="#292332"
-              stroke-width="3"
-              stroke-linecap="round"
-            />
-            <rect
-              x="56"
-              y="92"
-              width="370"
-              height="254"
-              rx="20"
-              fill="#292332"
-            />
-            <rect
-              x="47"
-              y="81"
-              width="370"
-              height="254"
-              rx="20"
-              fill="#fffdf9"
-              stroke="#292332"
-              stroke-width="3"
-            />
-            <path d="M48 125h368" stroke="#292332" stroke-width="3" />
-            <circle cx="70" cy="103" r="5" fill="#e9a28c" />
-            <circle cx="88" cy="103" r="5" fill="#e8cb65" />
-            <circle cx="106" cy="103" r="5" fill="#a5c8ad" />
-            <rect
-              x="133"
-              y="95"
-              width="166"
-              height="15"
-              rx="7.5"
-              fill="#eeebe6"
-            />
-            <rect
-              x="72"
-              y="151"
-              width="106"
-              height="150"
-              rx="10"
-              fill="#eee4ff"
-            />
-            <path
-              d="M91 174h67M91 192h42M91 219h58M91 238h45M91 276h57"
-              stroke="#8467b1"
-              stroke-width="5"
-              stroke-linecap="round"
-            />
-            <rect
-              x="200"
-              y="151"
-              width="189"
-              height="84"
-              rx="10"
-              fill="#faf0c9"
-            />
-            <path
-              d="M221 175h136M221 193h103M221 212h68"
-              stroke="#a78d40"
-              stroke-width="5"
-              stroke-linecap="round"
-            />
-            <rect
-              x="200"
-              y="252"
-              width="189"
-              height="49"
-              rx="10"
-              fill="#e1eedf"
-            />
-            <path
-              d="m224 275 9 9 17-19M267 276h98"
-              stroke="#487654"
-              stroke-width="5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M33 334h397l28 30c3 4 0 11-6 11H19c-6 0-9-7-5-11l19-30Z"
-              fill="#d2c1ee"
-              stroke="#292332"
-              stroke-width="3"
-            />
-            <path
-              d="M190 334h85l10 16H181l9-16Z"
-              fill="#fffdf9"
-              stroke="#292332"
-              stroke-width="3"
-            />
-            <circle
-              cx="359"
-              cy="176"
-              r="50"
-              fill="#fffdf9"
-              stroke="#292332"
-              stroke-width="3"
-            />
-            <circle
-              cx="359"
-              cy="176"
-              r="36"
-              fill="#ede2ff"
-              stroke="#292332"
-              stroke-width="3"
-            />
-            <path
-              d="m394 212 29 29"
-              stroke="#292332"
-              stroke-width="18"
-              stroke-linecap="round"
-            />
-            <path
-              d="m394 212 29 29"
-              stroke="#b49ad8"
-              stroke-width="11"
-              stroke-linecap="round"
-            />
-            <path
-              d="m344 174 10 11 21-24"
-              stroke="#6940a2"
-              stroke-width="5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="m66 60 5-15 5 15 15 5-15 5-5 15-5-15-15-5 15-5Z"
-              fill="#b49ad8"
-              stroke="#292332"
-              stroke-width="2"
-            />
-            <path
-              d="M58 395c35 7 61 8 82-1"
-              stroke="#292332"
-              stroke-width="3"
-              stroke-linecap="round"
-            />
-            <path
-              d="m130 387 12 6-8 10"
-              stroke="#292332"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <span class="sticker sticker-left"
-            ><span
-              ><svg
-                class="icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <use href="assets/lucide.svg#corner-down-right"></use></svg
-            ></span>
-            Du blocage à la prochaine étape.</span
-          >
-          <span class="sticker sticker-bottom"
-            >La main reste<br /><strong>la vôtre.</strong> <span>✌</span></span
-          >
-          <div class="portrait-tag">
-            <img
-              class="jean-portrait"
-              src="assets/jean-sordes-actuel.jpg"
-              width="64"
-              height="64"
-              alt=""
-            /><span
-              >Jean, enchanté !<small
-                >Ingénieur · pédagogue · entrepreneur</small
-              ></span
+            <a class="offer-choice offer-choice-urgent" href="#intervention"
+              ><span class="offer-choice-title"
+                ><span><span aria-hidden="true">🔥</span> Vibe Pompier</span
+                ><span aria-hidden="true">↓</span></span
+              ><span class="offer-choice-subtitle"
+                >Corriger un blocage précis</span
+              ></a
+            >
+            <a class="offer-choice offer-choice-doctor" href="#accompagnement"
+              ><span class="offer-choice-title"
+                ><span><span aria-hidden="true">🩺</span> Vibe Doctor</span
+                ><span aria-hidden="true">↓</span></span
+              ><span class="offer-choice-subtitle"
+                >Définir les priorités et suivre la suite</span
+              ></a
             >
           </div>
         </div>
       </section>
 
-      <div class="section-divider wrap">
+      <div class="trust-strip wrap" aria-label="Repères dans mon parcours">
         <span
-          >Des projets qui avancent. Des équipes qui gagnent en autonomie.</span
-        ><span aria-hidden="true"
-          ><svg
-            class="icon"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            aria-hidden="true"
-            focusable="false"
-          >
-            <use href="assets/lucide.svg#sparkles"></use></svg
-        ></span>
+          >Développement ·
+          <a href="#career-title">Capgemini / SNCF Fret</a></span
+        >
+        <span
+          >Pédagogie ·
+          <a href="#career-title">MolenGeek &amp; Holberton</a></span
+        >
+        <a href="#television">Mes interventions sur l’IA sur BX1 ↗</a>
       </div>
 
       <section
@@ -464,133 +199,161 @@
         aria-labelledby="intervention-title"
       >
         <div class="wrap">
-          <div class="intervention-heading">
-            <div>
-              <p class="eyebrow">
-                Intervention urgente · On se retrousse les manches
-              </p>
-              <h2 id="intervention-title">Vibe Pompier</h2>
-              <p class="section-lead">
-                Votre projet prend feu ?<br /><strong
-                  >Vous n’êtes plus seul.</strong
-                >
-              </p>
-            </div>
-            <span class="sticker fire-sticker" aria-hidden="true">🔥 👨‍🚒</span>
-          </div>
-          <p class="intervention-intro">
-            Votre application bloque, une fonctionnalité ne répond plus ou les
-            bugs s’accumulent ? Vous m’expliquez ce qui se passe, et on se
-            retrousse les manches ensemble.
-          </p>
-          <p class="intervention-intro">
-            Je vous aide à comprendre ce qui coince, j’interviens sur le projet
-            et nous vérifions ensemble le résultat attendu. On éteint le feu
-            pour vous permettre d’avancer à nouveau.
-          </p>
-          <div class="intervention-action">
-            <a
-              class="button"
-              data-booking-link
-              href="https://calendar.notion.so/meet/johnsordes/30min"
-              >Préparons une intervention
-              <span aria-hidden="true"
-                ><svg
-                  class="icon"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <use
-                    href="assets/lucide.svg#arrow-up-right"
-                  ></use></svg></span
-            ></a>
+          <div class="section-heading">
+            <p class="eyebrow">🔥 Réparation ciblée</p>
+            <h2 id="intervention-title">Vibe Pompier</h2>
+            <p class="section-lead">
+              Corriger le blocage. Vérifier le résultat.
+            </p>
             <p>
-              Un échange gratuit de 30 minutes sur Notion Calendar.<br />L’intervention
-              payante est convenue ensuite, ensemble.
+              Votre application charge sans fin ou vous renvoie à la connexion ?
+              Je recherche la cause, réalise les corrections convenues et
+              vérifie le parcours avec vous.
             </p>
           </div>
-          <div class="project-recovery" aria-hidden="true">
-            <div class="recovery-card">
-              <span class="sticker recovery-fire">🔥</span
-              ><span class="recovery-label">Avant</span
-              ><strong>Ça bloque.</strong
-              ><span
-                >Une page qui charge sans fin.<br />Un accès qui ne fonctionne
-                plus.</span
-              >
+          <div
+            class="service-demo recovery-demo"
+            aria-labelledby="recovery-title"
+          >
+            <div class="demo-heading">
+              <h3 id="recovery-title">Une correction, ça se vérifie.</h3>
+              <p class="demo-caption">
+                Exemples illustratifs · Le périmètre réel est convenu pour votre
+                projet.
+              </p>
             </div>
-            <span class="recovery-arrow"
-              ><svg
-                class="icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-                focusable="false"
+            <div
+              class="demo-switch"
+              data-recovery-controls
+              hidden
+              aria-label="Choisir un exemple"
+            >
+              <button
+                type="button"
+                data-recovery-choice="loading"
+                aria-pressed="true"
+                aria-controls="recovery-examples"
               >
-                <use href="assets/lucide.svg#arrow-up-right"></use></svg
-            ></span>
-            <div class="recovery-card recovery-resolved">
-              <span class="recovery-label">Ensemble</span
-              ><strong>On reprend la main.</strong
-              ><span
-                >Je réalise les corrections.<br />Nous vérifions le parcours
-                concerné.</span
+                Chargement sans fin
+              </button>
+              <button
+                type="button"
+                data-recovery-choice="login"
+                aria-pressed="false"
+                aria-controls="recovery-examples"
               >
+                Connexion en boucle
+              </button>
+            </div>
+            <div id="recovery-examples">
+              <article data-recovery-example="loading">
+                <h4>Ouvrir le tableau de bord</h4>
+                <div class="demo-comparison">
+                  <div>
+                    <span class="demo-label">Avant</span>
+                    <p class="mock-state">◌ Chargement…</p>
+                    <p>
+                      Les données n’arrivent pas et l’attente ne se termine
+                      jamais.
+                    </p>
+                  </div>
+                  <div>
+                    <span class="demo-label">À vérifier après correction</span>
+                    <p class="mock-state">✓ Données affichées</p>
+                    <p>
+                      La page affiche les données ; si la requête échoue, un
+                      message permet de réessayer.
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article data-recovery-example="login">
+                <h4>Se connecter à son espace</h4>
+                <div class="demo-comparison">
+                  <div>
+                    <span class="demo-label">Avant</span>
+                    <p class="mock-state">Connexion ↔ Connexion</p>
+                    <p>
+                      Après identification, le visiteur revient sur le
+                      formulaire.
+                    </p>
+                  </div>
+                  <div>
+                    <span class="demo-label">À vérifier après correction</span>
+                    <p class="mock-state">✓ Espace personnel</p>
+                    <p>
+                      La connexion ouvre l’espace prévu. Un visiteur non
+                      connecté reste sur la page de connexion.
+                    </p>
+                  </div>
+                </div>
+              </article>
             </div>
           </div>
           <div class="journey">
-            <h3>On se retrousse les manches, comment ?</h3>
+            <h3>L’intervention en 3 étapes</h3>
             <ol class="journey-grid">
               <li>
                 <span class="step-dot" aria-hidden="true">1</span>
-                <h4>Préparons l’intervention</h4>
+                <h4>Cadrer</h4>
                 <p>
-                  Vous réservez l’échange gratuit et préparez le contexte :
-                  votre projet, le blocage, vos tentatives et ce que vous voulez
-                  pouvoir faire.
+                  Nous vérifions le projet et les accès, puis convenons du
+                  résultat, du prix et du calendrier.
                 </p>
               </li>
               <li>
                 <span class="step-dot" aria-hidden="true">2</span>
-                <h4>On s’organise</h4>
+                <h4>Corriger</h4>
                 <p>
-                  J’examine le projet et les accès nécessaires. Nous convenons
-                  du résultat, du prix et du calendrier avant de commencer.
+                  Je mène le travail technique. Vous apportez le contexte et vos
+                  retours, sans avoir besoin de coder.
                 </p>
               </li>
               <li>
                 <span class="step-dot" aria-hidden="true">3</span>
-                <h4>On éteint le feu</h4>
+                <h4>Vérifier</h4>
                 <p>
-                  Je guide la recherche des causes et réalise les corrections
-                  techniques. Vous apportez le contexte et vos retours, sans
-                  avoir besoin de coder.
-                </p>
-              </li>
-              <li>
-                <span class="step-dot" aria-hidden="true">4</span>
-                <h4>On vérifie ensemble</h4>
-                <p>
-                  Nous validons le parcours concerné. Je vous explique les
-                  changements et vous donne les informations utiles pour
-                  poursuivre.
+                  Nous testons le parcours convenu. Je vous explique les
+                  changements et comment poursuivre.
                 </p>
               </li>
             </ol>
+          </div>
+          <details class="field-story">
+            <summary>
+              Un exemple de terrain : un projet Lovable repris
+              <span aria-hidden="true">+</span>
+            </summary>
+            <div class="field-story-content">
+              <div>
+                <p class="eyebrow">Une expérience de terrain</p>
+                <h3 id="experience-title">Un projet Lovable repris.</h3>
+              </div>
+              <div>
+                <p>
+                  J’ai accompagné une personne dont l’application créée avec
+                  Lovable accumulait les chargements sans fin, les redirections
+                  et les fonctionnalités défaillantes. J’ai repris le projet,
+                  travaillé sur sa structure et installé des méthodes pour
+                  continuer, puis accompagné un développeur dans le passage de
+                  relais.
+                </p>
+                <p class="experience-context">
+                  Un récit personnel anonymisé, sans témoignage ni résultat
+                  chiffré vérifiable. Il illustre mon travail sur un projet
+                  existant et la préparation du passage de relais.
+                </p>
+              </div>
+            </div>
+          </details>
+          <div class="service-action">
+            <a
+              class="button"
+              data-booking-link
+              href="https://calendar.notion.so/meet/johnsordes/30min"
+              >Réserver un échange <span aria-hidden="true">↗</span></a
+            >
+            <p class="action-note">Gratuit · 30 min · Sans engagement</p>
           </div>
         </div>
       </section>
@@ -599,301 +362,115 @@
         id="accompagnement"
         data-page-section="accompagnement"
         data-section-title="Vibe Doctor"
-        class="section wrap accompaniment"
+        class="section wrap doctor-section"
         aria-labelledby="accompaniment-title"
       >
-        <div class="accompaniment-visual" aria-hidden="true">
-          <span class="eyebrow">Diagnostic & suivi</span>
-          <div class="decision-card">
-            <span class="decision-label">Votre projet</span
-            ><span>Comprendre les besoins</span
-            ><span>Choisir les priorités</span><span>Suivre les progrès</span
-            ><strong
-              >Votre décision
-              <span
-                ><svg
-                  class="icon"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <use
-                    href="assets/lucide.svg#arrow-up-right"
-                  ></use></svg></span
-            ></strong>
-          </div>
-          <span class="sticker accompaniment-sticker"
-            ><span class="doctor-sticker-emoji">🧑‍⚕️ 🩺</span>Un diagnostic.<br />Un
-            cap et un suivi.</span
-          >
-        </div>
-        <div>
-          <p class="eyebrow">Comprendre, prioriser, progresser</p>
-          <h2 id="accompaniment-title">Vibe Doctor</h2>
-          <p class="section-lead">
-            Diagnostic et suivi.<br />Comprendre ce qu’il faut améliorer et
-            préparer la suite.
-          </p>
-          <p>
-            Je prends le temps de comprendre votre entreprise, votre projet et
-            vos besoins. Ensemble, nous identifions les améliorations utiles,
-            choisissons les priorités et planifions les prochaines étapes. Je
-            vous accompagne ensuite dans leur mise en œuvre avec du conseil, du
-            coaching et un suivi.
-          </p>
-          <ul class="check-list">
-            <li>
-              Un diagnostic pour comprendre les besoins et les opportunités.
-            </li>
-            <li>Des priorités expliquées et un plan pour préparer la suite.</li>
-            <li>
-              Du conseil, du coaching et un suivi pour faire progresser votre
-              équipe.
-            </li>
-            <li>
-              Des usages utiles de l’IA : alléger les tâches répétitives,
-              améliorer votre service et mieux exploiter vos informations.
-            </li>
-          </ul>
-          <p>
-            Vous gardez la décision finale. Nous définissons ensemble le rythme
-            et le périmètre ; les éventuelles interventions opérationnelles sont
-            cadrées séparément.
-          </p>
-          <a
-            class="button button-doctor"
-            data-booking-link
-            href="https://calendar.notion.so/meet/johnsordes/30min"
-            >Préparons un diagnostic
-            <span aria-hidden="true"
-              ><svg
-                class="icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <use href="assets/lucide.svg#arrow-up-right"></use></svg></span
-          ></a>
-          <p class="action-note">
-            Échange gratuit de 30 minutes sur Notion Calendar.
-          </p>
-        </div>
-      </section>
-
-      <section
-        id="approche"
-        data-page-section="approche"
-        data-section-title="Approche"
-        class="section approach-section"
-        aria-labelledby="approach-title"
-      >
-        <div class="wrap">
-          <div class="section-heading">
-            <p class="eyebrow">Ma manière de travailler</p>
-            <h2 id="approach-title">
-              De la technique.<br />Et surtout, du bon sens.
-            </h2>
-            <p>
-              Le bon choix est celui qui aide votre entreprise à avancer. Pas
-              forcément celui qui demande le plus de code.
-            </p>
-          </div>
-          <div class="principles-grid">
-            <article>
-              <span aria-hidden="true"
-                ><svg
-                  class="icon"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <use href="assets/lucide.svg#search"></use></svg
-              ></span>
-              <h3>Comprendre d’abord</h3>
-              <p>
-                Votre besoin, vos utilisateurs et votre contexte passent avant
-                la solution technique.
-              </p>
-            </article>
-            <article>
-              <span aria-hidden="true"
-                ><svg
-                  class="icon"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <use href="assets/lucide.svg#arrow-left-right"></use></svg
-              ></span>
-              <h3>Expliquer les choix</h3>
-              <p>
-                Ce qui fonctionne, les compromis et les incertitudes : vous avez
-                les éléments pour décider.
-              </p>
-            </article>
-            <article>
-              <span aria-hidden="true"
-                ><svg
-                  class="icon"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <use href="assets/lucide.svg#scissors"></use></svg
-              ></span>
-              <h3>Faire au plus juste</h3>
-              <p>
-                Une solution existante peut être la meilleure option, même si
-                elle rend mon intervention inutile.
-              </p>
-            </article>
-            <article>
-              <span aria-hidden="true"
-                ><svg
-                  class="icon"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <use href="assets/lucide.svg#arrow-up-right"></use></svg
-              ></span>
-              <h3>Préparer la suite</h3>
-              <p>
-                Vous ou votre équipe gagnez en autonomie. Le projet devient plus
-                facile à reprendre et à transmettre.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="television"
-        data-page-section="television"
-        data-section-title="À la télévision"
-        class="section wrap television"
-        aria-labelledby="television-title"
-      >
         <div class="section-heading">
-          <p class="eyebrow">L’IA, aussi à la télévision</p>
-          <h2 id="television-title">On en parle sur BX1.</h2>
+          <p class="eyebrow">🩺 Diagnostic &amp; suivi</p>
+          <h2 id="accompaniment-title">Vibe Doctor</h2>
+          <p class="section-lead">Savoir quoi améliorer. Garder un cap.</p>
           <p>
-            J’ai été invité dans <strong>Bonsoir Bruxelles</strong> pour parler
-            de l’intelligence artificielle. Retrouvez mes deux passages
-            directement au bon moment.
+            Je vous aide à comprendre les besoins, choisir les priorités et
+            suivre leur mise en œuvre. L’IA fait partie des pistes à explorer
+            quand elle sert votre entreprise.
           </p>
         </div>
-        <div class="television-grid">
-          <article class="television-card">
-            <div class="video-stage" data-video-stage>
-              <img
-                src="assets/media/bx1-JgMDYGr0zY4.jpg"
-                width="480"
-                height="360"
-                loading="lazy"
-                alt="Vignette de l’émission Bonsoir Bruxelles du 5 juin 2026"
-              />
-              <button
-                class="video-play"
-                type="button"
-                data-video-play
-                data-video-id="JgMDYGr0zY4"
-                data-video-start="2430"
-                data-video-title="Mon passage dans Bonsoir Bruxelles du 5 juin 2026, à partir de 40 minutes 30"
-                hidden
-              >
-                <span aria-hidden="true">▶</span> Lire à 40:30
-              </button>
-            </div>
-            <div class="television-copy">
-              <p class="eyebrow">
-                BX1 · <time datetime="2026-06-05">5 juin 2026</time>
-              </p>
-              <h3>Bonsoir Bruxelles</h3>
-              <p>Mon passage commence à <strong>40:30</strong>.</p>
-              <a
-                class="text-link"
-                href="https://www.youtube.com/live/JgMDYGr0zY4?t=2430"
-                >Voir sur YouTube à 40:30 <span aria-hidden="true">↗</span></a
-              >
-            </div>
-          </article>
-          <article class="television-card">
-            <div class="video-stage" data-video-stage>
-              <img
-                src="assets/media/bx1-nm2h6rb0BkY.jpg"
-                width="480"
-                height="360"
-                loading="lazy"
-                alt="Vignette de l’émission Bonsoir Bruxelles du 17 avril 2026"
-              />
-              <button
-                class="video-play"
-                type="button"
-                data-video-play
-                data-video-id="nm2h6rb0BkY"
-                data-video-start="2280"
-                data-video-title="Mon passage dans Bonsoir Bruxelles du 17 avril 2026, à partir de 38 minutes"
-                hidden
-              >
-                <span aria-hidden="true">▶</span> Lire à 38:00
-              </button>
-            </div>
-            <div class="television-copy">
-              <p class="eyebrow">
-                BX1 · <time datetime="2026-04-17">17 avril 2026</time>
-              </p>
-              <h3>Bonsoir Bruxelles</h3>
-              <p>Mon passage commence à <strong>38:00</strong>.</p>
-              <a
-                class="text-link"
-                href="https://www.youtube.com/live/nm2h6rb0BkY?t=2280"
-                >Voir sur YouTube à 38:00 <span aria-hidden="true">↗</span></a
-              >
-            </div>
-          </article>
+        <div class="doctor-layout">
+          <div class="service-demo action-plan" aria-labelledby="plan-title">
+            <p class="demo-caption">
+              Exemple illustratif de plan · Le format est adapté à la mission.
+            </p>
+            <h3 id="plan-title">Vos prochaines actions</h3>
+            <p class="plan-help">
+              Ouvrez une priorité pour voir comment avancer.
+            </p>
+            <details>
+              <summary>
+                <span class="priority">01</span> Fiabiliser la connexion
+                <span aria-hidden="true">+</span>
+              </summary>
+              <div>
+                <p>
+                  <strong>Constat :</strong> l’accès au compte bloque le
+                  parcours principal.
+                </p>
+                <p>
+                  <strong>Action :</strong> vérifier la session et les
+                  redirections avant d’ajouter de nouvelles fonctions.
+                </p>
+                <p>
+                  <strong>Validation :</strong> un utilisateur connecté accède à
+                  son espace ; un visiteur non connecté est invité à se
+                  connecter.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span class="priority">02</span> Simplifier la saisie
+                <span aria-hidden="true">+</span>
+              </summary>
+              <div>
+                <p>
+                  <strong>Constat :</strong> l’équipe recopie les mêmes
+                  informations dans deux outils.
+                </p>
+                <p>
+                  <strong>Action :</strong> examiner une intégration existante
+                  avant de développer une automatisation.
+                </p>
+                <p>
+                  <strong>Validation :</strong> l’information n’est saisie
+                  qu’une fois et reste accessible à l’équipe.
+                </p>
+              </div>
+            </details>
+            <details>
+              <summary>
+                <span class="priority">03</span> Tester un usage de l’IA
+                <span aria-hidden="true">+</span>
+              </summary>
+              <div>
+                <p>
+                  <strong>Constat :</strong> préparer les réponses aux demandes
+                  répétitives mobilise l’équipe.
+                </p>
+                <p>
+                  <strong>Action :</strong> tester des brouillons assistés,
+                  relus par une personne, sur un périmètre adapté.
+                </p>
+                <p>
+                  <strong>Validation :</strong> l’équipe vérifie la qualité et
+                  l’utilité des réponses avant de généraliser.
+                </p>
+              </div>
+            </details>
+          </div>
+          <div class="doctor-followup">
+            <h3>Un plan, puis un suivi.</h3>
+            <p>
+              Un diagnostic et un plan priorisé, expliqués lors d’une
+              restitution : vous savez quoi traiter en premier et quoi déléguer.
+              Le conseil et le coaching aident ensuite votre équipe à avancer.
+            </p>
+            <ul class="check-list">
+              <li>Faire le point sur ce qui a avancé.</li>
+              <li>Éclairer les décisions qui restent ouvertes.</li>
+              <li>Ajuster la prochaine action.</li>
+            </ul>
+            <p>
+              Vous gardez la décision finale. Le rythme et le périmètre sont
+              convenus ensemble ; les interventions techniques sont cadrées
+              séparément.
+            </p>
+            <a
+              class="button button-doctor"
+              data-booking-link
+              href="https://calendar.notion.so/meet/johnsordes/30min"
+              >Réserver un échange <span aria-hidden="true">↗</span></a
+            >
+            <p class="action-note">Gratuit · 30 min · Sans engagement</p>
+          </div>
         </div>
       </section>
 
@@ -925,15 +502,11 @@
             Ingénieur logiciel, pédagogue et entrepreneur.
           </p>
           <p>
-            J’aime relier les choix techniques à ce qui compte pour votre
-            entreprise : les utilisateurs, les coûts et la capacité à faire
-            avancer votre projet.
+            Je construis des logiciels et je forme des développeurs. Ce double
+            regard m’aide à relier votre projet, les besoins de votre entreprise
+            et les compétences de votre équipe.
           </p>
-          <p>
-            Mon rôle : prendre le temps de comprendre, rendre les choses claires
-            et vous aider à poursuivre sans dépendre de moi pour chaque
-            décision.
-          </p>
+
           <p class="about-degree">
             Master MIAGE · Informatique et gestion d’entreprise · Toulouse III,
             2022
@@ -967,7 +540,7 @@
       >
         <div class="section-heading">
           <p class="eyebrow">Quelques repères dans mon parcours</p>
-          <h2 id="career-title">Construire, transmettre,<br />entreprendre.</h2>
+          <h2 id="career-title">Mon parcours</h2>
           <p>
             Des logiciels métier aux salles de formation, le même fil conducteur
             : comprendre le besoin et rendre la technique utile.
@@ -1125,30 +698,131 @@
       </section>
 
       <section
-        data-page-section="a-propos"
-        data-section-title="Parcours"
-        class="experience wrap"
-        aria-labelledby="experience-title"
+        id="approche"
+        data-page-section="approche"
+        data-section-title="Approche"
+        class="section approach-section"
+        aria-labelledby="approach-title"
       >
-        <div>
-          <p class="eyebrow">Une expérience de terrain</p>
-          <h3 id="experience-title">
-            Quand les demandes à l’IA ne suffisent plus.
-          </h3>
+        <div class="wrap">
+          <div class="section-heading">
+            <h2 id="approach-title">Comment je travaille</h2>
+            <p>
+              La technique doit servir votre entreprise. Je vous explique les
+              options et leurs limites pour que vous puissiez décider.
+            </p>
+          </div>
+          <div class="principles-grid">
+            <article>
+              <h3>Le besoin avant le code</h3>
+              <p>
+                Nous partons de vos utilisateurs et de votre contexte pour
+                traiter le bon problème.
+              </p>
+            </article>
+            <article>
+              <h3>La solution au juste coût</h3>
+              <p>
+                Un outil existant peut être préférable, même s’il rend mon
+                intervention inutile.
+              </p>
+            </article>
+            <article>
+              <h3>Une suite autonome</h3>
+              <p>
+                Je transmets les explications utiles pour poursuivre ou passer
+                le relais à votre équipe.
+              </p>
+            </article>
+          </div>
         </div>
-        <div>
+      </section>
+
+      <section
+        id="television"
+        data-page-section="television"
+        data-section-title="À la télévision"
+        class="section wrap television"
+        aria-labelledby="television-title"
+      >
+        <div class="section-heading">
+          <p class="eyebrow">L’IA, aussi à la télévision</p>
+          <h2 id="television-title">On en parle sur BX1.</h2>
           <p>
-            J’ai accompagné une personne dont l’application créée avec Lovable
-            accumulait les chargements sans fin, les redirections et les
-            fonctionnalités défaillantes. J’ai repris le projet, travaillé sur
-            sa structure et installé des méthodes pour continuer, puis
-            accompagné un développeur dans le passage de relais.
+            J’ai été invité dans <strong>Bonsoir Bruxelles</strong> pour parler
+            de l’intelligence artificielle. Retrouvez mes deux passages
+            directement au bon moment.
           </p>
-          <p class="experience-context">
-            Un récit personnel anonymisé, sans témoignage ni résultat chiffré
-            vérifiable. Il illustre mon travail sur un projet existant et la
-            préparation du passage de relais.
-          </p>
+        </div>
+        <div class="television-grid">
+          <article class="television-card">
+            <div class="video-stage" data-video-stage>
+              <img
+                src="assets/media/bx1-JgMDYGr0zY4.jpg"
+                width="480"
+                height="360"
+                loading="lazy"
+                alt="Vignette de l’émission Bonsoir Bruxelles du 5 juin 2026"
+              />
+              <button
+                class="video-play"
+                type="button"
+                data-video-play
+                data-video-id="JgMDYGr0zY4"
+                data-video-start="2430"
+                data-video-title="Mon passage dans Bonsoir Bruxelles du 5 juin 2026, à partir de 40 minutes 30"
+                hidden
+              >
+                <span aria-hidden="true">▶</span> Lire à 40:30
+              </button>
+            </div>
+            <div class="television-copy">
+              <p class="eyebrow">
+                BX1 · <time datetime="2026-06-05">5 juin 2026</time>
+              </p>
+              <h3>Bonsoir Bruxelles</h3>
+
+              <a
+                class="text-link"
+                href="https://www.youtube.com/live/JgMDYGr0zY4?t=2430"
+                >Voir sur YouTube à 40:30 <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </article>
+          <article class="television-card">
+            <div class="video-stage" data-video-stage>
+              <img
+                src="assets/media/bx1-nm2h6rb0BkY.jpg"
+                width="480"
+                height="360"
+                loading="lazy"
+                alt="Vignette de l’émission Bonsoir Bruxelles du 17 avril 2026"
+              />
+              <button
+                class="video-play"
+                type="button"
+                data-video-play
+                data-video-id="nm2h6rb0BkY"
+                data-video-start="2280"
+                data-video-title="Mon passage dans Bonsoir Bruxelles du 17 avril 2026, à partir de 38 minutes"
+                hidden
+              >
+                <span aria-hidden="true">▶</span> Lire à 38:00
+              </button>
+            </div>
+            <div class="television-copy">
+              <p class="eyebrow">
+                BX1 · <time datetime="2026-04-17">17 avril 2026</time>
+              </p>
+              <h3>Bonsoir Bruxelles</h3>
+
+              <a
+                class="text-link"
+                href="https://www.youtube.com/live/nm2h6rb0BkY?t=2280"
+                >Voir sur YouTube à 38:00 <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </article>
         </div>
       </section>
 
@@ -1161,7 +835,7 @@
       >
         <div class="section-heading">
           <p class="eyebrow">Du code à des outils concrets</p>
-          <h2 id="portfolio-title">Des outils concrets.</h2>
+          <h2 id="portfolio-title">Des outils à essayer.</h2>
           <p>
             Trois outils pour Obsidian, une application de prise de notes.
             Découvrez les projets et ce qu’ils permettent de faire.
@@ -1444,13 +1118,31 @@
             data-project-slide
             aria-labelledby="expander-title"
           >
-            <div class="project-illustration snippet-illustration">
-              <span class="illustration-label">Exemple de principe</span>
-              <div>
-                <kbd>btw</kbd><span aria-hidden="true">→</span
-                ><span class="snippet-result">By the way</span>
-              </div>
-              <p>Un raccourci. Le texte complet.</p>
+            <div
+              class="project-illustration snippet-illustration expander-demo"
+            >
+              <span class="illustration-label">Démonstration de principe</span>
+              <label for="expander-input"
+                >Un raccourci, le texte complet.</label
+              >
+              <p>Tapez <kbd>btw</kbd> suivi d’un espace.</p>
+              <textarea
+                id="expander-input"
+                rows="3"
+                placeholder="btw "
+                data-expander-input
+              ></textarea>
+              <p class="demo-caption">
+                Exemple local : « btw » devient « By the way ». Aucun texte
+                n’est envoyé.
+              </p>
+              <p class="demo-caption" data-expander-status role="status"></p>
+              <noscript
+                ><p>
+                  Dans le plugin, le raccourci « btw » peut devenir « By the way
+                  ».
+                </p></noscript
+              >
             </div>
             <div class="project-content">
               <p class="eyebrow">Plugin Obsidian · Automatisation</p>
@@ -1707,7 +1399,7 @@
       >
         <div>
           <p class="eyebrow">Quelques réponses avant de commencer</p>
-          <h2 id="faq-title">Vous vous demandez<br />peut-être…</h2>
+          <h2 id="faq-title">Vos questions</h2>
           <span class="faq-doodle" aria-hidden="true"
             ><svg
               class="icon"
@@ -1898,7 +1590,7 @@
           </details>
           <details>
             <summary>
-              Qu’est-ce qui est livré ?<span
+              Que livre Vibe Pompier ?<span
                 class="disclosure-icons"
                 aria-hidden="true"
                 ><svg
@@ -1982,7 +1674,7 @@
           </details>
           <details>
             <summary>
-              Quand choisir Vibe Doctor ?<span
+              Vibe Doctor comprend-il les corrections ?<span
                 class="disclosure-icons"
                 aria-hidden="true"
                 ><svg
@@ -2016,13 +1708,10 @@
               ></span>
             </summary>
             <p>
-              Vibe Pompier répond à un blocage précis sur un projet existant.
-              Vibe Doctor vous aide à comprendre les besoins et les
-              possibilités, à choisir les priorités, à planifier et à suivre
-              leur mise en œuvre dans la durée, avec du conseil et du coaching.
-              Les usages utiles de l’IA font partie des opportunités à explorer.
-              Vous gardez la décision finale ; les interventions techniques sont
-              cadrées avant engagement.
+              Le diagnostic, le plan d’action et le suivi ne comprennent pas
+              automatiquement l’implémentation. Vous pouvez utiliser le plan
+              avec votre outil IA, le transmettre à votre équipe ou me demander
+              une proposition distincte pour les corrections.
             </p>
           </details>
         </div>
@@ -2036,69 +1725,33 @@
         aria-labelledby="booking-title"
       >
         <div class="booking-card">
-          <span class="booking-spark" aria-hidden="true"
-            ><svg
-              class="icon"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-              focusable="false"
-            >
-              <use href="assets/lucide.svg#sparkles"></use></svg
-          ></span>
-          <p class="eyebrow">Le premier pas, c’est une conversation.</p>
-          <h2 id="booking-title">
-            Un blocage à lever ?<br />Un cap à construire ?
-          </h2>
+          <h2 id="booking-title">Parlons de votre projet.</h2>
           <p>
-            30 minutes gratuites pour préparer Vibe Pompier ou faire le premier
-            pas avec Vibe Doctor, à partir de votre situation et de vos
-            objectifs.
+            Un premier échange pour comprendre votre situation et vérifier
+            comment je peux vous aider.
           </p>
           <p class="booking-prompt">
-            Avant notre échange, préparez quelques phrases sur votre projet ou
-            votre blocage.<br />Ne partagez pas de données confidentielles.
+            Préparez quelques phrases sur votre projet, votre blocage et votre
+            objectif.
           </p>
-          <!-- BOOKING:START -->
-          <a
+          <!-- BOOKING:START --><a
             class="button"
             data-booking-link
             href="https://calendar.notion.so/meet/johnsordes/30min"
-            >Réserver un échange gratuit de 30 min
-            <span aria-hidden="true"
-              ><svg
-                class="icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-                focusable="false"
-              >
-                <use href="assets/lucide.svg#arrow-up-right"></use></svg></span
-          ></a>
+            >Réserver un échange <span aria-hidden="true">↗</span></a
+          >
+          <p class="action-note">Gratuit · 30 min · Sans engagement</p>
           <p class="booking-provider">
-            Choisissez votre créneau dans Notion Calendar. La réservation et sa
-            confirmation sont gérées par ce service.
+            Choisissez votre créneau dans Notion Calendar.
           </p>
           <p class="booking-help">
-            Pas de créneau adapté ou un souci de réservation ? Retrouvez-moi sur
+            Pas de créneau adapté ? Retrouvez-moi sur
             <a href="https://www.linkedin.com/in/jean-sordes">LinkedIn</a>.
           </p>
           <!-- BOOKING:END -->
           <p class="action-note">
-            Un premier échange sans engagement. Le périmètre et le prix de la
-            mission sont convenus avant de commencer.
+            Le périmètre et le prix de la mission sont convenus avant de
+            commencer.
           </p>
         </div>
       </section>
