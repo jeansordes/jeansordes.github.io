@@ -209,3 +209,15 @@ Les outils T3 `preview_status` puis `preview_open` ont confirmé l'absence d'hô
 Contrôles dans Chromium headless aux largeurs 1 440, 768, 390 et 320 px : aucun débordement horizontal, portrait visible dans la hero, raccourcis des offres masqués au début, visibles après la hero puis masqués au retour, absence de clignotement à la frontière, logos pointant vers LinkedIn. Les captures fournies sont intégrées en stickers dans un bloc compact.
 
 Les deux stickers ouvrent une boîte de dialogue avec l’identifiant YouTube et le timestamp attendus. Échap et le bouton de fermeture retirent l’iframe et rendent le focus au sticker. Aucun lecteur n’est présent au chargement. Sans JavaScript, les deux liens YouTube restent accessibles. Aucun message d’erreur JavaScript observé. La réponse du lecteur externe est simulée pour ces tests ; la lecture réelle distante reste à contrôler dans un navigateur habituel. L’aperçu collaboratif T3 est indisponible dans cet environnement, vérifications effectuées avec Playwright.
+
+
+## Retours navigateur — 22 octobre 2026
+
+- Portrait du header recadré avec `object-fit: cover`, dimensions carrées fixes et proportions intrinsèques conservées. Les URL de la feuille de styles et du script de navigation sont versionnées pour renouveler le cache après déploiement.
+- Raccourcis Vibe Pompier et Vibe Doctor visibles dès l’accueil, avec et sans JavaScript. Sur les écrans les plus étroits, les libellés passent sur deux lignes dans trois boutons toujours alignés.
+- Grande illustration évoquant un formulaire retirée de Vibe Doctor.
+- Conférences mises en avant par une carte d’accueil et une section violette juste après Vibe Doctor. Les liens BX1 et LinkedIn sont conservés.
+- Section « À propos » délimitée par un fond, une bordure et un titre avant le portrait.
+- Bloc d’expérience reformulé autour de « Vous aussi ? », avec un lien vers le premier échange. Le récit anonymisé reste disponible dans un volet dépliable.
+
+Vérifications Chromium à 320, 390, 599, 600, 646, 760, 768, 1000, 1024 et 1440 px : portrait chargé et recadré, boutons visibles sans débordement, ancres et état actif fonctionnels, ordre des sections correct. Contrôles supplémentaires sans JavaScript à 320, 646 et 1440 px, notamment sur les ancres sous le header. Audits axe WCAG A/AA sans violation détectée aux trois mêmes largeurs. Lecteur vidéo : identifiants, timestamps, fermeture et retour du focus vérifiés avec une réponse distante simulée. Captures des sections modifiées inspectées. Syntaxe JavaScript et `git diff --check` valides.
