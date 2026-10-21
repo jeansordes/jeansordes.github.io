@@ -3,16 +3,13 @@
   const header = document.querySelector("[data-section-header]");
   const regions = [...document.querySelectorAll("[data-page-section]")];
   const links = [...document.querySelectorAll("[data-section-link]")];
-  const position = document.querySelector("[data-nav-position]");
-  const label = document.querySelector("[data-section-label]");
-  if (!header || !regions.length || !label) return;
+  if (!header || !regions.length) return;
 
   const hero = document.querySelector('#accueil');
   const offers = [...header.querySelectorAll('.nav-offer')];
   let offersVisible = false;
   let scheduled = false;
   let current;
-  position.hidden = false;
 
   const update = () => {
     scheduled = false;
@@ -41,7 +38,6 @@
     const id = region.dataset.pageSection;
     if (id === current) return;
     current = id;
-    label.textContent = region.dataset.sectionTitle;
     for (const link of links) {
       if (link.hash === `#${id}`) link.setAttribute("aria-current", "location");
       else link.removeAttribute("aria-current");
