@@ -228,3 +228,10 @@ Vérifications Chromium à 320, 390, 599, 600, 646, 760, 768, 1000, 1024 et 1440
 Le header ajoute un troisième raccourci permanent « Conférences et formations », de même niveau que Vibe Pompier et Vibe Doctor. Les trois liens restent alignés ; sur mobile et tablette, le nom et la réservation occupent la ligne précédente. La carte d’accueil et la section emploient le même intitulé. L’expérience de conception pédagogique et d’accompagnement au bac+2 chez MolenGeek est présentée avec les sources documentées dans `sources-parcours-portfolio.md`.
 
 Contrôles Chromium à 320, 360, 390, 599, 600, 646, 768, 1000, 1100, 1101, 1280 et 1440 px : trois raccourcis visibles et alignés, cibles d’au moins 44 px, header inférieur à 140 px, aucun débordement ou chevauchement, ancre et état actif corrects. Navigation sans JavaScript vérifiée à 320, 646 et 1440 px. Aucun problème détecté par axe dans les règles WCAG A/AA contrôlées à ces trois largeurs. Captures du header et de la section formation inspectées ; aucune erreur JavaScript. Version de la feuille de styles renouvelée pour le cache.
+
+
+## Mode nuit système — 22 octobre 2026
+
+Le thème suit `prefers-color-scheme`, sans script supplémentaire ni réglage stocké. Les surfaces, textes, bordures et ombres s’adaptent ; les couleurs de fond des boutons restent distinctes des couleurs des textes pour conserver les contrastes. Les métadonnées `color-scheme` et `theme-color` couvrent les deux thèmes. Les photos et logos gardent leurs couleurs originales.
+
+Contrôles Chromium en clair et sombre à 320, 646 et 1440 px : bascule en direct sans rechargement, absence de débordement et aucune violation détectée par axe dans les règles WCAG A/AA contrôlées. FAQ et récit dépliés vérifiés en sombre, lecteur vidéo ouvert et fermé avec réponse distante simulée, mode sombre et navigation confirmés sans JavaScript. Captures de l’accueil, des offres, de la formation, du parcours, des projets et de la réservation produites ; accueil, formation et réservation inspectés. Version CSS renouvelée pour le cache ; `git diff --check` valide.

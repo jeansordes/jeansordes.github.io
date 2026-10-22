@@ -10,12 +10,12 @@ Depuis le dossier du projet :
 python3 -m http.server 4173 --bind 127.0.0.1
 ```
 
-Ouvrir `http://127.0.0.1:4173`. La FAQ, la navigation et les liens fonctionnent sans JavaScript.
+Ouvrir `http://127.0.0.1:4173`. La FAQ, la navigation et les liens fonctionnent sans JavaScript. Le thème suit le réglage clair/sombre du système, y compris lorsqu’il change pendant la consultation ; aucun JavaScript ni préférence locale n’est nécessaire.
 
 ## Fichiers
 
 - `index.html` : contenu, navigation, FAQ native, métadonnées et liens de réservation.
-- `assets/styles.css` : styles, adaptations mobiles et préférence de réduction des mouvements.
+- `assets/styles.css` : styles, adaptations mobiles, mode nuit automatique selon `prefers-color-scheme` et préférence de réduction des mouvements.
 - `assets/lucide.svg` : icônes Lucide dans un sprite local, utilisable sans JavaScript ; licence dans `assets/LUCIDE-LICENSE`. [Provenance et usage](docs/icones-lucide.md).
 - `assets/jean-sordes-actuel.jpg` : photo récente fournie par Jean, encodée en JPEG sans retouche, utilisée dans le header, la présentation, « À propos » et la signature au défilement. L’ancien portrait Gravatar est conservé mais n’est plus affiché.
 - `assets/jean-sordes-partage-v3.png` : visuel de partage avec la photo récente, utilisé par Open Graph et la carte de grande taille. Les versions précédentes sont conservées. [Prompt et provenance](docs/visuel-partage.md).

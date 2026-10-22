@@ -12,6 +12,11 @@
   --urgent-soft: #ffebe7;
   --doctor: #17538b;
   --doctor-soft: #e7f2ff;
+  --purple-fill: #68409b;
+  --urgent-fill: #a82324;
+  --doctor-fill: #17538b;
+  --outline: var(--ink);
+  --shadow: var(--ink);
   --radius: 24px;
   color-scheme: light;
   font-family:
@@ -150,7 +155,7 @@ p + p {
   z-index: 30;
   padding: 12px 18px;
   background: var(--ink);
-  color: white;
+  color: var(--paper);
   border-radius: 8px;
 }
 .skip-link:focus {
@@ -219,7 +224,7 @@ p + p {
   gap: 18px;
   padding: 17px 22px;
   min-height: 54px;
-  background: var(--purple);
+  background: var(--purple-fill);
   color: #fff;
   border: 2px solid var(--purple);
   border-radius: 12px;
@@ -227,14 +232,14 @@ p + p {
   font-size: 0.92rem;
   font-weight: 700;
   line-height: 1.45;
-  box-shadow: 3px 3px 0 var(--ink);
+  box-shadow: 3px 3px 0 var(--shadow);
   transition:
     transform 0.15s,
     box-shadow 0.15s;
 }
 .button:hover {
   transform: translate(-1px, -1px);
-  box-shadow: 4px 4px 0 var(--ink);
+  box-shadow: 4px 4px 0 var(--shadow);
   background: #573183;
 }
 .button span {
@@ -338,11 +343,11 @@ p + p {
 }
 .sticker {
   display: inline-block;
-  border: 2px solid var(--ink);
+  border: 2px solid var(--outline);
   background: var(--white);
   padding: 13px 19px;
   border-radius: 12px;
-  box-shadow: 3px 4px 0 var(--ink);
+  box-shadow: 3px 4px 0 var(--shadow);
   font-size: 0.88rem;
   line-height: 1.35;
   font-weight: 650;
@@ -388,7 +393,7 @@ p + p {
 .portrait-tag img {
   width: 53px;
   height: 53px;
-  border: 2px solid var(--ink);
+  border: 2px solid var(--outline);
   border-radius: 50%;
   object-fit: cover;
 }
@@ -553,7 +558,7 @@ p + p {
   position: relative;
   padding: 12px;
   background: var(--lavender);
-  border: 2px solid var(--ink);
+  border: 2px solid var(--outline);
   border-radius: 30px;
   transform: rotate(-3deg);
   max-width: 345px;
@@ -639,7 +644,7 @@ p + p {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: start;
-  border: 2px solid var(--ink);
+  border: 2px solid var(--outline);
   box-shadow: 5px 5px 0 var(--lavender);
 }
 .project-preview,
@@ -758,9 +763,9 @@ p + p {
 .snippet-illustration kbd {
   background: var(--white);
   padding: 8px 16px;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--outline);
   border-radius: 10px;
-  box-shadow: 3px 3px 0 var(--ink);
+  box-shadow: 3px 3px 0 var(--shadow);
 }
 .snippet-result {
   font-weight: 650;
@@ -775,7 +780,7 @@ p + p {
 }
 .workflow-example span {
   padding: 16px 8px;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--outline);
   border-radius: 10px;
   background: var(--white);
   font-size: 0.78rem;
@@ -886,9 +891,9 @@ details p {
 }
 .booking-card {
   text-align: center;
-  border: 2px solid var(--ink);
+  border: 2px solid var(--outline);
   border-radius: 32px;
-  box-shadow: 6px 6px 0 var(--ink);
+  box-shadow: 6px 6px 0 var(--shadow);
   padding: 54px 40px;
   background: var(--yellow);
   position: relative;
@@ -1136,7 +1141,7 @@ details p {
   .booking-card {
     padding: 45px 24px;
     border-radius: 24px;
-    box-shadow: 4px 4px 0 var(--ink);
+    box-shadow: 4px 4px 0 var(--shadow);
   }
   .booking-spark {
     font-size: 2rem;
@@ -1389,13 +1394,13 @@ details p {
 }
 .site-header nav .nav-offer[aria-current="location"] {
   color: white;
-  box-shadow: inset 0 -3px 0 var(--ink);
+  box-shadow: inset 0 -3px 0 var(--shadow);
 }
 .site-header nav .nav-offer-urgent[aria-current="location"] {
-  background: var(--urgent);
+  background: var(--urgent-fill);
 }
 .site-header nav .nav-offer-doctor[aria-current="location"] {
-  background: var(--doctor);
+  background: var(--doctor-fill);
 }
 .offer-choices {
   display: grid;
@@ -1467,7 +1472,7 @@ details p {
   color: var(--urgent);
 }
 .intervention-action .button {
-  background: var(--urgent);
+  background: var(--urgent-fill);
   border-color: var(--urgent);
 }
 .intervention-action .button:hover {
@@ -1479,7 +1484,7 @@ details p {
 }
 
 .button-doctor {
-  background: var(--doctor);
+  background: var(--doctor-fill);
   border-color: var(--doctor);
 }
 .button-doctor:hover {
@@ -1532,7 +1537,7 @@ details p {
   display: grid;
   gap: 12px;
   background: var(--white);
-  border: 2px solid var(--ink);
+  border: 2px solid var(--outline);
   border-radius: 20px;
   padding: 24px;
 }
@@ -1552,7 +1557,7 @@ details p {
 }
 .recovery-resolved {
   background: var(--green);
-  box-shadow: 4px 4px 0 var(--ink);
+  box-shadow: 4px 4px 0 var(--shadow);
 }
 .recovery-fire {
   position: absolute;
@@ -1852,7 +1857,7 @@ details p {
   flex-shrink: 0;
   border: 1px solid var(--purple);
   border-radius: 10px;
-  background: var(--purple);
+  background: var(--purple-fill);
   color: white;
   cursor: pointer;
 }
@@ -1944,7 +1949,7 @@ button:focus-visible,
   max-width: calc(100% - 32px);
   min-height: 48px;
   padding: 12px 18px;
-  border: 2px solid var(--ink);
+  border: 2px solid var(--outline);
   border-radius: 12px;
   background: var(--white);
   color: var(--ink);
@@ -1952,7 +1957,7 @@ button:focus-visible,
   font-size: 0.9rem;
   font-weight: 750;
   cursor: pointer;
-  box-shadow: 3px 3px 0 var(--ink);
+  box-shadow: 3px 3px 0 var(--shadow);
 }
 .video-play:hover {
   background: var(--yellow);
@@ -2062,9 +2067,9 @@ button:focus-visible,
   width: min(360px, 82%);
   height: 400px;
   object-fit: cover;
-  border: 3px solid var(--ink);
+  border: 3px solid var(--outline);
   border-radius: 36px;
-  box-shadow: 7px 8px 0 var(--ink);
+  box-shadow: 7px 8px 0 var(--shadow);
   transform: rotate(-4deg);
 }
 .hero-art .sticker-top {
@@ -2157,10 +2162,10 @@ button:focus-visible,
   display: block;
   min-width: 0;
   padding: 7px;
-  border: 2px solid var(--ink);
+  border: 2px solid var(--outline);
   border-radius: 16px;
   background: var(--white);
-  box-shadow: 4px 5px 0 var(--ink);
+  box-shadow: 4px 5px 0 var(--shadow);
   text-decoration: none;
   transform: rotate(-4deg);
   transition: transform 0.15s;
@@ -2207,7 +2212,7 @@ button:focus-visible,
   overflow-y: auto;
   color: var(--ink);
   background: var(--paper);
-  border: 2px solid var(--ink);
+  border: 2px solid var(--outline);
   border-radius: 20px;
   box-shadow: 7px 8px 0 rgb(0 0 0 / 25%);
 }
@@ -2229,7 +2234,7 @@ button:focus-visible,
   flex-shrink: 0;
   width: 44px;
   height: 44px;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--outline);
   border-radius: 50%;
   font: inherit;
   background: var(--white);
@@ -2247,9 +2252,9 @@ button:focus-visible,
     width: 104px;
     height: 112px;
     object-fit: cover;
-    border: 2px solid var(--ink);
+    border: 2px solid var(--outline);
     border-radius: 22px;
-    box-shadow: 4px 4px 0 var(--ink);
+    box-shadow: 4px 4px 0 var(--shadow);
     transform: rotate(-4deg);
     margin-bottom: 24px;
   }
@@ -2349,7 +2354,7 @@ button:focus-visible,
 }
 .site-header nav .nav-offer-speaker[aria-current="location"] {
   color: white;
-  background: var(--purple);
+  background: var(--purple-fill);
 }
 .training-experience {
   grid-column: 1 / -1;
@@ -2381,5 +2386,53 @@ button:focus-visible,
 @media (max-width: 760px) {
   .training-skills {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Follow the OS preference, including changes while the page is open. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --paper: #18151d;
+    --ink: #f3edf7;
+    --muted: #c4bacd;
+    --purple: #c6a2f3;
+    --lavender: #30243e;
+    --yellow: #4c3c1e;
+    --green: #243c30;
+    --border: #51455f;
+    --white: #221e29;
+    --urgent: #ffa49d;
+    --urgent-soft: #3b2327;
+    --doctor: #a3ccff;
+    --doctor-soft: #20334b;
+    --outline: #82758f;
+    --shadow: #09070c;
+  }
+  .approach-section,
+  .about {
+    background: #211c27;
+    border-color: var(--border);
+  }
+  .intervention-section {
+    border-color: #75434b;
+  }
+  .journey-grid p {
+    color: var(--muted);
+  }
+  .about-portrait {
+    box-shadow: 6px 6px 0 #49365e;
+  }
+  .portfolio-arrows button:disabled {
+    background: #302936;
+  }
+  .training-experience {
+    border-color: #68527e;
+  }
+  .video-stage {
+    background: #09070c;
+  }
+  .site-header {
+    box-shadow: 0 3px 0 rgb(0 0 0 / 20%);
   }
 }
