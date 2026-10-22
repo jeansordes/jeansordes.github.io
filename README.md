@@ -1,6 +1,6 @@
 # Site de Jean Sordes
 
-Page statique en français présentant Jean Sordes avec « Face à l’IA, vous n’êtes plus seul », **Vibe Pompier** pour la réparation et **Vibe Doctor** pour le diagnostic et le suivi. HTML et CSS, sans dépendance de production ni étape de compilation.
+Page statique en français présentant Jean Sordes avec « Votre projet mérite un développeur expérimenté », **Vibe Pompier** pour la réparation et **Vibe Doctor** pour le diagnostic et le suivi. HTML et CSS, sans dépendance de production ni étape de compilation.
 
 ## Prévisualisation locale
 
@@ -66,3 +66,11 @@ Les métadonnées de l'API oEmbed de YouTube confirment les titres, dates et aut
 Le dépôt conserve son fonctionnement statique pour GitHub Pages. Aucune publication n’est déclenchée par la prévisualisation locale. Vérifier le parcours de réservation et les informations publiques avant une mise en ligne demandée par Jean.
 
 La section formation présente le rôle de Jean chez MolenGeek : conception du contenu et accompagnement des apprenants jusqu’au titre professionnel de niveau bac+2. Les compétences pédagogiques et le programme de référence sont documentés dans [les sources du parcours](docs/sources-parcours-portfolio.md).
+
+## Flash Info PHP — 22 octobre 2026
+
+Le bloc en tête de page renvoie à l’alerte CERTFR-2026-ALE-014 et propose un diagnostic cadré, puis une éventuelle mise à jour séparée après vérification. Relire le bulletin et actualiser ou retirer cette alerte lorsqu’elle devient obsolète.
+
+« C’est quoi le problème ? » ouvre une explication native, utilisable sans JavaScript. L’emplacement `#php-video` annonce la vidéo à venir. Lorsque son URL est disponible, remplacer le paragraphe `.flash-video-status` par un lien YouTube comportant `data-video-play`, `data-video-id` et `data-video-title`, comme les vidéos déjà présentes. Le lecteur existant ne charge YouTube qu’au clic.
+
+Les textes de réservation annoncent 20 minutes conformément au brief. Le lien Notion Calendar existant (`/30min`) est conservé à la demande de Jean ; le réglage de durée du calendrier externe reste à aligner.

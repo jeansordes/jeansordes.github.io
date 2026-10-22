@@ -2436,3 +2436,130 @@ button:focus-visible,
     box-shadow: 0 3px 0 rgb(0 0 0 / 20%);
   }
 }
+
+/* Alerte éditoriale datée ; couleurs adaptées aux deux thèmes système. */
+.flash-info {
+  margin-block: 28px 0;
+  padding: clamp(20px, 3vw, 32px);
+  border: 2px solid var(--urgent);
+  border-radius: var(--radius);
+  background: var(--urgent-soft);
+}
+.flash-label {
+  color: var(--urgent);
+  font-size: 0.82rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+.flash-info h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 16px;
+}
+.flash-info p {
+  max-width: 80ch;
+}
+.flash-explanation {
+  margin-block: 20px;
+}
+.flash-explanation summary {
+  cursor: pointer;
+  font-weight: 750;
+  padding-block: 10px;
+}
+.flash-video-slot {
+  padding: 20px;
+  margin-top: 8px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+.flash-video-status {
+  color: var(--muted);
+}
+.flash-diagnostic {
+  padding-top: 20px;
+  border-top: 1px solid var(--urgent);
+}
+.flash-diagnostic h3 {
+  margin-bottom: 12px;
+}
+.flash-diagnostic .button {
+  margin-top: 20px;
+  max-width: 100%;
+  white-space: normal;
+}
+
+.flash-sources {
+  margin-block: 28px;
+}
+.flash-sources-intro {
+  margin-top: 12px;
+}
+.flash-sources-note {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.flash-source-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+.flash-source-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--white);
+  font-size: 0.92rem;
+}
+.flash-source-heading {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.flash-country {
+  flex-shrink: 0;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+.flash-source-heading h4 {
+  font-size: 1rem;
+  letter-spacing: normal;
+}
+.flash-source-heading p {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  overflow-wrap: anywhere;
+}
+.flash-source-kind {
+  align-self: flex-start;
+  margin-block: 18px 12px;
+  padding: 4px 10px;
+  border-radius: 10px;
+  background: var(--lavender);
+  color: var(--purple);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.flash-source-title {
+  font-size: 1.05rem;
+  line-height: 1.4;
+  font-weight: 750;
+}
+.flash-source-card > a {
+  margin-top: auto;
+  padding-top: 20px;
+  font-weight: 650;
+}
+@media (max-width: 760px) {
+  .flash-source-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .flash-source-card {
+    padding: 18px;
+  }
+}

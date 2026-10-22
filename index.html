@@ -44,7 +44,7 @@
       content="Jean Z. Sordes, CTO à temps partagé. Comprendre ce qui bloque. Savoir comment avancer. Son portrait est entouré de stickers pastel."
     />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/styles.css?v=a31ea8403e" />
+    <link rel="stylesheet" href="assets/styles.css?v=a34ba470ca" />
     <script src="assets/identity-scroll.js" defer></script>
     <script src="assets/section-navigation.js?v=93d37dd626" defer></script>
     <script src="assets/portfolio-carousel.js" defer></script>
@@ -90,7 +90,7 @@
       </nav>
       <a
         class="button button-small"
-        aria-label="Réserver un échange gratuit de 30 minutes"
+        aria-label="Réserver un échange gratuit de 20 minutes"
         data-booking-link
         href="https://calendar.notion.so/meet/johnsordes/30min"
         >Échange gratuit
@@ -113,6 +113,80 @@
     </header>
 
     <main id="contenu" tabindex="-1">
+      <section class="flash-info wrap" aria-labelledby="flash-title">
+        <p class="flash-label">Flash Info · Sécurité PHP · <time datetime="2026-10-22">22 octobre 2026</time></p>
+        <h2 id="flash-title">Votre site utilise PHP ? Vérifiez sa version sans attendre.</h2>
+        <p>Le CERT-FR signale deux vulnérabilités critiques permettant à un attaquant
+          d’exécuter du code à distance. Des correctifs sont disponibles depuis le
+          21 octobre. Si votre installation est concernée, sa mise à jour est urgente.</p>
+        <p><a href="https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-014/">Consulter l’alerte du CERT-FR et les versions concernées</a></p>
+        <details class="flash-explanation">
+          <summary>C’est quoi le problème ?</summary>
+          <div class="flash-video-slot" id="php-video">
+            <!-- Vidéo à venir : remplacer ce paragraphe par un lien YouTube avec
+                 data-video-play, data-video-id et data-video-title pour utiliser
+                 le lecteur existant. Ne pas charger de lecteur avant le clic. -->
+            <p class="flash-video-status"><strong>Vidéo explicative à venir sur YouTube.</strong></p>
+            <p>Une exécution de code à distance permet à un attaquant de faire
+              exécuter ses instructions sur le serveur. Pour savoir si votre projet
+              est concerné, il faut vérifier sa version de PHP et son environnement.
+              Le bulletin du CERT-FR détaille les versions affectées et les correctifs.</p>
+          </div>
+        </details>
+        <section class="flash-sources" aria-labelledby="flash-sources-title">
+          <h3 id="flash-sources-title">Une alerte relayée dans quatre pays</h3>
+          <p class="flash-sources-intro">Des organismes nationaux publient leurs consignes.
+            Aux Pays-Bas, le NCSC indique même avoir temporairement mis son propre site
+            hors ligne par précaution.</p>
+          <p class="flash-sources-note">Résumés en français de publications officielles du 21 octobre 2026,
+            consultées le 22 octobre. Chaque carte renvoie à la source originale.</p>
+          <div class="flash-source-grid">
+            <article class="flash-source-card">
+              <div class="flash-source-heading"><span class="flash-country" aria-hidden="true">🇫🇷</span><div><h4>France · CERT-FR / ANSSI</h4><p>cert.cyber.gouv.fr · <time datetime="2026-10-21">21 octobre 2026</time></p></div></div>
+              <span class="flash-source-kind">Alerte et recommandations</span>
+              <p class="flash-source-title">Isoler les équipements affectés et appliquer les correctifs</p>
+              <p>Le CERT-FR recommande l’isolement des équipements affectés, puis la migration
+                vers une version maintenue avec les derniers correctifs. Son bulletin confirme leur disponibilité.</p>
+              <a href="https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-014/">Lire le bulletin du CERT-FR <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="flash-source-card">
+              <div class="flash-source-heading"><span class="flash-country" aria-hidden="true">🇯🇵</span><div><h4>Japon · IPA</h4><p>ipa.go.jp · <time datetime="2026-10-21">21 octobre 2026</time></p></div></div>
+              <span class="flash-source-kind">Préalerte et préparation</span>
+              <p class="flash-source-title">Recenser les usages de PHP pour préparer la mise à jour</p>
+              <p>Publiée avant la sortie des correctifs, la préalerte de l’IPA demande
+                de repérer les usages de PHP et de se préparer à appliquer rapidement
+                les mises à jour dès leur publication.</p>
+              <a href="https://www.ipa.go.jp/security/security-alert/2026/pre-alert20261021.html" hreflang="ja">Lire la préalerte de l’IPA (japonais) <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="flash-source-card">
+              <div class="flash-source-heading"><span class="flash-country" aria-hidden="true">🇬🇧</span><div><h4>Royaume-Uni · NCSC</h4><p>ncsc.gov.uk · <time datetime="2026-10-21">21 octobre 2026</time></p></div></div>
+              <span class="flash-source-kind">Consignes de correction</span>
+              <p class="flash-source-title">Mettre à jour en priorité les systèmes exposés à Internet</p>
+              <p>Le NCSC demande de recenser les systèmes PHP et d’installer une version corrigée.
+                Il recommande d’envisager une mise hors ligne si ni la mise à jour ni les mesures
+                temporaires ne peuvent être appliquées assez vite.</p>
+              <a href="https://www.ncsc.gov.uk/news/critical-security-issue-affecting-php" hreflang="en">Lire l’alerte du NCSC (anglais) <span aria-hidden="true">↗</span></a>
+            </article>
+            <article class="flash-source-card">
+              <div class="flash-source-heading"><span class="flash-country" aria-hidden="true">🇳🇱</span><div><h4>Pays-Bas · NCSC</h4><p>ncsc.nl · <time datetime="2026-10-21">21 octobre 2026</time></p></div></div>
+              <span class="flash-source-kind">Mesure préventive déclarée</span>
+              <p class="flash-source-title">Le NCSC a temporairement mis son propre site hors ligne</p>
+              <p>L’organisme rapporte cette mesure de précaution et appelle à appliquer les correctifs.
+                Il fournit aussi un arbre de décision et un inventaire des logiciels utilisant PHP.</p>
+              <a href="https://www.ncsc.nl/alerts/kwetsbaarheden-php-patches-beschikbaar-update-nu" hreflang="nl">Lire la publication du NCSC (néerlandais) <span aria-hidden="true">↗</span></a>
+            </article>
+          </div>
+        </section>
+        <div class="flash-diagnostic">
+          <h3>Un diagnostic pour savoir quoi faire</h3>
+          <p>Après vérification de l’adéquation de votre projet et des accès nécessaires,
+            je vous propose une analyse dans un périmètre convenu, une restitution
+            et un plan d’action priorisé. Une mise à jour peut ensuite faire l’objet
+            d’une prestation séparée, après vérification de sa faisabilité et des compatibilités.</p>
+          <a class="button" data-booking-link href="https://calendar.notion.so/meet/johnsordes/30min">Réserver un échange gratuit de 20 minutes <span aria-hidden="true">↗</span></a>
+          <p class="action-note">Décrivez votre projet et votre blocage à la réservation. Ce premier échange sert à cadrer le besoin ; le diagnostic est une prestation distincte.</p>
+        </div>
+      </section>
       <section
         id="accueil"
         data-page-section="accueil"
@@ -142,9 +216,7 @@
             Intervention technique · diagnostic & suivi
           </p>
           <h1 id="hero-title">
-            Face à l’IA,<br /><span class="marker"
-              >vous n’êtes <span class="punchline-end">plus seul.</span></span
-            >
+            Votre projet mérite<br /><span class="marker">un développeur expérimenté.</span>
           </h1>
           <div
             class="offer-choices"
@@ -215,18 +287,19 @@
             </a>
           </div>
           <p class="hero-intro">
-            Je suis <strong>Jean Z. Sordes.</strong> Je vous aide à débloquer
-            votre projet et à faire avancer votre entreprise.
+            Je suis <strong>Jean Z. Sordes.</strong> Je développais déjà avant
+            ChatGPT, et mes études étaient terminées avant sa sortie. Je vous aide
+            à comprendre ce qui bloque et à choisir les actions utiles pour votre projet.
           </p>
           <p class="hero-role">
-            Je mène le travail technique et vous accompagne dans vos choix. Vous
-            gardez la main sur les décisions.
+            Besoin d’un développeur expérimenté ? Parlons de votre projet.
+            Je vous accompagne dans vos choix techniques ; vous gardez la décision finale.
           </p>
           <a
             class="button"
             data-booking-link
             href="https://calendar.notion.so/meet/johnsordes/30min"
-            >Réserver un échange gratuit de 30 min
+            >Réserver un échange gratuit de 20 min
             <span aria-hidden="true"
               ><svg
                 class="icon"
@@ -333,7 +406,7 @@
                   ></use></svg></span
             ></a>
             <p>
-              Un échange gratuit de 30 minutes sur Notion Calendar.<br />L’intervention
+              Un échange gratuit de 20 minutes sur Notion Calendar.<br />L’intervention
               payante est convenue ensuite, ensemble.
             </p>
           </div>
@@ -477,7 +550,7 @@
                 <use href="assets/lucide.svg#arrow-up-right"></use></svg></span
           ></a>
           <p class="action-note">
-            Échange gratuit de 30 minutes sur Notion Calendar.
+            Échange gratuit de 20 minutes sur Notion Calendar.
           </p>
         </div>
       </section>
@@ -1426,7 +1499,7 @@
               ></span>
             </summary>
             <p>
-              Ces 30 minutes servent à comprendre votre situation et à préparer
+              Ces 20 minutes servent à comprendre votre situation et à préparer
               Vibe Pompier ou le diagnostic et le suivi Vibe Doctor. Nous
               vérifions le projet et les accès utiles, puis convenons d’une
               proposition avant engagement. Réserver cet échange ne commande pas
@@ -1679,7 +1752,7 @@
             Un blocage à lever ?<br />Un cap à construire ?
           </h2>
           <p>
-            30 minutes gratuites pour préparer Vibe Pompier ou faire le premier
+            20 minutes gratuites pour préparer Vibe Pompier ou faire le premier
             pas avec Vibe Doctor, à partir de votre situation et de vos
             objectifs.
           </p>
@@ -1692,7 +1765,7 @@
             class="button"
             data-booking-link
             href="https://calendar.notion.so/meet/johnsordes/30min"
-            >Réserver un échange gratuit de 30 min
+            >Réserver un échange gratuit de 20 min
             <span aria-hidden="true"
               ><svg
                 class="icon"
