@@ -2563,3 +2563,91 @@ button:focus-visible,
     padding: 18px;
   }
 }
+
+/* LinkedIn-style experience groups, with a continuous chronological rail. */
+.career-timeline-section { padding-top: 0; }
+.career-timeline {
+  list-style: none;
+  padding: 0;
+  margin: 32px 0;
+}
+.timeline-company {
+  position: relative;
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 28px;
+  padding-bottom: 32px;
+}
+.timeline-company:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 43px;
+  top: 80px;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+.timeline-mark {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: #fff;
+}
+.timeline-mark img { width: 100%; height: auto; }
+.timeline-initials {
+  background: var(--lavender);
+  color: var(--purple);
+  font-weight: 800;
+  font-size: 1.35rem;
+}
+.timeline-content {
+  min-width: 0;
+  padding: 24px 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--white);
+}
+.timeline-content h3, .timeline-education h3 { margin: 0 0 8px; font-size: 1.2rem; }
+.timeline-content h4 { margin: 0; font-size: 1rem; font-weight: 650; }
+.timeline-content p { margin: 12px 0 0; font-size: .94rem; max-width: 70ch; }
+.timeline-content .timeline-date { margin-top: 4px; color: var(--muted); font-size: .82rem; }
+.timeline-roles { list-style: none; padding: 0 0 0 20px; margin: 16px 0 0; }
+.timeline-roles li { position: relative; padding: 0 0 24px 20px; border-left: 2px solid var(--border); }
+.timeline-roles li:last-child { padding-bottom: 0; border-color: transparent; }
+.timeline-roles li::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -6px;
+  top: 8px;
+  border-radius: 50%;
+  background: var(--purple);
+}
+.timeline-education {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: var(--radius);
+  background: var(--lavender);
+}
+.timeline-education .sticker { position: static; flex-shrink: 0; background: var(--yellow); transform: rotate(-4deg); }
+.timeline-education p { margin: 4px 0 0; font-size: .9rem; }
+@media (max-width: 600px) {
+  .timeline-company { grid-template-columns: 52px minmax(0, 1fr); gap: 12px; padding-bottom: 20px; }
+  .timeline-mark { width: 52px; height: 52px; padding: 5px; border-radius: 12px; }
+  .timeline-company:not(:last-child)::before { left: 25px; top: 52px; }
+  .timeline-content { padding: 18px 16px; border-radius: 18px; }
+  .timeline-content h3 { font-size: 1.05rem; }
+  .timeline-roles { padding-left: 4px; }
+  .timeline-roles li { padding-left: 14px; }
+  .timeline-education { flex-direction: column; gap: 18px; }
+}

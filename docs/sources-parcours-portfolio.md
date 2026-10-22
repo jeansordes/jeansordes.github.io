@@ -97,3 +97,20 @@ Sources consultées :
 - [Programme développeur web à Roubaix sur le site principal](https://molengeek.com/formation-developpeur-web-roubaix/) : titre professionnel Développeur web et web mobile, niveau 5 (bac+2). Le programme décrit la création d’interfaces, la programmation, les bases de données, la mise en ligne et la préparation au jury. Les méthodes reposent sur des exercices, des projets et un suivi des acquis. Le sommaire mentionne Jean pour le programme et les méthodes pédagogiques, sans établir à lui seul les résultats d’une promotion.
 
 Traitement : synthèse des compétences pédagogiques, lien vers le campus France et lien vers le programme détaillé. Les anciennes dates, durées hétérogènes, prix et conditions d’inscription du site principal ne sont pas repris. Le titre bac+2 concerne l’expérience de Jean chez MolenGeek ; aucune certification ni financement n’est promis pour ses prestations personnelles.
+
+## Timeline du parcours — 22 octobre 2026
+
+À la demande de Jean, une section dédiée `#parcours` reprend le format des expériences LinkedIn : ordre décroissant des expériences, postes regroupés par entreprise, fonctions, périodes et descriptions, puis formation séparée. Elle remplace les petites icônes dans « À propos ».
+
+La lecture directe du profil LinkedIn renvoie une erreur 999 lors de cette intervention. Le contenu s’appuie donc sur le relevé du 8 octobre ci-dessus et la confirmation de Jean concernant MolenGeek, sans prétendre à une nouvelle synchronisation. Les dates sans fin sont libellées « À partir de » ; aucune durée ni date de fin n’est déduite. Les initiales EE et AA sont des repères typographiques, pas des logos reconstitués. Le crédit MolenGeek est déplacé sous la timeline.
+
+### Vérification directe via SocialFetch
+
+Après connexion OAuth du serveur MCP SocialFetch, le profil a été récupéré le 22 octobre 2026 avec `linkedin_live_profile_get_v2` : `lookupStatus: found`, requête `req_7f5ed037-e781-4429-ba3b-91f6c7bb1a4a`, 3 crédits. Le champ `fullPositions` confirme les dates du relevé précédent et fournit les expériences supplémentaires ci-dessous. Les quatre postes indiqués comme actuels utilisent désormais « aujourd’hui ». Ce relevé remplace la limitation d’accès décrite au paragraphe précédent ; il reste une déclaration du profil, pas une certification indépendante.
+
+- Associate Agency : Product Designer freelance, 2018 ; interface et maquette de réseau social, encadrement d’un stagiaire.
+- CGX AERO : développeur Angular et C#, septembre 2019–août 2020 ; composants et API C#/C++, guide de sécurité web.
+- StandOut : développeur WordPress freelance, 2018–2019 ; adaptation mobile et personnalisation autonome du site.
+- Le Catalyseur : service civique, octobre 2017–juin 2018 ; animation du coworking et accompagnement à l’idéation.
+
+Ces expériences rejoignent la timeline. Les initiales des organismes sans logo local sont de simples repères typographiques. Les mois absents de la source ne sont pas inventés.
