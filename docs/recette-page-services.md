@@ -221,3 +221,10 @@ Les deux stickers ouvrent une boîte de dialogue avec l’identifiant YouTube et
 - Bloc d’expérience reformulé autour de « Vous aussi ? », avec un lien vers le premier échange. Le récit anonymisé reste disponible dans un volet dépliable.
 
 Vérifications Chromium à 320, 390, 599, 600, 646, 760, 768, 1000, 1024 et 1440 px : portrait chargé et recadré, boutons visibles sans débordement, ancres et état actif fonctionnels, ordre des sections correct. Contrôles supplémentaires sans JavaScript à 320, 646 et 1440 px, notamment sur les ancres sous le header. Audits axe WCAG A/AA sans violation détectée aux trois mêmes largeurs. Lecteur vidéo : identifiants, timestamps, fermeture et retour du focus vérifiés avec une réponse distante simulée. Captures des sections modifiées inspectées. Syntaxe JavaScript et `git diff --check` valides.
+
+
+## Conférences et formations — 22 octobre 2026
+
+Le header ajoute un troisième raccourci permanent « Conférences et formations », de même niveau que Vibe Pompier et Vibe Doctor. Les trois liens restent alignés ; sur mobile et tablette, le nom et la réservation occupent la ligne précédente. La carte d’accueil et la section emploient le même intitulé. L’expérience de conception pédagogique et d’accompagnement au bac+2 chez MolenGeek est présentée avec les sources documentées dans `sources-parcours-portfolio.md`.
+
+Contrôles Chromium à 320, 360, 390, 599, 600, 646, 768, 1000, 1100, 1101, 1280 et 1440 px : trois raccourcis visibles et alignés, cibles d’au moins 44 px, header inférieur à 140 px, aucun débordement ou chevauchement, ancre et état actif corrects. Navigation sans JavaScript vérifiée à 320, 646 et 1440 px. Aucun problème détecté par axe dans les règles WCAG A/AA contrôlées à ces trois largeurs. Captures du header et de la section formation inspectées ; aucune erreur JavaScript. Version de la feuille de styles renouvelée pour le cache.

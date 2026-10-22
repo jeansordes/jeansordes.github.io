@@ -83,3 +83,17 @@ Les vidéos restent hébergées par YouTube ; aucun fichier vidéo n'est copié 
 Les deux pièces jointes de Jean remplacent les vignettes des émissions complètes : `IMG_1180.png` → `assets/media/bx1-prompt-contexte.webp` et `IMG_1181.png` → `assets/media/bx1-mots-clefs.webp`. Les titres courts reprennent les bandeaux visibles. Les captures originales de 2 048 × 945 px sont recadrées à 1 680 × 945 (retrait des bandes noires latérales), puis réduites à 960 × 540 en WebP. Aucun contenu de l’image n’est généré ou retouché. Leur association aux vidéos suit l’ordre fourni ; les liens et timestamps existants sont conservés.
 
 Le bloc présente désormais la disponibilité de Jean pour des interventions sur l’IA, avec deux stickers ouvrant un lecteur flottant. La photo récente déjà fournie prend une place centrale dans la hero sur ordinateur et un format compact immédiatement visible sur mobile.
+
+
+## Formation MolenGeek — 22 octobre 2026
+
+Jean confirme avoir créé le contenu et formé les apprenants de bout en bout jusqu’à l’obtention d’un bac+2. Cette confirmation directe étaye son rôle personnel et les résultats des apprenants ; les pages de l’organisme décrivent le cadre du parcours. Aucun effectif ni taux de réussite supplémentaire n’est publié.
+
+Sources consultées :
+
+- [Campus MolenGeek France](https://fr.molengeek.com/campus) : campus français de Roubaix et activités de formation.
+- [MolenGeek France pour les entreprises](https://fr.molengeek.com/entreprises) : formation des équipes, coaching et accompagnement des usages du numérique et de l’IA.
+- [Catalogue France](https://fr.molengeek.com/catalogue) : lors de la consultation, il présente uniquement l’accompagnement de projet numérique, sans programme détaillé du parcours diplômant.
+- [Programme développeur web à Roubaix sur le site principal](https://molengeek.com/formation-developpeur-web-roubaix/) : titre professionnel Développeur web et web mobile, niveau 5 (bac+2). Le programme décrit la création d’interfaces, la programmation, les bases de données, la mise en ligne et la préparation au jury. Les méthodes reposent sur des exercices, des projets et un suivi des acquis. Le sommaire mentionne Jean pour le programme et les méthodes pédagogiques, sans établir à lui seul les résultats d’une promotion.
+
+Traitement : synthèse des compétences pédagogiques, lien vers le campus France et lien vers le programme détaillé. Les anciennes dates, durées hétérogènes, prix et conditions d’inscription du site principal ne sont pas repris. Le titre bac+2 concerne l’expérience de Jean chez MolenGeek ; aucune certification ni financement n’est promis pour ses prestations personnelles.
