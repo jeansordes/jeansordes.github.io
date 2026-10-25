@@ -2,7 +2,25 @@
 
 Page : `/projets/`. Relevé des sources publiques : **25 octobre 2026**.
 
-## Choix validés
+## Sélection éditoriale — 26 octobre 2026
+
+À la demande de Jean, cette sélection remplace le catalogue exhaustif initial. L’inventaire de 47 entrées est conservé dans les données pour éviter de perdre le travail de recherche ; seules les cinq clés de `selection` sont publiées en cartes, dans cet ordre. Aucun dépôt GitHub n’est supprimé ou modifié.
+
+| Retenu | Pourquoi |
+| --- | --- |
+| Jotlane | Usage clair, site de présentation et installateur Mac disponible ; mention alpha maintenue. |
+| Dot Navigator | Plugin avec documentation, captures et fiche officielle Obsidian. |
+| Auto Expander | Fonctionnement concret et documenté, fiche officielle Obsidian. |
+| Workflow Boards | Plugin spécialisé documenté et distribué dans le registre Obsidian. |
+| aio | Outil CLI documenté et paquet npm `@jeansordes/aio` vérifié (version 0.10.0 lors du relevé). |
+
+Critères : usage compréhensible, présentation propre au projet et accès concret à l’installation. L’inclusion ne certifie pas l’absence de bugs ni la maturité de toutes les fonctionnalités.
+
+Écartés : exercices et démonstrations d’apprentissage, templates/starters, archives, dépôts vides ou mal documentés, prototypes sans accès exploitable. Better Geoportail reste hors sélection faute de validation actuelle de compatibilité avec le site cible ; Entrep Ensemble sans site joignable ; les anciens outils calendaires et WordPress sans présentation ni distribution actuelle suffisantes. Le site JZS.fr lui-même est retiré pour éviter l’autoréférence.
+
+Pour ajouter un projet : vérifier ces critères, documenter sa fiche dans `projects`, puis ajouter explicitement son identifiant à `selection`. Un nouveau dépôt n’apparaît jamais automatiquement. Les filtres dérivent des catégories présentes : Applications, Obsidian, Développement. Le texte et les compteurs concernent uniquement cette sélection.
+
+## Choix initiaux (remplacés par la sélection ci-dessus)
 
 Page dédiée sur le site existant, portfolio exhaustif, identité visuelle de jzs.fr avec une présentation de catalogue, cartes menant directement aux projets, ajout éditorial. Aucun compte, paiement ou synchronisation automatique avec GitHub.
 

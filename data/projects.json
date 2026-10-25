@@ -900,5 +900,13 @@
       ]
     }
   ],
-  "iconsChecked": "2026-10-26"
+  "iconsChecked": "2026-10-26",
+  "selection": [
+    "jotlane",
+    "dot-navigator",
+    "auto-expander",
+    "obsidian-workflow-boards",
+    "aio"
+  ],
+  "selectionChecked": "2026-10-26"
 }
