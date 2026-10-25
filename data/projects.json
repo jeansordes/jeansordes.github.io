@@ -7,13 +7,19 @@
       "category": "Applications",
       "description": "Capturez du texte, des images et des liens vers votre inbox Obsidian avec un raccourci clavier.",
       "status": "Alpha",
-      "platform": "macOS 14+",
-      "mark": "J",
+      "platform": {
+        "icon": "ui-monitor",
+        "label": "macOS 14+"
+      },
       "source": "https://jotlane.jzs.fr/",
       "action": "Télécharger pour Mac",
       "url": "https://jotlane.jzs.fr/#telecharger",
       "image": "../assets/projects/jotlane-icon.svg",
-      "note": "Gratuit · Alpha · Intel et Apple Silicon"
+      "note": "Gratuit · Alpha · Intel et Apple Silicon",
+      "icon": "code-xml",
+      "technologies": [
+        "Swift"
+      ]
     },
     {
       "id": "dot-navigator",
@@ -21,11 +27,19 @@
       "category": "Obsidian",
       "description": "Organisez vos notes en arborescence et naviguez dans votre vault à partir de leurs noms.",
       "status": "Plugin",
-      "platform": "Obsidian",
-      "mark": "DN",
+      "platform": {
+        "icon": "brand-obsidian",
+        "label": "Obsidian"
+      },
       "source": "https://github.com/jeansordes/dot-navigator",
       "action": "Installer dans Obsidian",
-      "url": "https://obsidian.md/plugins?id=dot-navigator"
+      "url": "https://obsidian.md/plugins?id=dot-navigator",
+      "icon": "folder-git-2",
+      "technologies": [
+        "TypeScript",
+        "SCSS",
+        "JavaScript"
+      ]
     },
     {
       "id": "auto-expander",
@@ -33,11 +47,19 @@
       "category": "Obsidian",
       "description": "Transformez vos raccourcis de saisie en textes réutilisables pendant que vous écrivez.",
       "status": "Plugin",
-      "platform": "Obsidian",
-      "mark": "Ae",
+      "platform": {
+        "icon": "brand-obsidian",
+        "label": "Obsidian"
+      },
       "source": "https://github.com/jeansordes/auto-expander",
       "action": "Installer dans Obsidian",
-      "url": "https://obsidian.md/plugins?id=auto-expander"
+      "url": "https://obsidian.md/plugins?id=auto-expander",
+      "icon": "text-cursor-input",
+      "technologies": [
+        "TypeScript",
+        "JavaScript",
+        "CSS"
+      ]
     },
     {
       "id": "obsidian-workflow-boards",
@@ -45,11 +67,18 @@
       "category": "Obsidian",
       "description": "Reliez vos notes dans des tableaux de suivi, avec des tâches récurrentes et des vues CRM.",
       "status": "Plugin",
-      "platform": "Obsidian",
-      "mark": "Wb",
+      "platform": {
+        "icon": "brand-obsidian",
+        "label": "Obsidian"
+      },
       "source": "https://github.com/jeansordes/obsidian-workflow-boards",
       "action": "Installer dans Obsidian",
-      "url": "https://obsidian.md/plugins?id=workflow-boards"
+      "url": "https://obsidian.md/plugins?id=workflow-boards",
+      "icon": "columns-3",
+      "technologies": [
+        "JavaScript",
+        "CSS"
+      ]
     },
     {
       "id": "aio",
@@ -57,11 +86,17 @@
       "category": "Développement",
       "description": "Décrivez vos workflows d’agents IA en YAML et lancez-les depuis votre projet.",
       "status": "Outil",
-      "platform": "CLI · Node.js",
-      "mark": "aio",
+      "platform": {
+        "icon": "ui-terminal",
+        "label": "CLI · Node.js"
+      },
       "source": "https://github.com/jeansordes/aio",
       "action": "Voir l’installation",
-      "url": "https://github.com/jeansordes/aio#quick-start"
+      "url": "https://github.com/jeansordes/aio#quick-start",
+      "icon": "workflow",
+      "technologies": [
+        "JavaScript"
+      ]
     },
     {
       "id": "better-geoportail",
@@ -69,11 +104,19 @@
       "category": "Extensions",
       "description": "Recherchez un lieu depuis une URL et déplacez les étiquettes de mesure sur Geoportail.",
       "status": "Installation manuelle",
-      "platform": "Chrome",
-      "mark": "Bg",
+      "platform": {
+        "icon": "brand-googlechrome",
+        "label": "Extension Chrome"
+      },
       "source": "https://github.com/jeansordes/better-geoportail",
       "action": "Voir l’installation",
-      "url": "https://github.com/jeansordes/better-geoportail#installation"
+      "url": "https://github.com/jeansordes/better-geoportail#installation",
+      "image": "../assets/projects/icons/better-geoportail.png",
+      "icon": "code-xml",
+      "technologies": [
+        "JavaScript",
+        "HTML"
+      ]
     },
     {
       "id": "play.jzs.fr-morpion",
@@ -81,11 +124,19 @@
       "category": "Jeux",
       "description": "Jouez à deux sur le même écran : alignez trois symboles et recommencez la partie.",
       "status": "Code disponible",
-      "platform": "Navigateur",
-      "mark": "×○",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/play.jzs.fr-morpion",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/play.jzs.fr-morpion"
+      "url": "https://github.com/jeansordes/play.jzs.fr-morpion",
+      "icon": "gamepad-2",
+      "technologies": [
+        "JavaScript",
+        "CSS",
+        "HTML"
+      ]
     },
     {
       "id": "test-chorale",
@@ -93,11 +144,17 @@
       "category": "Applications",
       "description": "Une application de mise en relation pour organiser le covoiturage au sein d’une chorale.",
       "status": "Prototype",
-      "platform": "PHP",
-      "mark": "Cc",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/test-chorale",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/test-chorale"
+      "url": "https://github.com/jeansordes/test-chorale",
+      "icon": "car",
+      "technologies": [
+        "PHP"
+      ]
     },
     {
       "id": "screen.jzs.fr",
@@ -105,11 +162,19 @@
       "category": "Applications",
       "description": "Faites défiler des annonces sur un écran vertical et gérez leur contenu depuis une administration.",
       "status": "Prototype",
-      "platform": "Python · SQLite",
-      "mark": "É",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/screen.jzs.fr",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/screen.jzs.fr"
+      "url": "https://github.com/jeansordes/screen.jzs.fr",
+      "icon": "presentation",
+      "technologies": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ]
     },
     {
       "id": "entrep-ensemble.fr",
@@ -117,11 +182,20 @@
       "category": "Sites",
       "description": "Le site du réseau entrepreneurial Entrep Ensemble.",
       "status": "Code disponible",
-      "platform": "Navigateur",
-      "mark": "Ee",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/entrep-ensemble.fr",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/entrep-ensemble.fr"
+      "url": "https://github.com/jeansordes/entrep-ensemble.fr",
+      "image": "../assets/projects/icons/entrep-ensemble.fr.png",
+      "icon": "code-xml",
+      "imageBackground": "white",
+      "technologies": [
+        "HTML",
+        "JavaScript"
+      ]
     },
     {
       "id": "dotenv-placeholder",
@@ -129,11 +203,17 @@
       "category": "Développement",
       "description": "Un wrapper de dotenv pour faciliter la gestion des fichiers de configuration avec Git.",
       "status": "Outil",
-      "platform": "Node.js",
-      "mark": ".env",
+      "platform": {
+        "icon": "ui-code-xml",
+        "label": "Code source"
+      },
       "source": "https://github.com/jeansordes/dotenv-placeholder",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/dotenv-placeholder"
+      "url": "https://github.com/jeansordes/dotenv-placeholder",
+      "icon": "file-code",
+      "technologies": [
+        "JavaScript"
+      ]
     },
     {
       "id": "edt-miage",
@@ -141,11 +221,19 @@
       "category": "Développement",
       "description": "Convertissez un emploi du temps PDF en fichier iCal à importer dans un calendrier.",
       "status": "Code disponible",
-      "platform": "JavaScript",
-      "mark": "Edt",
+      "platform": {
+        "icon": "ui-code-xml",
+        "label": "Code source"
+      },
       "source": "https://github.com/jeansordes/edt-miage",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/edt-miage"
+      "url": "https://github.com/jeansordes/edt-miage",
+      "icon": "calendar-days",
+      "technologies": [
+        "JavaScript",
+        "CSS",
+        "HTML"
+      ]
     },
     {
       "id": "celcat2ics-ts",
@@ -153,11 +241,17 @@
       "category": "Développement",
       "description": "Un service qui génère des fichiers calendrier .ics à partir de edt.univ-tlse3.fr.",
       "status": "Code disponible",
-      "platform": "TypeScript",
-      "mark": "ics",
+      "platform": {
+        "icon": "ui-server",
+        "label": "Serveur"
+      },
       "source": "https://github.com/jeansordes/celcat2ics-ts",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/celcat2ics-ts"
+      "url": "https://github.com/jeansordes/celcat2ics-ts",
+      "icon": "calendar-days",
+      "technologies": [
+        "TypeScript"
+      ]
     },
     {
       "id": "jzs_homeplayer",
@@ -165,11 +259,19 @@
       "category": "Extensions",
       "description": "Un plugin WordPress réalisé pour afficher des produits WooCommerce dans une disposition spécifique en page d’accueil.",
       "status": "Code disponible",
-      "platform": "WordPress",
-      "mark": "Hp",
+      "platform": {
+        "icon": "brand-wordpress",
+        "label": "WordPress"
+      },
       "source": "https://github.com/jeansordes/jzs_homeplayer",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/jzs_homeplayer"
+      "url": "https://github.com/jeansordes/jzs_homeplayer",
+      "icon": "shopping-bag",
+      "technologies": [
+        "PHP",
+        "CSS",
+        "JavaScript"
+      ]
     },
     {
       "id": "followers2profit",
@@ -177,11 +279,19 @@
       "category": "Expériences",
       "description": "Explorez une estimation de revenus à partir d’une audience et d’hypothèses de conversion. Les résultats sont des simulations.",
       "status": "Expérience",
-      "platform": "Navigateur",
-      "mark": "F2p",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/followers2profit",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/followers2profit"
+      "url": "https://github.com/jeansordes/followers2profit",
+      "icon": "calculator",
+      "technologies": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ]
     },
     {
       "id": "alten-exercise",
@@ -189,11 +299,19 @@
       "category": "Expériences",
       "description": "Un exercice de boutique avec catalogue et panier, réalisé avec Angular, Node.js et SQLite.",
       "status": "Exercice",
-      "platform": "Angular",
-      "mark": "A",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/alten-exercise",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/alten-exercise"
+      "url": "https://github.com/jeansordes/alten-exercise",
+      "icon": "shopping-bag",
+      "technologies": [
+        "CSS",
+        "TypeScript",
+        "HTML"
+      ]
     },
     {
       "id": "alten-exercise-back",
@@ -201,11 +319,17 @@
       "category": "Développement",
       "description": "Le dépôt backend associé à l’exercice de boutique Angular.",
       "status": "Exercice",
-      "platform": "TypeScript",
-      "mark": "API",
+      "platform": {
+        "icon": "ui-server",
+        "label": "Serveur"
+      },
       "source": "https://github.com/jeansordes/alten-exercise-back",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/alten-exercise-back"
+      "url": "https://github.com/jeansordes/alten-exercise-back",
+      "icon": "server",
+      "technologies": [
+        "TypeScript"
+      ]
     },
     {
       "id": "exercice-angular-calculator-miage",
@@ -213,11 +337,19 @@
       "category": "Expériences",
       "description": "Une calculatrice réalisée pour découvrir Angular pendant la formation MIAGE.",
       "status": "Exercice",
-      "platform": "Angular",
-      "mark": "±",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/exercice-angular-calculator-miage",
       "action": "Essayer la calculatrice",
-      "url": "https://calculette-angular.netlify.app/"
+      "url": "https://calculette-angular.netlify.app/",
+      "icon": "calculator",
+      "technologies": [
+        "TypeScript",
+        "HTML",
+        "JavaScript"
+      ]
     },
     {
       "id": "angular-webapp-exercice",
@@ -225,11 +357,19 @@
       "category": "Expériences",
       "description": "Un exercice d’application Angular réalisé en juillet 2019.",
       "status": "Exercice",
-      "platform": "Angular",
-      "mark": "Ng",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/angular-webapp-exercice",
       "action": "Voir la démonstration",
-      "url": "https://www.jzs.fr/angular-webapp-exercice/"
+      "url": "https://www.jzs.fr/angular-webapp-exercice/",
+      "icon": "graduation-cap",
+      "technologies": [
+        "TypeScript",
+        "HTML",
+        "CSS"
+      ]
     },
     {
       "id": "dcc",
@@ -237,11 +377,18 @@
       "category": "Expériences",
       "description": "Un projet étudiant en Java réalisé à l’université Toulouse III Paul Sabatier.",
       "status": "Projet étudiant",
-      "platform": "Java",
-      "mark": "Dcc",
+      "platform": {
+        "icon": "ui-code-xml",
+        "label": "Code source"
+      },
       "source": "https://github.com/jeansordes/dcc",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/dcc"
+      "url": "https://github.com/jeansordes/dcc",
+      "image": "../assets/projects/icons/dcc.png",
+      "icon": "code-xml",
+      "technologies": [
+        "Java"
+      ]
     },
     {
       "id": "phishing-exemple",
@@ -249,11 +396,17 @@
       "category": "Expériences",
       "description": "Une page de démonstration utilisée pour expliquer le phishing et les adresses web trompeuses.",
       "status": "Démonstration",
-      "platform": "HTML",
-      "mark": "?",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/phishing-exemple",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/phishing-exemple"
+      "url": "https://github.com/jeansordes/phishing-exemple",
+      "icon": "shield-question-mark",
+      "technologies": [
+        "HTML"
+      ]
     },
     {
       "id": "chatgptclone",
@@ -261,11 +414,19 @@
       "category": "Expériences",
       "description": "Une expérimentation de clone de ChatGPT. Le code est disponible sur GitHub.",
       "status": "Expérience",
-      "platform": "JavaScript",
-      "mark": "Chat",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/chatgptclone",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/chatgptclone"
+      "url": "https://github.com/jeansordes/chatgptclone",
+      "icon": "message-circle",
+      "technologies": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ]
     },
     {
       "id": "elliot.discord.bot",
@@ -273,11 +434,17 @@
       "category": "Développement",
       "description": "Un bot Discord écrit en TypeScript.",
       "status": "Code disponible",
-      "platform": "Discord",
-      "mark": "E",
+      "platform": {
+        "icon": "brand-discord",
+        "label": "Discord"
+      },
       "source": "https://github.com/jeansordes/elliot.discord.bot",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/elliot.discord.bot"
+      "url": "https://github.com/jeansordes/elliot.discord.bot",
+      "icon": "bot",
+      "technologies": [
+        "TypeScript"
+      ]
     },
     {
       "id": "obsidian-show-hidden-folders",
@@ -285,11 +452,19 @@
       "category": "Obsidian",
       "description": "Une tentative d’affichage des dossiers cachés dans Obsidian.",
       "status": "Expérience",
-      "platform": "Obsidian",
-      "mark": "./",
+      "platform": {
+        "icon": "brand-obsidian",
+        "label": "Obsidian"
+      },
       "source": "https://github.com/jeansordes/obsidian-show-hidden-folders",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/obsidian-show-hidden-folders"
+      "url": "https://github.com/jeansordes/obsidian-show-hidden-folders",
+      "icon": "folder-open",
+      "technologies": [
+        "TypeScript",
+        "JavaScript",
+        "CSS"
+      ]
     },
     {
       "id": "rename-wizard",
@@ -297,11 +472,19 @@
       "category": "Obsidian",
       "description": "Des suggestions pour renommer les fichiers dans Obsidian. Projet abandonné au profit de Dot Navigator.",
       "status": "Archivé",
-      "platform": "Obsidian",
-      "mark": "Rw",
+      "platform": {
+        "icon": "brand-obsidian",
+        "label": "Obsidian"
+      },
       "source": "https://github.com/jeansordes/rename-wizard",
       "action": "Découvrir son successeur",
-      "url": "https://github.com/jeansordes/dot-navigator"
+      "url": "https://github.com/jeansordes/dot-navigator",
+      "icon": "text-cursor",
+      "technologies": [
+        "TypeScript",
+        "JavaScript",
+        "CSS"
+      ]
     },
     {
       "id": "play.jzs.fr",
@@ -309,11 +492,17 @@
       "category": "Jeux",
       "description": "Le dépôt du portail de jeux web. La page du dépôt ne contient pas encore de cartes de jeux.",
       "status": "Prototype",
-      "platform": "HTML",
-      "mark": "Play",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/play.jzs.fr",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/play.jzs.fr"
+      "url": "https://github.com/jeansordes/play.jzs.fr",
+      "icon": "gamepad-2",
+      "technologies": [
+        "HTML"
+      ]
     },
     {
       "id": "since-pwa",
@@ -321,11 +510,20 @@
       "category": "Applications",
       "description": "Une base d’application web progressive avec React, TypeScript et Supabase.",
       "status": "Prototype",
-      "platform": "PWA",
-      "mark": "S",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web · PWA"
+      },
       "source": "https://github.com/jeansordes/since-pwa",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/since-pwa"
+      "url": "https://github.com/jeansordes/since-pwa",
+      "image": "../assets/projects/icons/since-pwa.svg",
+      "icon": "code-xml",
+      "technologies": [
+        "TypeScript",
+        "HTML",
+        "JavaScript"
+      ]
     },
     {
       "id": "young-s-slits-explorer",
@@ -333,11 +531,19 @@
       "category": "Expériences",
       "description": "Projet React et TypeScript issu de Lovable. Le README public décrit son environnement de développement.",
       "status": "Dépôt de travail",
-      "platform": "React",
-      "mark": "Y",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/young-s-slits-explorer",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/young-s-slits-explorer"
+      "url": "https://github.com/jeansordes/young-s-slits-explorer",
+      "icon": "flask-conical",
+      "technologies": [
+        "TypeScript",
+        "CSS",
+        "HTML"
+      ]
     },
     {
       "id": "networking-app",
@@ -345,11 +551,19 @@
       "category": "Applications",
       "description": "Dépôt JavaScript public. Présentation fonctionnelle à documenter.",
       "status": "Dépôt de travail",
-      "platform": "JavaScript",
-      "mark": "N",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/networking-app",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/networking-app"
+      "url": "https://github.com/jeansordes/networking-app",
+      "icon": "users",
+      "technologies": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ]
     },
     {
       "id": "confort-maison-occitanie",
@@ -357,11 +571,21 @@
       "category": "Sites",
       "description": "Dépôt public du projet Confort Maison Occitanie. Présentation à documenter.",
       "status": "Dépôt de travail",
-      "platform": "JavaScript",
-      "mark": "Cm",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/confort-maison-occitanie",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/confort-maison-occitanie"
+      "url": "https://github.com/jeansordes/confort-maison-occitanie",
+      "image": "../assets/projects/icons/confort-maison-occitanie.png",
+      "icon": "code-xml",
+      "imageBackground": "dark",
+      "technologies": [
+        "JavaScript",
+        "PHP",
+        "Twig"
+      ]
     },
     {
       "id": "telegram_tripode_a_bot",
@@ -369,11 +593,17 @@
       "category": "Développement",
       "description": "Dépôt TypeScript public. Présentation fonctionnelle à documenter.",
       "status": "Dépôt de travail",
-      "platform": "TypeScript",
-      "mark": "T",
+      "platform": {
+        "icon": "brand-telegram",
+        "label": "Telegram"
+      },
       "source": "https://github.com/jeansordes/telegram_tripode_a_bot",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/telegram_tripode_a_bot"
+      "url": "https://github.com/jeansordes/telegram_tripode_a_bot",
+      "icon": "bot",
+      "technologies": [
+        "TypeScript"
+      ]
     },
     {
       "id": "scrapping-gscript",
@@ -381,11 +611,17 @@
       "category": "Développement",
       "description": "Dépôt JavaScript public. Présentation fonctionnelle à documenter.",
       "status": "Dépôt de travail",
-      "platform": "JavaScript",
-      "mark": "Gs",
+      "platform": {
+        "icon": "ui-code-xml",
+        "label": "Code source"
+      },
       "source": "https://github.com/jeansordes/scrapping-gscript",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/scrapping-gscript"
+      "url": "https://github.com/jeansordes/scrapping-gscript",
+      "icon": "file-code",
+      "technologies": [
+        "JavaScript"
+      ]
     },
     {
       "id": "jzs-tools",
@@ -393,11 +629,15 @@
       "category": "Développement",
       "description": "Dépôt de travail public dont les outils restent à documenter.",
       "status": "Dépôt de travail",
-      "platform": "GitHub",
-      "mark": "Jzs",
+      "platform": {
+        "icon": "ui-code-xml",
+        "label": "Code source"
+      },
       "source": "https://github.com/jeansordes/jzs-tools",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/jzs-tools"
+      "url": "https://github.com/jeansordes/jzs-tools",
+      "icon": "puzzle",
+      "technologies": []
     },
     {
       "id": "grader",
@@ -405,11 +645,15 @@
       "category": "Expériences",
       "description": "Un dépôt public encore vide lors du relevé du 25 octobre 2026.",
       "status": "Dépôt vide",
-      "platform": "GitHub",
-      "mark": "G",
+      "platform": {
+        "icon": "ui-code-xml",
+        "label": "Code source"
+      },
       "source": "https://github.com/jeansordes/grader",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/grader"
+      "url": "https://github.com/jeansordes/grader",
+      "icon": "clipboard-check",
+      "technologies": []
     },
     {
       "id": "holberton-admission-test",
@@ -417,11 +661,19 @@
       "category": "Expériences",
       "description": "Dépôt HTML public. Le contexte et le fonctionnement restent à documenter.",
       "status": "Dépôt de travail",
-      "platform": "HTML",
-      "mark": "H",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/holberton-admission-test",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/holberton-admission-test"
+      "url": "https://github.com/jeansordes/holberton-admission-test",
+      "icon": "graduation-cap",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
     },
     {
       "id": "2026-02-23-test",
@@ -429,11 +681,18 @@
       "category": "Expériences",
       "description": "Un petit projet pour tester la publication de pages sur GitHub.",
       "status": "Test",
-      "platform": "HTML",
-      "mark": "↗",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/2026-02-23-test",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/2026-02-23-test"
+      "url": "https://github.com/jeansordes/2026-02-23-test",
+      "icon": "flask-conical",
+      "technologies": [
+        "HTML",
+        "CSS"
+      ]
     },
     {
       "id": "redirect",
@@ -441,11 +700,17 @@
       "category": "Développement",
       "description": "Un relais de redirection conçu pour les liens utilisant un protocole autre que HTTP.",
       "status": "Utilitaire",
-      "platform": "HTML",
-      "mark": "→",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/redirect",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/redirect"
+      "url": "https://github.com/jeansordes/redirect",
+      "icon": "arrow-right-left",
+      "technologies": [
+        "HTML"
+      ]
     },
     {
       "id": "ia-souveraine-starter",
@@ -453,11 +718,15 @@
       "category": "Développement",
       "description": "Dépôt de démarrage dont le README public contient uniquement le nom du projet.",
       "status": "Dépôt de travail",
-      "platform": "GitHub",
-      "mark": "IA",
+      "platform": {
+        "icon": "ui-code-xml",
+        "label": "Code source"
+      },
       "source": "https://github.com/jeansordes/ia-souveraine-starter",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/ia-souveraine-starter"
+      "url": "https://github.com/jeansordes/ia-souveraine-starter",
+      "icon": "package",
+      "technologies": []
     },
     {
       "id": "php-starter",
@@ -465,11 +734,19 @@
       "category": "Développement",
       "description": "Une base de site PHP avec le framework Slim.",
       "status": "Starter",
-      "platform": "PHP",
-      "mark": "PHP",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/php-starter",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/php-starter"
+      "url": "https://github.com/jeansordes/php-starter",
+      "icon": "package",
+      "technologies": [
+        "PHP",
+        "Twig",
+        "JavaScript"
+      ]
     },
     {
       "id": "docker-php-starter",
@@ -477,11 +754,17 @@
       "category": "Développement",
       "description": "Dépôt de démarrage PHP. Configuration et usage à consulter dans le code.",
       "status": "Starter",
-      "platform": "PHP",
-      "mark": "D",
+      "platform": {
+        "icon": "ui-server",
+        "label": "Serveur"
+      },
       "source": "https://github.com/jeansordes/docker-php-starter",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/docker-php-starter"
+      "url": "https://github.com/jeansordes/docker-php-starter",
+      "icon": "package",
+      "technologies": [
+        "PHP"
+      ]
     },
     {
       "id": "symfony-starter",
@@ -489,11 +772,17 @@
       "category": "Développement",
       "description": "Dépôt de démarrage PHP pour Symfony.",
       "status": "Starter",
-      "platform": "PHP",
-      "mark": "Sf",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/symfony-starter",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/symfony-starter"
+      "url": "https://github.com/jeansordes/symfony-starter",
+      "icon": "package",
+      "technologies": [
+        "PHP"
+      ]
     },
     {
       "id": "node-ts-starter",
@@ -501,11 +790,17 @@
       "category": "Développement",
       "description": "Une base de projet Node.js utilisant TypeScript.",
       "status": "Starter",
-      "platform": "Node.js",
-      "mark": "Ts",
+      "platform": {
+        "icon": "ui-code-xml",
+        "label": "Code source"
+      },
       "source": "https://github.com/jeansordes/node-ts-starter",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/node-ts-starter"
+      "url": "https://github.com/jeansordes/node-ts-starter",
+      "icon": "package",
+      "technologies": [
+        "TypeScript"
+      ]
     },
     {
       "id": "graphql-starter",
@@ -513,11 +808,17 @@
       "category": "Développement",
       "description": "Dépôt de démarrage JavaScript. Configuration et usage à consulter dans le code.",
       "status": "Starter",
-      "platform": "JavaScript",
-      "mark": "Gql",
+      "platform": {
+        "icon": "ui-server",
+        "label": "Serveur"
+      },
       "source": "https://github.com/jeansordes/graphql-starter",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/graphql-starter"
+      "url": "https://github.com/jeansordes/graphql-starter",
+      "icon": "package",
+      "technologies": [
+        "JavaScript"
+      ]
     },
     {
       "id": "html-ts-scss-starter",
@@ -525,11 +826,19 @@
       "category": "Développement",
       "description": "Une base frontend avec TypeScript, Sass, Webpack et rechargement automatique.",
       "status": "Starter",
-      "platform": "Web",
-      "mark": "</>",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/html-ts-scss-starter",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/html-ts-scss-starter"
+      "url": "https://github.com/jeansordes/html-ts-scss-starter",
+      "icon": "package",
+      "technologies": [
+        "JavaScript",
+        "TypeScript",
+        "CSS"
+      ]
     },
     {
       "id": "strapi-cloud-template-blog-b9a2accc75",
@@ -537,11 +846,17 @@
       "category": "Développement",
       "description": "Un projet basé sur le template de blog Strapi, avec les commandes de développement et de déploiement.",
       "status": "Template",
-      "platform": "Strapi",
-      "mark": "St",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/strapi-cloud-template-blog-b9a2accc75",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/strapi-cloud-template-blog-b9a2accc75"
+      "url": "https://github.com/jeansordes/strapi-cloud-template-blog-b9a2accc75",
+      "icon": "book-open",
+      "technologies": [
+        "JavaScript"
+      ]
     },
     {
       "id": "obsidian-sample-plugin",
@@ -549,11 +864,19 @@
       "category": "Obsidian",
       "description": "Un projet basé sur l’exemple de plugin Obsidian pour démarrer un développement.",
       "status": "Template",
-      "platform": "Obsidian",
-      "mark": "Ob",
+      "platform": {
+        "icon": "brand-obsidian",
+        "label": "Obsidian"
+      },
       "source": "https://github.com/jeansordes/obsidian-sample-plugin",
       "action": "Voir le code",
-      "url": "https://github.com/jeansordes/obsidian-sample-plugin"
+      "url": "https://github.com/jeansordes/obsidian-sample-plugin",
+      "icon": "puzzle",
+      "technologies": [
+        "TypeScript",
+        "JavaScript",
+        "SCSS"
+      ]
     },
     {
       "id": "jeansordes.github.io",
@@ -561,11 +884,21 @@
       "category": "Sites",
       "description": "Mon site personnel : accompagnement technique, formations, parcours et projets.",
       "status": "Site web",
-      "platform": "HTML · CSS",
-      "mark": "JZS",
+      "platform": {
+        "icon": "ui-globe",
+        "label": "Web"
+      },
       "source": "https://github.com/jeansordes/jeansordes.github.io",
       "action": "Visiter le site",
-      "url": "https://www.jzs.fr/"
+      "url": "https://www.jzs.fr/",
+      "image": "../assets/favicon.svg",
+      "icon": "code-xml",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
     }
-  ]
+  ],
+  "iconsChecked": "2026-10-26"
 }

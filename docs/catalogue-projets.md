@@ -58,3 +58,30 @@ Le gabarit éditorial et le bloc Jotlane figurent dans le script. Le compteur et
 - Captures ordinateur et mobile inspectées ; aucune erreur JavaScript pendant la recette.
 
 Publication : GitHub Pages sert la branche `main`, à la racine du dépôt. Le catalogue est accessible à `https://www.jzs.fr/projets/`.
+
+## Icônes, plateformes et technologies — 26 octobre 2026
+
+Les visuels existants ont été recherchés dans l’arbre de chacun des 46 dépôts publics. Les copies locales suivantes reprennent les assets des projets :
+
+| Projet | Source publique |
+| --- | --- |
+| Since PWA | `jeansordes/since-pwa`, `main`, `public/icon-192.svg` |
+| Entrep Ensemble | `jeansordes/entrep-ensemble.fr`, `main`, `logo-entrep-ensemble.png` |
+| Better Geoportail | `jeansordes/better-geoportail`, `main`, `icons/icon128.png` |
+| Confort Maison Occitanie | `jeansordes/confort-maison-occitanie`, `master`, `public/img/logo-cmo-simple.png` |
+| Duck Coin Coin | `jeansordes/dcc`, `master`, `src/dcc/duck_icon.png` |
+
+Jotlane conserve son icône existante et JZS.fr reprend son favicon. Les favicons génériques de frameworks et les logos d’entreprises tierces présents dans des exercices n’ont pas été présentés comme des identités propres aux projets. Aucun asset raster n’a été retouché ; les proportions sont conservées avec `object-fit: contain`. Les fonds blancs/sombres rendent les identités originales lisibles dans les deux thèmes.
+
+Pour les autres projets, les monogrammes sont remplacés par des pictogrammes fonctionnels Lucide (pas de nouveaux logos officiels). Dot Navigator déclare `TREE_VIEW_ICON = 'folder-git-2'` dans `src/types.ts` : ce symbole est réutilisé. Pour Auto Expander et Workflow Boards, aucune icône propre n’a été identifiée dans les points d’entrée consultés : pictogrammes de saisie et de colonnes.
+
+Le sprite local `assets/projects/symbols.svg` contient :
+
+- Lucide, instantané `70562c1ee1c4fdcf736fe97bc893fb8511927934`, licence déjà conservée dans `assets/LUCIDE-LICENSE`.
+- [Simple Icons](https://github.com/simple-icons/simple-icons/tree/90646e4bf7f3b89df6c37e65baf3e7bc759a517c), instantané `90646e4bf7f3b89df6c37e65baf3e7bc759a517c`, licence CC0 conservée dans `assets/projects/SIMPLE-ICONS-LICENSE`. Marques de plateformes et de langages présentées en monochrome, accompagnées de leur nom.
+
+La plateforme est désormais un objet `platform: {icon, label}`. Elle désigne le contexte d’utilisation : Web, macOS, Obsidian, Chrome, WordPress, Discord, Telegram, CLI ou serveur. Pour les dépôts sans plateforme déterminée, le badge indique « Code source ».
+
+`technologies` contient jusqu’à trois langages/technologies réellement présents dans les statistiques GitHub `/repos/jeansordes/{repo}/languages`, hors scripts auxiliaires et fichiers d’outillage. Jotlane utilise Swift d’après son site public. Les données GitHub sont un relevé de fichiers, pas une mesure du niveau de compétence ou de la part personnelle de code écrite. Le dépôt Screen actuel contient du JavaScript/HTML/CSS malgré un README plus ancien décrivant Python : les badges suivent le code public actuel. HTML, CSS et SCSS sont regroupés sous le libellé accessible « Langages et technologies ».
+
+Chaque badge conserve un texte visible. Les SVG sont décoratifs (`aria-hidden`) et ne remplacent pas les libellés. Les références de symboles sont validées à la génération. Une empreinte de contenu dans l’URL du sprite et de la feuille CSS évite de garder d’anciens assets après publication.

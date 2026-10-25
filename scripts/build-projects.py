@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Render the editorial catalogue. Stdlib only; output works without JavaScript."""
 import json
+import hashlib
+import xml.etree.ElementTree as ET
 from html import escape
 from pathlib import Path
 
@@ -14,18 +16,31 @@ for p in projects:
     for key in ('url', 'source'):
         assert p[key].startswith('https://'), f'Invalid {key} for {p["id"]}'
 e = escape
+symbol_path = ROOT / 'assets/projects/symbols.svg'
+symbols = {node.attrib['id'] for node in ET.parse(symbol_path).getroot()}
+symbol_version = hashlib.sha256(symbol_path.read_bytes()).hexdigest()[:10]
+def icon(name):
+    assert name in symbols, f'Unknown icon: {name}'
+    style = 'fill="currentColor"' if name.startswith('brand-') else 'fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"'
+    return f'<svg class="catalog-icon" width="18" height="18" viewBox="0 0 24 24" {style} aria-hidden="true" focusable="false"><use href="../assets/projects/symbols.svg?v={symbol_version}#{e(name)}"></use></svg>'
+language_icons = {'JavaScript':'brand-javascript', 'TypeScript':'brand-typescript', 'PHP':'brand-php', 'Python':'brand-python', 'Swift':'brand-swift', 'HTML':'brand-html5', 'CSS':'brand-css', 'SCSS':'brand-sass', 'Java':'ui-coffee', 'Twig':'ui-code-xml'}
 cards = []
 for p in projects:
     color = categories.index(p['category']) % 5
-    mark = f'<img src="{e(p["image"])}" alt="" width="76" height="76" loading="lazy">' if p.get('image') else f'<span aria-hidden="true">{e(p["mark"])}</span>'
+    mark = f'<img src="{e(p["image"])}" alt="" width="76" height="76" loading="lazy">' if p.get('image') else icon('ui-' + p['icon'])
+    image_class = ' logo-' + p['imageBackground'] if p.get('imageBackground') else ''
+    platform = p['platform']
+    platform_badge = f'<span class="project-platform">{icon(platform["icon"])}{e(platform["label"])}</span>'
+    technologies = ''.join(f'<span class="technology">{icon(language_icons[lang])}{e(lang)}</span>' for lang in p['technologies'])
+    technology_row = f'<div class="project-technologies" role="group" aria-label="Langages et technologies">{technologies}</div>' if technologies else ''
     source = f'<a class="source-link" href="{e(p["source"])}" aria-label="Code source de {e(p["name"])}">Code source <span aria-hidden="true">↗</span></a>' if p['url'] != p['source'] and p['id'] != 'jotlane' else ''
     note = f'<p class="project-note">{e(p["note"])}</p>' if p.get('note') else ''
     cards.append(f'''      <article class="project-card tone-{color}" id="{e(p['id'])}" data-project data-category="{e(p['category'])}" aria-labelledby="title-{e(p['id'])}">
-        <div class="card-cover"><div class="app-mark">{mark}</div><span class="project-platform">{e(p['platform'])}</span></div>
+        <div class="card-cover"><div class="app-mark{image_class}">{mark}</div>{platform_badge}</div>
         <div class="card-body"><div class="card-meta"><span>{e(p['category'])}</span><span class="status">{e(p['status'])}</span></div>
           <h3 id="title-{e(p['id'])}">{e(p['name'])}</h3>
           <p class="project-description">{e(p['description'])}</p>{note}
-          <div class="card-actions"><a class="project-action" href="{e(p['url'])}" aria-label="{e(p['action'])} — {e(p['name'])}">{e(p['action'])} <span aria-hidden="true">↗</span></a>{source}</div>
+          {technology_row}<div class="card-actions"><a class="project-action" href="{e(p['url'])}" aria-label="{e(p['action'])} — {e(p['name'])}">{e(p['action'])} <span aria-hidden="true">↗</span></a>{source}</div>
         </div>
       </article>''')
 filters = ''.join(f'<button type="button" data-category-filter="{e(c)}" aria-pressed="false">{e(c)}</button>' for c in categories)
@@ -49,7 +64,7 @@ html = '''<!doctype html>
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../assets/styles.css?v=a34ba470ca">
-  <link rel="stylesheet" href="../assets/projects.css">
+  <link rel="stylesheet" href="../assets/projects.css?v=__CSS_VERSION__">
   <script src="../assets/projects.js" defer></script>
 </head>
 <body class="projects-page">
@@ -87,5 +102,6 @@ __CARDS__
 </html>
 '''
 html = html.replace('__TOTAL__', str(len(projects))).replace('__FILTERS__', filters).replace('__CARDS__', '\n'.join(cards))
+html = html.replace('__CSS_VERSION__', hashlib.sha256((ROOT / 'assets/projects.css').read_bytes()).hexdigest()[:10])
 (ROOT / 'projets/index.html').write_text(html)
 print(f'Rendered {len(projects)} projects → projets/index.html')
