@@ -1,0 +1,10 @@
+{
+  "source_language": "fr",
+  "fallback_language": "en",
+  "provider": "deepl",
+  "deepl_api": "auto",
+  "languages": {
+    "fr": {"label": "Français", "deepl_target": "FR", "og_locale": "fr_FR"},
+    "en": {"label": "English", "deepl_target": "EN-GB", "og_locale": "en_GB"}
+  }
+}

@@ -34,7 +34,7 @@
     });
     previous.disabled = current === 0;
     next.disabled = current === slides.length - 1;
-    counter.textContent = `Projet ${current + 1} sur ${slides.length} : ${slides[current].querySelector("h3").textContent}`;
+    counter.textContent = window.siteI18n.text("Projet {current} sur {total} : {name}", { current: current + 1, total: slides.length, name: slides[current].querySelector("h3").textContent });
     fitHeight();
   };
   const goTo = (index) => {

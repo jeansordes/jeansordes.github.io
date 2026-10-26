@@ -1,6 +1,6 @@
 # Site de Jean Sordes
 
-Page statique en français présentant Jean Sordes avec « Votre projet mérite un développeur expérimenté », **Vibe Pompier** pour la réparation et **Vibe Doctor** pour le diagnostic et le suivi. HTML et CSS, sans dépendance de production ni étape de compilation.
+Site statique en français et en anglais, avec détection de la langue préférée du visiteur et anglais par défaut, présentant Jean Sordes avec « Votre projet mérite un développeur expérimenté », **Vibe Pompier** pour la réparation et **Vibe Doctor** pour le diagnostic et le suivi. HTML et CSS, sans dépendance de production. Les pages traduites sont générées localement puis versionnées.
 
 ## Prévisualisation locale
 
@@ -10,11 +10,13 @@ Depuis le dossier du projet :
 python3 -m http.server 4173 --bind 127.0.0.1
 ```
 
-Ouvrir `http://127.0.0.1:4173`. La FAQ, la navigation et les liens fonctionnent sans JavaScript. Le thème suit le réglage clair/sombre du système, y compris lorsqu’il change pendant la consultation ; aucun JavaScript ni préférence locale n’est nécessaire.
+Ouvrir `http://127.0.0.1:4173` pour la détection automatique, `/fr/` pour le français ou `/en/` pour l’anglais. Le choix manuel de langue est mémorisé ; sans JavaScript, les URL neutres affichent l’anglais. La FAQ, la navigation et les liens fonctionnent sans JavaScript. Le thème suit le réglage clair/sombre du système, y compris lorsqu’il change pendant la consultation ; aucun JavaScript ni préférence locale n’est nécessaire.
 
 ## Fichiers
 
-- `index.html` : contenu, navigation, FAQ native, métadonnées et liens de réservation.
+- `templates/home.html` : source française du contenu, de la navigation, de la FAQ, des métadonnées et des liens de réservation.
+- `locales/en.json` et `localization.json` : traductions et langues disponibles ; [fonctionnement et maintenance](docs/localization.md).
+- `index.html`, `projets/index.html`, `fr/` et `en/` : pages générées, à ne pas modifier directement.
 - `assets/styles.css` : styles, adaptations mobiles, mode nuit automatique selon `prefers-color-scheme` et préférence de réduction des mouvements.
 - `assets/lucide.svg` : icônes Lucide dans un sprite local, utilisable sans JavaScript ; licence dans `assets/LUCIDE-LICENSE`. [Provenance et usage](docs/icones-lucide.md).
 - `assets/jean-sordes-actuel.jpg` : photo récente fournie par Jean, encodée en JPEG sans retouche, utilisée dans le header, la présentation, « À propos » et la signature au défilement. L’ancien portrait Gravatar est conservé mais n’est plus affiché.
@@ -33,11 +35,11 @@ Ouvrir `http://127.0.0.1:4173`. La FAQ, la navigation et les liens fonctionnent 
 
 ## Parcours et portfolio
 
-La sélection de projets se trouve dans [`projets/index.html`](projets/index.html), accessible à `/projets/` et depuis le portfolio et le pied de page de l’accueil. Il présente Jotlane, trois plugins Obsidian et aio sous forme de cartes, avec recherche et filtres progressifs. Tous les liens restent accessibles sans JavaScript. Pour un ajout éditorial, modifier les fiches et la liste explicite `selection` dans `data/projects.json`, puis exécuter `python3 scripts/build-projects.py` et versionner le HTML généré. L’hébergement reste statique, sans étape de compilation en production. Voir [les sources, la maintenance et la recette du catalogue](docs/catalogue-projets.md).
+La sélection de projets se trouve dans [`projets/index.html`](projets/index.html), accessible à `/projets/` et depuis le portfolio et le pied de page de l’accueil. Il présente Jotlane, trois plugins Obsidian et aio sous forme de cartes, avec recherche et filtres progressifs. Tous les liens restent accessibles sans JavaScript. Pour un ajout éditorial, modifier les fiches et la liste explicite `selection` dans `data/projects.json`, puis exécuter `python3 scripts/build-projects.py`, compléter les traductions et lancer `python3 scripts/localize.py build`. Versionner les sources et toutes les pages générées. L’hébergement reste statique, sans étape de compilation en production. Voir [les sources, la maintenance et la recette du catalogue](docs/catalogue-projets.md).
 
 Les sections présentent une sélection du parcours professionnel de Jean et trois plugins Obsidian. Le portfolio montre un projet à la fois dans un carrousel manuel avec défilement tactile natif, sélection par nom, boutons précédent/suivant et compteur. Lorsque la galerie a le focus, les flèches, Début et Fin changent le projet. Sans JavaScript, le défilement natif et les liens vers chacun des trois projets conservent tous les contenus accessibles. Les changements sont annoncés aux lecteurs d’écran et les contrôles gardent leur focus, conformément aux [principes WAI pour les carrousels](https://www.w3.org/WAI/tutorials/carousels/). La section « Mon parcours » présente une timeline des expériences regroupées par entreprise, puis le master MIAGE, avec un lien vers le profil LinkedIn complet. Elle fonctionne sans JavaScript et s’adapte aux petits écrans et au thème sombre. Les détails des contributions, liens et indicateurs des projets sont repliables avec des éléments `details` natifs. Les captures de Dot Navigator sont conservées dans `assets/portfolio/` ; les autres visuels illustrent le fonctionnement des projets en HTML/CSS. La galerie de renommage utilise un élément `details` natif et reste utilisable sans JavaScript.
 
-Les stars GitHub et téléchargements Obsidian sont un relevé manuel daté, sans requête d’API côté visiteur. Lors d’une mise à jour, vérifier les sources indiquées dans le document de provenance, puis modifier les chiffres et la date dans `index.html` ainsi que ce document. Ne pas assimiler les téléchargements à des utilisateurs actifs.
+Les stars GitHub et téléchargements Obsidian sont un relevé manuel daté, sans requête d’API côté visiteur. Lors d’une mise à jour, vérifier les sources indiquées dans le document de provenance, puis modifier les chiffres et la date dans `templates/home.html` ainsi que ce document, puis régénérer les traductions. Ne pas assimiler les téléchargements à des utilisateurs actifs.
 
 ## Réservation et contenu commercial
 

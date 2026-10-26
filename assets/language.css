@@ -1,0 +1,22 @@
+.language-switch {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: .35rem;
+  width: min(100% - 2rem, 1160px);
+  margin: .6rem auto;
+  font-size: .8rem;
+}
+.language-switch a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: .35rem .75rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  color: inherit;
+  text-decoration: none;
+}
+.language-switch a[aria-current] { font-weight: 800; text-decoration: underline; text-underline-offset: .2em; }
+.language-switch a:hover { text-decoration: underline; }
+.language-switch a:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }

@@ -109,5 +109,5 @@ __CARDS__
 '''
 html = html.replace('__TOTAL__', str(len(projects))).replace('__FILTERS__', filters).replace('__CARDS__', '\n'.join(cards))
 html = html.replace('__CSS_VERSION__', hashlib.sha256((ROOT / 'assets/projects.css').read_bytes()).hexdigest()[:10])
-(ROOT / 'projets/index.html').write_text(html)
-print(f'Rendered {len(projects)} projects → projets/index.html')
+(ROOT / 'templates/projects.html').write_text(html)
+print(f'Rendered {len(projects)} projects → templates/projects.html')

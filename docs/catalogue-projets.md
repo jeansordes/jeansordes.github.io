@@ -61,7 +61,7 @@ Une réponse HTTP et un document correspondent à un lien de démonstration, pas
 1. Modifier `data/projects.json` : nom, description, catégorie, statut, plateforme, monogramme, source et destination de l'action. Ajouter une note courte si nécessaire. `id` est unique et sert d'ancre partageable.
 2. Vérifier la documentation et la destination. Réserver « Télécharger », « Installer », « Essayer » ou « Visiter » aux accès correspondants ; conserver « Voir le code » si la disponibilité de l'application n'est pas établie.
 3. Exécuter `python3 scripts/build-projects.py` depuis le dépôt (ou avec son chemin absolu). Python standard uniquement. Le script valide les identifiants, les catégories et les URL HTTPS, puis échappe les textes HTML.
-4. Versionner les données **et** `projets/index.html`. GitHub Pages sert le résultat déjà généré ; aucune nouvelle étape de compilation ou dépendance de production.
+4. Compléter les traductions, exécuter `python3 scripts/localize.py check` puis `python3 scripts/localize.py build`. Versionner les données, `templates/projects.html`, les catalogues et les pages générées (`projets/`, `fr/`, `en/`). GitHub Pages sert le résultat déjà généré ; aucune dépendance de production. Voir [la maintenance des traductions](localization.md).
 5. Prévisualiser et vérifier les liens et filtres. Mettre à jour ce relevé pour les nouvelles sources.
 
 Le gabarit éditorial et le bloc Jotlane figurent dans le script. Le compteur et les cartes dérivent du même fichier de données. Ne pas éditer directement le HTML généré.
