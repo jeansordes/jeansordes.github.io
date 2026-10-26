@@ -14,7 +14,7 @@ selection = data['selection']
 assert len(selection) == len(set(selection)), 'Duplicate selection ID'
 assert selection and all(key in inventory for key in selection), 'Unknown or empty selection'
 projects = [inventory[key] for key in selection]
-category_order = ['Applications', 'Obsidian', 'Extensions', 'Jeux', 'Développement', 'Sites', 'Expériences']
+category_order = ['Applications', 'Obsidian', 'Extensions', 'Jeux', 'Développement', 'Sites', 'Expériences', 'Projets métier']
 categories = [category for category in category_order if any(p['category'] == category for p in projects)]
 assert len({p['id'] for p in projects}) == len(projects), 'Duplicate project ID'
 for p in projects:
@@ -41,11 +41,17 @@ for p in projects:
     technology_row = f'<div class="project-technologies" role="group" aria-label="Langages et technologies">{technologies}</div>' if technologies else ''
     source = f'<a class="source-link" href="{e(p["source"])}" aria-label="Code source de {e(p["name"])}">Code source <span aria-hidden="true">↗</span></a>' if p['url'] != p['source'] and p['id'] != 'jotlane' else ''
     note = f'<p class="project-note">{e(p["note"])}</p>' if p.get('note') else ''
+    case = p['caseStudy']
+    context = f'<p class="project-context">{e(case["context"])}</p>'
+    case_html = '<details class="project-case"><summary>Le besoin et mon travail</summary><dl>'
+    for key, label in [('need', 'Le besoin'), ('contribution', 'Ma contribution'), ('benefit', 'Utilité')]:
+        case_html += f'<div><dt>{label}</dt><dd>{e(case[key])}</dd></div>'
+    case_html += '</dl></details>'
     cards.append(f'''      <article class="project-card tone-{color}" id="{e(p['id'])}" data-project data-category="{e(p['category'])}" aria-labelledby="title-{e(p['id'])}">
         <div class="card-cover"><div class="app-mark{image_class}">{mark}</div>{platform_badge}</div>
         <div class="card-body"><div class="card-meta"><span>{e(p['category'])}</span><span class="status">{e(p['status'])}</span></div>
           <h3 id="title-{e(p['id'])}">{e(p['name'])}</h3>
-          <p class="project-description">{e(p['description'])}</p>{note}
+          {context}<p class="project-description">{e(p['description'])}</p>{note}{case_html}
           {technology_row}<div class="card-actions"><a class="project-action" href="{e(p['url'])}" aria-label="{e(p['action'])} — {e(p['name'])}">{e(p['action'])} <span aria-hidden="true">↗</span></a>{source}</div>
         </div>
       </article>''')
@@ -59,12 +65,12 @@ html = '''<!doctype html>
   <meta name="theme-color" content="#faf7f0" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#18151d" media="(prefers-color-scheme: dark)">
   <title>Mes projets et applications · Jean Z. Sordes</title>
-  <meta name="description" content="Explorez les projets de Jean Sordes : Jotlane pour Mac, plugins Obsidian et outils de développement. Une sélection à télécharger ou à installer.">
+  <meta name="description" content="Découvrez les réalisations de Jean Sordes : suivi de dossiers, e-commerce, rencontres professionnelles et outils pour travailler. Besoin, contribution et utilité de chaque projet.">
   <link rel="canonical" href="https://www.jzs.fr/projets/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:title" content="Les projets de Jean Z. Sordes">
-  <meta property="og:description" content="Une sélection d’applications et de plugins à installer pour prendre des notes et développer.">
+  <meta property="og:description" content="Des réalisations métier et des outils partagés, avec le besoin traité, mon travail et leur utilité.">
   <meta property="og:url" content="https://www.jzs.fr/projets/">
   <meta property="og:image" content="https://www.jzs.fr/assets/jean-sordes-partage-v3.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -81,7 +87,7 @@ html = '''<!doctype html>
   </header>
   <main id="contenu" tabindex="-1" class="catalog-wrap">
     <section class="catalog-intro" aria-labelledby="page-title">
-      <div><p class="catalog-eyebrow"><span aria-hidden="true">✳</span> L’atelier de Jean</p><h1 id="page-title">Des idées devenues<br><span>des outils.</span></h1><p>Je développe les outils dont j’ai envie de me servir.<br>Voici une sélection pour capturer vos idées, organiser vos notes et développer.</p></div>
+      <div><p class="catalog-eyebrow"><span aria-hidden="true">✳</span> L’atelier de Jean</p><h1 id="page-title">Des idées devenues<br><span>des outils.</span></h1><p>Je développe des applications pour des besoins métier et des outils que je partage.<br>Découvrez le besoin de départ, mon travail et l’utilité de chaque projet.</p></div>
       <a class="collection-sticker" href="#collection"><span aria-hidden="true">↘</span> Faits maison.<br>À explorer.</a>
     </section>
     <section class="featured-project" aria-labelledby="featured-title">
@@ -89,7 +95,7 @@ html = '''<!doctype html>
       <div class="featured-preview"><span class="preview-caption">Votre inbox, à une touche près.</span><img src="../assets/projects/jotlane-capture.png" width="1120" height="460" alt="Fenêtre de Jotlane : une capture de texte avec un lien, une image et la destination Inbox."><div class="preview-bottom"><span>Capture vers Obsidian</span><span><kbd>⌃</kbd> <kbd>espace</kbd></span></div></div>
     </section>
     <section class="collection" id="collection" aria-labelledby="collection-title">
-      <div class="collection-heading"><div><p class="catalog-eyebrow">Le catalogue</p><h2 id="collection-title">Les projets sélectionnés<span class="total-count">__TOTAL__</span></h2></div><p>Des usages précis, des outils à installer.</p></div>
+      <div class="collection-heading"><div><p class="catalog-eyebrow">Le catalogue</p><h2 id="collection-title">Les projets sélectionnés<span class="total-count">__TOTAL__</span></h2></div><p>Réalisations métier et outils à utiliser.</p></div>
       <div class="catalog-controls" hidden>
         <div class="search-row"><label class="catalog-search" for="project-search"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><span class="sr-only">Rechercher un projet</span><input id="project-search" type="search" placeholder="Un projet, un usage, une technologie…" autocomplete="off" aria-controls="project-grid"></label><button class="reset-filters" type="button" data-reset hidden>Tout afficher</button></div>
         <div class="category-filters" role="group" aria-label="Filtrer par catégorie"><button type="button" data-category-filter="" aria-pressed="true">Tout explorer</button>__FILTERS__</div>
@@ -99,7 +105,7 @@ html = '''<!doctype html>
 __CARDS__
       </div>
       <div class="empty-results" hidden><span aria-hidden="true">⌕</span><h3>Aucun projet trouvé</h3><p>Essayez un autre mot ou affichez toute la collection.</p><button class="catalog-button" type="button" data-reset>Afficher tous les projets</button></div>
-      <p class="catalog-note">Cette sélection présente les outils que je souhaite vous faire découvrir. Retrouvez mes autres travaux sur <a href="https://github.com/jeansordes?tab=repositories">GitHub</a>.</p>
+      <p class="catalog-note">Les réalisations métier présentent le travail développé et son utilité. Les outils personnels illustrent des usages possibles, sans revendiquer de références clients. Retrouvez mes autres travaux sur <a href="https://github.com/jeansordes?tab=repositories">GitHub</a>.</p>
     </section>
     <aside class="catalog-about" aria-labelledby="about-title"><div><p class="catalog-eyebrow">Et derrière ces projets…</p><h2 id="about-title">Jean, tout simplement.</h2><p>Je développe, j’expérimente et j’accompagne aussi les personnes qui construisent leur propre projet.</p></div><a class="catalog-button secondary" href="../">Découvrir mon accompagnement <span aria-hidden="true">↗</span></a></aside>
   </main>

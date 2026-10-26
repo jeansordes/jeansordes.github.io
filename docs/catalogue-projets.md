@@ -2,6 +2,28 @@
 
 Page : `/projets/`. Relevé des sources publiques : **25 octobre 2026**.
 
+## Réalisations métier et contribution — 26 octobre 2026
+
+Cette évolution remplace le critère « installable » comme unique condition d’inclusion. Jean souhaite aussi montrer son travail utile aux entreprises. La sélection compte désormais **8 projets**, avec trois réalisations métier avant les cinq outils personnels. Les exercices, starters et dépôts sans usage identifié restent écartés.
+
+Chaque projet sélectionné possède `caseStudy` : `context`, `need`, `contribution`, `benefit`. Les trois derniers champs sont rendus dans un `details` natif « Le besoin et mon travail ». Les contextes distinguent mission client, application métier, projet Entrep Ensemble et outil personnel partagé. Les textes expliquent les fonctions développées et leur utilité ; ils ne prétendent pas établir des résultats commerciaux mesurés.
+
+### Preuves des trois réalisations réintégrées
+
+| Projet | Source consultée | Ce qui est établi / limite |
+| --- | --- | --- |
+| Confort Maison Occitanie | [Dossier et interface](https://github.com/jeansordes/confort-maison-occitanie/blob/master/src/templates/dossier/id-dossier.html.twig), [routes de dossiers](https://github.com/jeansordes/confort-maison-occitanie/blob/master/src/routes/dossier.php) | Fiches clients/dossiers, fournisseurs, formulaires, étapes de traitement, fichiers, commentaires, historique et notifications. Le code établit la réalisation fonctionnelle ; ne prouve ni déploiement client ni gain de temps mesuré. « Conçu pour » décrit l’utilité visée. |
+| JZS Homeplayer | [Description du dépôt](https://github.com/jeansordes/jzs_homeplayer), [classe publique du plugin](https://github.com/jeansordes/jzs_homeplayer/blob/master/public/class-jzs_homeplayer-public.php) | La description précise une demande client de présentation spécifique en accueil. Le code porte le nom de Jean et relie produits, stocks, panier et commande WooCommerce. Des vues attendues sont absentes du dépôt actuel ; lien de code de réalisation, aucune promesse de plugin prêt à installer aujourd’hui. Aucun client nommé ou gain de conversion déduit. |
+| Rencontres Entrep Ensemble | [Application React](https://github.com/jeansordes/networking-app/blob/main/app/src/App.jsx) | Le titre indique un projet Entrep Ensemble et le pied de page l’attribue à Jean. Calcul des groupes en fonction des présences et des rencontres antérieures, historique des tours et persistance locale. L’algorithme cherche à diversifier les rencontres ; aucune optimalité ni absence garantie de répétition revendiquée. Usage effectif lors d’événements à confirmer par Jean. |
+
+Le site Entrep Ensemble contient un lien vers son groupe Meetup ; ce contexte complète l’application de rencontres, sans créer une quatrième carte redondante. Screen demeure hors sélection en attendant le contexte d’usage réel ; le code d’administration montre une gestion d’annonces, mais les images MolenGeek ne suffisent pas à établir une mission réalisée pour cet organisme.
+
+Les fiches des outils existants s’appuient sur leurs README, manifestes et la page publique Jotlane déjà référencés. Les applications possibles à la veille, à la documentation ou au suivi CRM ne sont pas présentées comme des usages constatés chez des clients.
+
+Une question a été adressée à Jean pour confirmer les organisations concernées, son rôle personnel et les changements observés en usage réel. En l’absence de réponse au moment de la rédaction, aucun déploiement, témoignage, effectif, gain financier ou gain de temps n’est inventé. Des résultats confirmés pourront compléter ces descriptions.
+
+Recette : 8 fiches FR/EN, textes de contexte, besoins/contributions/utilités accessibles sans JavaScript, filtre métier (3 cartes), recherche dans les détails, quatre largeurs, deux thèmes, contrôles automatisés d’accessibilité. Les traductions et pages sont régénérées via le système de localisation existant.
+
 ## Sélection éditoriale — 26 octobre 2026
 
 À la demande de Jean, cette sélection remplace le catalogue exhaustif initial. L’inventaire de 47 entrées est conservé dans les données pour éviter de perdre le travail de recherche ; seules les cinq clés de `selection` sont publiées en cartes, dans cet ordre. Aucun dépôt GitHub n’est supprimé ou modifié.

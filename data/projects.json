@@ -19,7 +19,13 @@
       "icon": "code-xml",
       "technologies": [
         "Swift"
-      ]
+      ],
+      "caseStudy": {
+        "context": "Outil personnel partagé",
+        "need": "Garder une idée, un lien ou une image pendant une autre activité, puis les retrouver dans Obsidian.",
+        "contribution": "Développement d’une application Mac native en Swift : raccourci global, fenêtre de capture et enregistrement dans un dossier Obsidian.",
+        "benefit": "Capturer au moment où l’idée arrive et organiser ses notes ensuite. Un usage possible pour la veille et les notes de travail."
+      }
     },
     {
       "id": "dot-navigator",
@@ -39,7 +45,13 @@
         "TypeScript",
         "SCSS",
         "JavaScript"
-      ]
+      ],
+      "caseStudy": {
+        "context": "Plugin personnel partagé",
+        "need": "Se repérer dans une base de notes volumineuse, structurée par des noms hiérarchiques.",
+        "contribution": "Développement de la navigation en arborescence et des outils de renommage pour les notes Obsidian.",
+        "benefit": "Retrouver et réorganiser les connaissances par sujet, par exemple pour une documentation de travail."
+      }
     },
     {
       "id": "auto-expander",
@@ -59,7 +71,13 @@
         "TypeScript",
         "JavaScript",
         "CSS"
-      ]
+      ],
+      "caseStudy": {
+        "context": "Plugin personnel partagé",
+        "need": "Éviter de ressaisir les mêmes textes pendant la prise de notes.",
+        "contribution": "Développement du remplacement de raccourcis par des textes réutilisables, avec déclencheurs configurables et prise en charge des expressions régulières.",
+        "benefit": "Réutiliser des formulations et des modèles de notes pour les tâches de saisie répétitives."
+      }
     },
     {
       "id": "obsidian-workflow-boards",
@@ -78,7 +96,13 @@
       "technologies": [
         "JavaScript",
         "CSS"
-      ]
+      ],
+      "caseStudy": {
+        "context": "Plugin personnel partagé",
+        "need": "Suivre des tâches, des contacts et leurs prochaines actions à partir de notes liées.",
+        "contribution": "Développement de tableaux configurables, du suivi des étapes et des tâches récurrentes, avec des vues CRM dans Obsidian.",
+        "benefit": "Relier le contexte d’un dossier à son suivi et à la prochaine action. Les vues CRM sont un usage prévu du plugin."
+      }
     },
     {
       "id": "aio",
@@ -96,7 +120,13 @@
       "icon": "workflow",
       "technologies": [
         "JavaScript"
-      ]
+      ],
+      "caseStudy": {
+        "context": "Outil pour développeurs",
+        "need": "Répéter un enchaînement d’étapes confiées à des agents IA dans un projet logiciel.",
+        "contribution": "Développement d’un outil en ligne de commande qui exécute des workflows YAML, associe des rôles à des outils et conserve le travail dans les fichiers du projet.",
+        "benefit": "Rendre une méthode de travail avec des agents explicite et réexécutable. Le développeur peut inspecter les fichiers produits."
+      }
     },
     {
       "id": "better-geoportail",
@@ -256,9 +286,9 @@
     {
       "id": "jzs_homeplayer",
       "name": "JZS Homeplayer",
-      "category": "Extensions",
-      "description": "Un plugin WordPress réalisé pour afficher des produits WooCommerce dans une disposition spécifique en page d’accueil.",
-      "status": "Code disponible",
+      "category": "Projets métier",
+      "description": "Un plugin WordPress sur mesure pour présenter les produits d’une boutique WooCommerce.",
+      "status": "Code de réalisation",
       "platform": {
         "icon": "brand-wordpress",
         "label": "WordPress"
@@ -271,7 +301,13 @@
         "PHP",
         "CSS",
         "JavaScript"
-      ]
+      ],
+      "caseStudy": {
+        "context": "Réalisation pour un client",
+        "need": "Un client souhaitait une présentation très spécifique des produits de sa boutique sur la page d’accueil WordPress.",
+        "contribution": "Développement d’un plugin sur mesure reliant la présentation des produits aux stocks WooCommerce, avec intégration des pages produit, du panier et de la commande.",
+        "benefit": "Une présentation adaptée au besoin du client tout en conservant WooCommerce pour gérer les produits et leurs disponibilités."
+      }
     },
     {
       "id": "followers2profit",
@@ -547,10 +583,10 @@
     },
     {
       "id": "networking-app",
-      "name": "Networking App",
-      "category": "Applications",
-      "description": "Dépôt JavaScript public. Présentation fonctionnelle à documenter.",
-      "status": "Dépôt de travail",
+      "name": "Rencontres Entrep Ensemble",
+      "category": "Projets métier",
+      "description": "Un organisateur de groupes et de rotations pour des rencontres professionnelles.",
+      "status": "Code de réalisation",
       "platform": {
         "icon": "ui-globe",
         "label": "Web"
@@ -563,14 +599,20 @@
         "JavaScript",
         "HTML",
         "CSS"
-      ]
+      ],
+      "caseStudy": {
+        "context": "Projet Entrep Ensemble",
+        "need": "Organiser plusieurs tours de rencontres professionnelles en petits groupes, en tenant compte des présences et des rencontres précédentes.",
+        "contribution": "Développement du calcul des groupes, de la gestion des participants présents et de l’historique des tours, avec sauvegarde locale dans le navigateur.",
+        "benefit": "Un outil pour préparer les rotations et chercher à diversifier les rencontres, sans répartir les groupes à la main à chaque tour."
+      }
     },
     {
       "id": "confort-maison-occitanie",
       "name": "Confort Maison Occitanie",
-      "category": "Sites",
-      "description": "Dépôt public du projet Confort Maison Occitanie. Présentation à documenter.",
-      "status": "Dépôt de travail",
+      "category": "Projets métier",
+      "description": "Une application de suivi des dossiers clients, de leurs documents et de leur avancement.",
+      "status": "Code de réalisation",
       "platform": {
         "icon": "ui-globe",
         "label": "Web"
@@ -585,7 +627,13 @@
         "JavaScript",
         "PHP",
         "Twig"
-      ]
+      ],
+      "caseStudy": {
+        "context": "Application métier",
+        "need": "Suivre les dossiers clients et coordonner les informations entre commerciaux, fournisseurs et administration.",
+        "contribution": "Développement des fiches clients et dossiers, du dépôt de documents, des commentaires et du suivi des étapes, avec historique et notifications.",
+        "benefit": "Conçu pour retrouver les pièces, les échanges et l’avancement d’un dossier au même endroit."
+      }
     },
     {
       "id": "telegram_tripode_a_bot",
@@ -902,6 +950,9 @@
   ],
   "iconsChecked": "2026-10-26",
   "selection": [
+    "confort-maison-occitanie",
+    "jzs_homeplayer",
+    "networking-app",
     "jotlane",
     "dot-navigator",
     "auto-expander",

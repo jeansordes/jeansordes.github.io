@@ -166,3 +166,16 @@
 .technology { display: inline-flex; align-items: center; gap: 5px; font-size: 10px; line-height: 1.4; color: var(--catalog-muted); border: 1px solid var(--catalog-line); border-radius: 6px; padding: 5px 7px; }
 .technology .catalog-icon { width: 13px; height: 13px; }
 .project-technologies + .card-actions { margin-top: 0; }
+
+/* Explain the work without turning personal tools into client references. */
+.project-context { font-size: 10px; font-weight: 650; color: var(--purple); margin: -2px 0 12px; }
+.project-case { margin: 0 0 22px; border-block: 1px solid var(--catalog-line); }
+.project-case summary { padding: 12px 0; min-height: 44px; font-size: 12px; font-weight: 650; cursor: pointer; }
+.project-case dl { margin: 0 0 16px; font-size: 12px; line-height: 1.7; }
+.project-case dl > div + div { margin-top: 14px; }
+.project-case dt { font-weight: 750; color: var(--ink); margin-bottom: 4px; }
+.project-case dd { margin: 0; color: var(--catalog-muted); }
+.project-case summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.project-case summary::after { content: '+'; font-size: 20px; font-weight: 400; color: var(--purple); }
+.project-case[open] summary::after { content: '−'; }
+.app-mark.logo-dark { background: #888; }
