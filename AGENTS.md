@@ -22,3 +22,8 @@
 - Vérifier l'adéquation du projet et les accès nécessaires avant de s'engager. Ne pas promettre de pouvoir traiter toutes les technologies ou toutes les complexités.
 - Privilégier des engagements précis sur les livrables et un suivi limité dans le temps. Ne pas promettre de garantie à vie, d'absence totale de bugs ou de sécurité absolue.
 - Ne pas inventer de témoignages, de résultats chiffrés ou de preuves. Distinguer les expériences racontées des résultats vérifiables.
+
+## Publication
+
+- À la demande explicite de Jean, publier chaque modification du site après les vérifications adaptées, sauf instruction contraire. Ne pas demander une confirmation supplémentaire à chaque mise en ligne.
+- Vérifier le succès du déploiement et la présence des changements sur le site public avant d’annoncer la publication terminée.

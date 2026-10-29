@@ -44,7 +44,7 @@
       content="Jean Z. Sordes, CTO à temps partagé. Comprendre ce qui bloque. Savoir comment avancer. Son portrait est entouré de stickers pastel."
     />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/styles.css?v=a34ba470ca" />
+    <link rel="stylesheet" href="assets/styles.css?v=e5853936df" />
     <script src="assets/identity-scroll.js" defer></script>
     <script src="assets/section-navigation.js?v=93d37dd626" defer></script>
     <script src="assets/portfolio-carousel.js" defer></script>
@@ -113,7 +113,13 @@
     </header>
 
     <main id="contenu" tabindex="-1">
-      <section class="flash-info wrap" aria-labelledby="flash-title">
+      <details class="flash-info wrap">
+        <summary class="flash-summary">
+          <span class="flash-summary-label">Flash Info · PHP</span>
+          <span class="flash-summary-text">Des failles critiques à corriger</span>
+          <svg class="flash-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg>
+        </summary>
+        <div class="flash-content">
         <p class="flash-label">Flash Info · Sécurité PHP · <time datetime="2026-10-22">22 octobre 2026</time></p>
         <h2 id="flash-title">Votre site utilise PHP ? Vérifiez sa version sans attendre.</h2>
         <p>Le CERT-FR signale deux vulnérabilités critiques permettant à un attaquant
@@ -186,7 +192,8 @@
           <a class="button" data-booking-link href="https://calendar.notion.so/meet/johnsordes/30min">Réserver un échange gratuit de 20 minutes <span aria-hidden="true">↗</span></a>
           <p class="action-note">Décrivez votre projet et votre blocage à la réservation. Ce premier échange sert à cadrer le besoin ; le diagnostic est une prestation distincte.</p>
         </div>
-      </section>
+        </div>
+      </details>
       <section
         id="accueil"
         data-page-section="accueil"

@@ -2439,9 +2439,9 @@ button:focus-visible,
 
 /* Alerte éditoriale datée ; couleurs adaptées aux deux thèmes système. */
 .flash-info {
-  margin-block: 28px 0;
-  padding: clamp(20px, 3vw, 32px);
-  border: 2px solid var(--urgent);
+  margin-block: 16px 0;
+  padding: 0;
+  border: 1px solid var(--urgent);
   border-radius: var(--radius);
   background: var(--urgent-soft);
 }
@@ -2487,81 +2487,6 @@ button:focus-visible,
   margin-top: 20px;
   max-width: 100%;
   white-space: normal;
-}
-
-.flash-sources {
-  margin-block: 28px;
-}
-.flash-sources-intro {
-  margin-top: 12px;
-}
-.flash-sources-note {
-  color: var(--muted);
-  font-size: 0.85rem;
-}
-.flash-source-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 20px;
-}
-.flash-source-card {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  padding: 22px;
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  background: var(--white);
-  font-size: 0.92rem;
-}
-.flash-source-heading {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-}
-.flash-country {
-  flex-shrink: 0;
-  font-size: 1.6rem;
-  line-height: 1.2;
-}
-.flash-source-heading h4 {
-  font-size: 1rem;
-  letter-spacing: normal;
-}
-.flash-source-heading p {
-  margin-top: 6px;
-  color: var(--muted);
-  font-size: 0.78rem;
-  overflow-wrap: anywhere;
-}
-.flash-source-kind {
-  align-self: flex-start;
-  margin-block: 18px 12px;
-  padding: 4px 10px;
-  border-radius: 10px;
-  background: var(--lavender);
-  color: var(--purple);
-  font-size: 0.75rem;
-  font-weight: 700;
-}
-.flash-source-title {
-  font-size: 1.05rem;
-  line-height: 1.4;
-  font-weight: 750;
-}
-.flash-source-card > a {
-  margin-top: auto;
-  padding-top: 20px;
-  font-weight: 650;
-}
-@media (max-width: 760px) {
-  .flash-source-grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-  .flash-source-card {
-    padding: 18px;
-  }
 }
 
 /* LinkedIn-style experience groups, with a continuous chronological rail. */
@@ -2650,4 +2575,140 @@ button:focus-visible,
   .timeline-roles { padding-left: 4px; }
   .timeline-roles li { padding-left: 14px; }
   .timeline-education { flex-direction: column; gap: 18px; }
+}
+
+.flash-sources {
+  margin-block: 28px;
+}
+.flash-sources-intro {
+  margin-top: 12px;
+}
+.flash-sources-note {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.flash-source-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+.flash-source-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--white);
+  font-size: 0.92rem;
+}
+.flash-source-heading {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.flash-country {
+  flex-shrink: 0;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+.flash-source-heading h4 {
+  font-size: 1rem;
+  letter-spacing: normal;
+}
+.flash-source-heading p {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  overflow-wrap: anywhere;
+}
+.flash-source-kind {
+  align-self: flex-start;
+  margin-block: 18px 12px;
+  padding: 4px 10px;
+  border-radius: 10px;
+  background: var(--lavender);
+  color: var(--purple);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.flash-source-title {
+  font-size: 1.05rem;
+  line-height: 1.4;
+  font-weight: 750;
+}
+.flash-source-card > a {
+  margin-top: auto;
+  padding-top: 20px;
+  font-weight: 650;
+}
+@media (max-width: 760px) {
+  .flash-source-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .flash-source-card {
+    padding: 18px;
+  }
+}
+
+/* Repliée par défaut : toute la bannière est une cible clavier et tactile. */
+.flash-summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 52px;
+  padding: 12px 18px;
+  list-style: none;
+  cursor: pointer;
+  border-radius: inherit;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.flash-summary::-webkit-details-marker {
+  display: none;
+}
+.flash-summary::marker {
+  content: "";
+}
+.flash-summary:hover {
+  background: var(--white);
+}
+.flash-summary-label {
+  color: var(--urgent);
+  font-weight: 800;
+  flex-shrink: 0;
+}
+.flash-summary-text {
+  flex: 1;
+  min-width: 0;
+}
+.flash-chevron {
+  flex-shrink: 0;
+  color: var(--urgent);
+}
+.flash-info[open] > .flash-summary .flash-chevron {
+  transform: rotate(180deg);
+}
+.flash-content {
+  padding: clamp(18px, 3vw, 32px);
+  border-top: 1px solid var(--border);
+}
+@media (max-width: 600px) {
+  .flash-summary {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 20px;
+    column-gap: 12px;
+    row-gap: 3px;
+    padding: 10px 14px;
+    font-size: 0.82rem;
+  }
+  .flash-summary-label,
+  .flash-summary-text {
+    grid-column: 1;
+  }
+  .flash-chevron {
+    grid-column: 2;
+    grid-row: 1 / 3;
+  }
 }
