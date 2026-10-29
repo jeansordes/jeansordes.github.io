@@ -18,6 +18,12 @@ const base = process.env.SITE_URL || 'http://127.0.0.1:4178';
       await page.goto(base + '/?campaign=test#portfolio');
       await page.waitForURL(`**/${expected}/?campaign=test#portfolio`);
       assert.equal(await page.locator('html').getAttribute('lang'), expected);
+      await page.locator('.language-dropdown > summary').click();
+      assert.equal(await page.locator('.language-options a:visible').count(), 2);
+      assert.equal(await page.locator('[data-browser-default]').getAttribute('data-language'), expected);
+      assert.match(await page.locator('[data-browser-default]').textContent(), expected === 'fr' ? /Français.*Langue du navigateur/ : /English.*Browser default/);
+      assert.equal(await page.evaluate(() => localStorage.getItem('jzs.language')), null);
+
       await ctx.close();
     }
     const ctx = await context({locale: 'fr-FR', reducedMotion: 'reduce'});
@@ -42,7 +48,7 @@ const base = process.env.SITE_URL || 'http://127.0.0.1:4178';
     await page.locator('.language-dropdown > summary').click();
     await page.locator('[data-language="fr"]').click();
     await page.waitForURL('**/fr/');
-    assert.equal(await page.evaluate(() => localStorage.getItem('jzs.language')), 'fr');
+    assert.equal(await page.evaluate(() => localStorage.getItem('jzs.language')), null);
     await page.goto(base + '/projets/');
     await page.waitForURL('**/fr/projets/');
     await page.locator('.language-dropdown > summary').click();
@@ -51,7 +57,7 @@ const base = process.env.SITE_URL || 'http://127.0.0.1:4178';
     await page.goto(base + '/');
     await page.waitForURL('**/en/');
     await page.locator('.language-dropdown > summary').click();
-    await page.locator('[data-language="auto"]').click();
+    await page.locator('[data-browser-default]').click();
     await page.waitForURL('**/fr/');
     assert.equal(await page.evaluate(() => localStorage.getItem('jzs.language')), null);
     for (const lang of ['fr', 'en']) {

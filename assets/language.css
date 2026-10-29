@@ -31,6 +31,7 @@
   z-index: 50;
   right: 0;
   top: calc(100% + .25rem);
+  width: max-content;
   min-width: 190px;
   max-width: calc(100vw - 2rem);
   padding: .3rem;
@@ -48,6 +49,8 @@
   color: var(--ink);
   text-decoration: none;
 }
+.language-options a[hidden] { display: none; }
+.language-default-note { margin-left: .25em; font-size: .75rem; font-weight: 400; color: var(--muted); }
 .language-options a[aria-current] { font-weight: 700; background: var(--lavender); }
 .language-options a:hover { background: var(--lavender); }
 .language-options a[data-language="auto"] { border-top: 1px solid var(--border); border-radius: 0 0 8px 8px; color: var(--muted); }
