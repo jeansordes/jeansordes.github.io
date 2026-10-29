@@ -7,3 +7,5 @@ Source : [dépôt officiel Lucide](https://github.com/lucide-icons/lucide/tree/7
 Chaque utilisation fournit `viewBox="0 0 24 24"`, `stroke="currentColor"`, `stroke-width="2"`, extrémités et jonctions arrondies, `aria-hidden="true"` et `focusable="false"`. Les libellés textuels portent le sens des liens et contrôles. Les éléments `details` basculent les icônes plus/minus par CSS, sans JavaScript.
 
 Le sprite est servi avec le site ; aucun CDN, script Lucide ou framework n’est ajouté. Pour ajouter une icône, récupérer son SVG depuis le même instantané officiel, en ajouter le contenu dans un symbole avec son identifiant, puis l’utiliser avec `<use href="assets/lucide.svg#nom">`.
+
+Le sélecteur de langue utilise `languages` et `chevron-down`, issus du même instantané Lucide, avec un code de langue textuel FR / EN.

@@ -118,11 +118,12 @@ class Page(HTMLParser):
         if tag == 'header':
             label = self.translate('Langue')
             automatic = self.translate('Langue du navigateur')
-            self.output.append(f'<nav class="language-switch" aria-label="{escape(label)}">')
+            icon = lambda name: f'<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><use href="/assets/lucide.svg?language-menu=1#{name}"></use></svg>'
+            self.output.append(f'<nav class="language-switch" aria-label="{escape(label)}"><details class="language-dropdown"><summary aria-label="{escape(label)} : {escape(self.config["languages"][self.language]["label"])}">{icon("languages")}<span>{escape(self.language.upper())}</span>{icon("chevron-down")}</summary><div class="language-options">')
             for lang, info in self.config['languages'].items():
                 current = ' aria-current="true"' if lang == self.language else ''
                 self.output.append(f'<a href="/{lang}/{self.route}" lang="{lang}" hreflang="{lang}" data-language="{lang}"{current}>{escape(info["label"])}</a>')
-            self.output.append(f'<a href="/{self.route}" data-language="auto">{escape(automatic)}</a></nav>')
+            self.output.append(f'<a href="/{self.route}" data-language="auto">{escape(automatic)}</a></div></details></nav>')
 
     def handle_data(self, data):
         self.output.append(data if self.skip else escape(self.translate(data), quote=False))

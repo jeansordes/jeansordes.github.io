@@ -5,6 +5,7 @@ Le site dispose de versions françaises et anglaises pour l’accueil et la sél
 ## Langue du visiteur
 
 - `/` et `/projets/` détectent la première langue prise en charge dans `navigator.languages`, dans l’ordre de préférence. `fr-CA` et `fr-BE` utilisent le français ; `en-US` et `en-GB` utilisent l’anglais. Si aucune ne correspond, le site utilise l’anglais.
+- Le sélecteur discret affiche l’icône Lucide `languages` et le code de la langue active (FR / EN). Son menu déroulant natif fonctionne aussi sans JavaScript ; avec JavaScript, Échap ferme le menu et rend le focus au contrôle, et un clic ou un déplacement du focus à l’extérieur le ferme.
 - Le choix manuel Français / English est enregistré dans `localStorage` sous `jzs.language` et devient prioritaire lors des prochaines visites aux URL neutres. « Langue du navigateur » efface ce choix.
 - `/fr/`, `/en/`, `/fr/projets/` et `/en/projets/` affichent toujours la langue de l’URL, pour permettre le partage et l’indexation. Suivre une URL explicite ne modifie pas la préférence enregistrée.
 - Les liens internes restent dans la langue consultée. Le changement de langue conserve les paramètres et l’ancre de la page.

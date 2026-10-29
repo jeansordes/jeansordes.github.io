@@ -1,22 +1,55 @@
 .language-switch {
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-end;
-  gap: .35rem;
   width: min(100% - 2rem, 1160px);
-  margin: .6rem auto;
+  margin: .25rem auto;
   font-size: .8rem;
 }
-.language-switch a {
-  display: inline-flex;
+.language-dropdown { position: relative; border: 0; padding: 0; }
+.language-dropdown > summary {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  min-height: 44px;
+  padding: .4rem .5rem;
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: .8rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+.language-dropdown > summary::-webkit-details-marker { display: none; }
+.language-dropdown > summary::after { content: none; }
+.language-dropdown > summary svg { flex-shrink: 0; }
+.language-dropdown > summary svg:last-child { width: 12px; height: 12px; }
+.language-dropdown[open] > summary svg:last-child { transform: rotate(180deg); }
+.language-dropdown > summary:hover,
+.language-dropdown[open] > summary { color: var(--ink); background: var(--lavender); }
+.language-options {
+  position: absolute;
+  z-index: 50;
+  right: 0;
+  top: calc(100% + .25rem);
+  min-width: 190px;
+  max-width: calc(100vw - 2rem);
+  padding: .3rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--white);
+  box-shadow: 0 6px 20px rgb(0 0 0 / .12);
+}
+.language-options a {
+  display: flex;
   align-items: center;
   min-height: 44px;
-  padding: .35rem .75rem;
-  border: 1px solid currentColor;
-  border-radius: 999px;
-  color: inherit;
+  padding: .5rem .75rem;
+  border-radius: 8px;
+  color: var(--ink);
   text-decoration: none;
 }
-.language-switch a[aria-current] { font-weight: 800; text-decoration: underline; text-underline-offset: .2em; }
-.language-switch a:hover { text-decoration: underline; }
-.language-switch a:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+.language-options a[aria-current] { font-weight: 700; background: var(--lavender); }
+.language-options a:hover { background: var(--lavender); }
+.language-options a[data-language="auto"] { border-top: 1px solid var(--border); border-radius: 0 0 8px 8px; color: var(--muted); }
+.language-switch a:focus-visible,
+.language-dropdown > summary:focus-visible { outline: 2px solid var(--purple); outline-offset: 2px; }

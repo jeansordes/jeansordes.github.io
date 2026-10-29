@@ -37,6 +37,9 @@
     return;
   }
   document.addEventListener('click', (event) => {
+    document.querySelectorAll('.language-dropdown[open]').forEach(menu => {
+      if (!menu.contains(event.target)) menu.open = false;
+    });
     const link = event.target.closest('a[data-language]');
     if (!link || event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.altKey || event.shiftKey) return;
     const language = link.dataset.language;
@@ -47,5 +50,18 @@
     } catch { /* Explicit locale URLs still work without storage. */ }
     event.preventDefault();
     location.assign(destination(language === 'auto' ? preferred() : language));
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape') return;
+    document.querySelectorAll('.language-dropdown[open]').forEach(menu => {
+      const focusInside = menu.contains(document.activeElement);
+      menu.open = false;
+      if (focusInside) menu.querySelector('summary').focus();
+    });
+  });
+  document.addEventListener('focusin', (event) => {
+    document.querySelectorAll('.language-dropdown[open]').forEach(menu => {
+      if (!menu.contains(event.target)) menu.open = false;
+    });
   });
 })();
