@@ -3,6 +3,7 @@
 French templates remain the editorial source; no production dependency.
 """
 import argparse
+import hashlib
 import getpass
 import json
 import os
@@ -103,7 +104,9 @@ class Page(HTMLParser):
             changed.extend([('data-page-route', self.route), ('data-language-entry', str(self.entry).lower())])
         self.output.append('<' + tag + ''.join(' ' + k + ('' if v is None else '="' + escape(v, quote=True) + '"') for k, v in changed) + '>')
         if tag == 'head':
-            self.output.append('\n<script src="/assets/i18n-config.js"></script>\n<script src="/assets/language.js"></script>\n<link rel="stylesheet" href="/assets/language.css">\n')
+            js_version = hashlib.sha256((ROOT / 'assets/language.js').read_bytes()).hexdigest()[:10]
+            css_version = hashlib.sha256((ROOT / 'assets/language.css').read_bytes()).hexdigest()[:10]
+            self.output.append(f'\n<script src="/assets/i18n-config.js"></script>\n<script src="/assets/language.js?v={js_version}"></script>\n<link rel="stylesheet" href="/assets/language.css?v={css_version}">\n')
             for lang in [*self.config['languages'], 'x-default']:
                 target = '' if lang == 'x-default' else lang + '/'
                 self.output.append(f'<link rel="alternate" hreflang="{lang}" href="{ORIGIN}/{target}{self.route}">\n')
