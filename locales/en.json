@@ -615,5 +615,13 @@
   "Des réalisations métier et des outils partagés, avec le besoin traité, mon travail et leur utilité.": "Business projects and shared tools, with the need addressed, my work and their purpose.",
   "Voir le code — Rencontres Entrep Ensemble": "View source — Entrep Ensemble Networking",
   "Flash Info · PHP": "Newsflash · PHP",
-  "Des failles critiques à corriger": "Critical vulnerabilities to patch"
+  "Des failles critiques à corriger": "Critical vulnerabilities to patch",
+  "Application web": "Web application",
+  "Code source de Rencontres Entrep Ensemble": "Source code for Rencontres Entrep Ensemble",
+  "De petits outils à explorer.": "Small tools to explore.",
+  "Découvrir go.jzs.fr": "Explore go.jzs.fr",
+  "Le labo": "The lab",
+  "Ouvrir l’application": "Open the application",
+  "Ouvrir l’application — Rencontres Entrep Ensemble": "Open the application — Rencontres Entrep Ensemble",
+  "go.jzs.fr rend les liens vers vos applications partageables sous forme d’adresses HTTPS.": "go.jzs.fr makes links to your applications shareable as HTTPS addresses."
 }

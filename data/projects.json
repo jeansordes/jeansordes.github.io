@@ -586,14 +586,14 @@
       "name": "Rencontres Entrep Ensemble",
       "category": "Projets métier",
       "description": "Un organisateur de groupes et de rotations pour des rencontres professionnelles.",
-      "status": "Code de réalisation",
+      "status": "Application web",
       "platform": {
         "icon": "ui-globe",
         "label": "Web"
       },
       "source": "https://github.com/jeansordes/networking-app",
-      "action": "Voir le code",
-      "url": "https://github.com/jeansordes/networking-app",
+      "action": "Ouvrir l’application",
+      "url": "https://entrep-ensemble.jzs.fr/",
       "icon": "users",
       "technologies": [
         "JavaScript",
