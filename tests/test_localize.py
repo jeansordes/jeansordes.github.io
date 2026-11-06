@@ -54,7 +54,7 @@ class LocalizationTests(unittest.TestCase):
         keys, catalogs = i18n.catalogs(self.config)
         with patch.object(i18n, 'atomic_write') as write:
             i18n.build(self.config, keys, catalogs)
-        self.assertEqual(write.call_count, 7)
+        self.assertEqual(write.call_count, len(i18n.PAGES) * (len(self.config['languages']) + 1) + 1)
         for call in write.call_args_list:
             path, text = call.args
             self.assertEqual(path.read_text(), text, str(path))

@@ -18,7 +18,7 @@ from pathlib import Path
 from urllib.parse import urljoin, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-PAGES = {'': 'home.html', 'projets/': 'projects.html'}
+PAGES = {'': 'home.html', 'projets/': 'projects.html', 'informations/': 'legal.html'}
 ORIGIN = 'https://www.jzs.fr'
 DYNAMIC = ['Projet {current} sur {total} : {name}', '{count} projet à explorer',
            '{count} projets à explorer', 'Langue', 'Langue du navigateur']
