@@ -110,7 +110,7 @@ __CARDS__
     <section class="catalog-about" aria-labelledby="lab-title"><div><p class="catalog-eyebrow">Le labo</p><h2 id="lab-title">De petits outils à explorer.</h2><p>go.jzs.fr rend les liens vers vos applications partageables sous forme d’adresses HTTPS.</p></div><a class="catalog-button secondary" href="https://go.jzs.fr/">Découvrir go.jzs.fr <span aria-hidden="true">↗</span></a></section>
     <aside class="catalog-about" aria-labelledby="about-title"><div><p class="catalog-eyebrow">Et derrière ces projets…</p><h2 id="about-title">Jean, tout simplement.</h2><p>Je développe, j’expérimente et j’accompagne aussi les personnes qui construisent leur propre projet.</p></div><a class="catalog-button secondary" href="../">Découvrir mon accompagnement <span aria-hidden="true">↗</span></a></aside>
   </main>
-  <footer class="catalog-footer catalog-wrap"><a href="../informations/#mentions">Mentions légales</a><a href="../informations/#confidentialite">Confidentialité</a><a href="../">Jean Z. Sordes · jzs.fr</a><p>Une sélection qui évolue avec mes projets.</p><a href="https://github.com/jeansordes">Retrouvez-moi sur GitHub <span aria-hidden="true">↗</span></a></footer>
+      <footer class="catalog-footer catalog-wrap"><a href="../informations/">Mentions légales et confidentialité</a><a href="../">Jean Z. Sordes · jzs.fr</a><p>Une sélection qui évolue avec mes projets.</p><a href="https://github.com/jeansordes">Retrouvez-moi sur GitHub <span aria-hidden="true">↗</span></a></footer>
 </body>
 </html>
 '''
